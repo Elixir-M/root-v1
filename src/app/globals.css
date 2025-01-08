@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 10px rgba(106, 0, 173, 0.8), 0 0 20px rgba(139, 0, 255, 0.8), 0 0 30px rgba(186, 85, 211, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(106, 0, 173, 1), 0 0 30px rgba(139, 0, 255, 1), 0 0 40px rgba(186, 85, 211, 1);
+    }
+    100% {
+      text-shadow: 0 0 10px rgba(106, 0, 173, 0.8), 0 0 20px rgba(139, 0, 255, 0.8), 0 0 30px rgba(186, 85, 211, 0.8);
+    }
+  }
+
+  .glow-animation {
+    animation: glow 2s ease-in-out infinite;
+  }
