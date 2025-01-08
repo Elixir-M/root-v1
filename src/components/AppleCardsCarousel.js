@@ -9,187 +9,164 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    (<div className="w-full h-full py-20">
-      <h2
-        className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans text-center">
+    <div className="w-full h-full py-20">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans text-center">
         What We Offer
       </h2>
       <Carousel items={cards} />
-    </div>)
+    </div>
   );
 }
 
-
 const BlockchainContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Leverage the power of decentralized technologies to enhance security, streamline operations, and innovate business processes. With blockchain, ensure trust and transparency in transactions, automate processes through smart contracts, and reduce dependency on intermediaries.<br />
-            <strong>Tech/Tools:</strong> Solidity, Ethereum, Hyperledger, Web3.js, IPFS, Truffle Suite, Chainlink.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Leverage the power of decentralized technologies to enhance security, streamline operations, and innovate business processes. With blockchain, ensure trust and transparency in transactions, automate processes through smart contracts, and reduce dependency on intermediaries.<br />
+            <strong>Tech/Tools:</strong> Solidity, Ethereum, Hyperledger, Web3.js, IPFS, Truffle Suite, Chainlink.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 
 const DevContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Crafting seamless, user-friendly mobile and web applications tailored to your business needs with advanced features. Our team ensures optimized performance, intuitive UI/UX, and cross-platform compatibility.
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Crafting seamless, user-friendly mobile and web applications tailored to your business needs with advanced features. Our team ensures optimized performance, intuitive UI/UX, and cross-platform compatibility.
              From mobile-first applications to enterprise-grade web solutions, we provide end-to-end development.<br />
-            <strong>Tech/Tools:</strong> React, Vue.js, Angular, Flutter, React Native, Node.js, Express.js, MongoDB, Swift, Kotlin.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+            <strong>Tech/Tools:</strong> React, Vue.js, Angular, Flutter, React Native, Node.js, Express.js, MongoDB, Swift, Kotlin.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 
 const AIMLContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Unlock the potential of data-driven insights, predictive analytics, and automation to solve complex challenges and enhance decision-making. We build advanced AI/ML models that leverage big data for smarter predictions,
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Unlock the potential of data-driven insights, predictive analytics, and automation to solve complex challenges and enhance decision-making. We build advanced AI/ML models that leverage big data for smarter predictions,
              automation, and insights, empowering businesses to make data-driven decisions.<br />
-            <strong>Tech/Tools:</strong> TensorFlow, PyTorch, Scikit-Learn, Keras, Hugging Face, Pandas, Apache Spark, OpenCV, Jupyter Notebooks, Google Cloud AI.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+            <strong>Tech/Tools:</strong> TensorFlow, PyTorch, Scikit-Learn, Keras, Hugging Face, Pandas, Apache Spark, OpenCV, Jupyter Notebooks, Google Cloud AI.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 const IotContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Enable smart devices to communicate, optimize operations, and drive innovation with IoT solutions that provide real-time data and control. We create
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Enable smart devices to communicate, optimize operations, and drive innovation with IoT solutions that provide real-time data and control. We create
              custom IoT systems that connect physical devices to the internet, enabling automation, real-time data collection, and remote control.<br />
-            <strong>Tech/Tools:</strong> Raspberry Pi, Arduino, MQTT, Node-RED, Google Cloud IoT, AWS IoT, Microsoft Azure IoT, Zigbee, LoRaWAN.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+            <strong>Tech/Tools:</strong> Raspberry Pi, Arduino, MQTT, Node-RED, Google Cloud IoT, AWS IoT, Microsoft Azure IoT, Zigbee, LoRaWAN.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 
 const DesignContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Creating visually appealing and intuitive designs that elevate user experience and engage your audience across
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Creating visually appealing and intuitive designs that elevate user experience and engage your audience across
              digital platforms. Our designs are focused on simplicity, user-centric interactions, and maximizing conversions through aesthetically pleasing interfaces and graphics.<br />
-            <strong>Tech/Tools:</strong>Adobe XD, Figma, Sketch, InVision, Illustrator, Photoshop, Zeplin, Principle, Marvel App.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+            <strong>Tech/Tools:</strong>Adobe XD, Figma, Sketch, InVision, Illustrator, Photoshop, Zeplin, Principle, Marvel App.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 
 const STContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Delivering Excellence Through Rigorous Testing Ensure the highest quality of your software with comprehensive testing
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Delivering Excellence Through Rigorous Testing Ensure the highest quality of your software with comprehensive testing
              services that identify and resolve issues, ensuring flawless performance. We perform unit testing, integration testing, regression testing, and performance testing to make sure your solution works seamlessly.<br />
-            <strong>Tech/Tools:</strong> Selenium, JUnit, Appium, TestNG, Jenkins, Postman, Katalon Studio, LoadRunner, Cucumber, SonarQube.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+            <strong>Tech/Tools:</strong> Selenium, JUnit, Appium, TestNG, Jenkins, Postman, Katalon Studio, LoadRunner, Cucumber, SonarQube.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 
 const GameDevContent = () => {
   return (
-       (
-        <div
-          className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p
-          dangerouslySetInnerHTML={{__html:  `Design and develop interactive and engaging games that captivate audiences, with cutting-edge graphics and
+    <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
+      <p
+        dangerouslySetInnerHTML={{
+          __html: `Design and develop interactive and engaging games that captivate audiences, with cutting-edge graphics and
              intuitive gameplay. We create fully immersive, high-performance games across different platforms, from mobile to PC and VR/AR.<br />
-            <strong>Tech/Tools:</strong> Unity, Unreal Engine, Cocos2d, Blender, Autodesk Maya, Adobe Animate, VR/AR SDKs, GameMaker Studio, CryEngine.`}}
-            className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
-          >
-          </p>
-          <Image
-            src="https://assets.aceternity.com/macbook.png"
-            alt="Macbook mockup from Aceternity UI"
-            height="500"
-            width="500"
-            className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-          />
-        </div>
-      )
+            <strong>Tech/Tools:</strong> Unity, Unreal Engine, Cocos2d, Blender, Autodesk Maya, Adobe Animate, VR/AR SDKs, GameMaker Studio, CryEngine.`,
+        }}
+        className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
+      ></p>
+      <Image
+        src="https://assets.aceternity.com/macbook.png"
+        alt="Macbook mockup from Aceternity UI"
+        height="500"
+        width="500"
+        className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+      />
+    </div>
   );
 };
 // const DummyContent = () => {
@@ -286,7 +263,7 @@ const data = [
   {
     category: "Cloud Solutions (AWS & Azure)",
     title: "Scalable, Secure, and Agile Cloud Services",
-    src: "https://plus.unsplash.com/premium_photo-1683120968693-9af51578770e?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "https://plus.unsplash.com/premium_photo-1683836722608-60ab4d1b58e5?q=80&w=3424&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // content: <CloudContent />,
   },
   {

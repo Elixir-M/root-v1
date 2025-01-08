@@ -5,27 +5,42 @@ import Image from "next/image";
 
 export function HeroScrollDemo() {
   return (
-    (<div className="flex flex-col overflow-hidden mt-10">
+    <div className="flex flex-col mt-10">
       <ContainerScroll
         titleComponent={
           <>
             <h1 className="text-4xl font-semibold text-white">
               {/* Unleash the power of  */}
               <br />
+              <br />
+              <br />
+              <br />
+              <br />
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Scroll Animations
+                Unleash the Power of Next-Gen Solutions
               </span>
+              <br />
+              <br />
             </h1>
           </>
-        } >
+        }
+      >
         <Image
-          src="https://imgs.search.brave.com/CqtInyQsq5rDUFct1LEuwfHvaSDVeVtUjrdVtN1WfZE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9teXFy/Y29kZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjQvMDQv/MTF6b25fUVItY29k/ZS1mb3ItYW55LWlt/YWdlLW9yLXBob3Rv/LW9uLXRoZS13ZWIt/MTAyNHg3NTUud2Vi/cA"
+          src="/ElixirCode.png"
           alt="hero"
-          height={720}
+          height={1000}
           width={1400}
-          className="mx-auto rounded-2xl object-cover h-full object-left-top"
-          draggable={false} />
+          className="mx-auto rounded-2xl object-cover w-full h-full object-center"
+          draggable={false}
+        />
       </ContainerScroll>
-    </div>)
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
   );
 }
