@@ -9,13 +9,13 @@ export function VortexDemo() {
           text: "Build ",
         },
         {
-          text: "awesome ",
+          text: "The ",
         },
         {
-          text: "apps ",
+          text: "Future ",
         },
         {
-          text: "with ",
+          text: "With ",
         },
         {
           text: "Elixir.",
@@ -30,7 +30,7 @@ export function VortexDemo() {
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full">
             <div className="flex flex-col items-center justify-center h-[40rem]  ">
       <p className="text-neutral-200 text-xs sm:text-base  ">
-        The road to freedom starts from here
+      Transforming ideas into cutting-edge digital solutions
       </p>
       <TypewriterEffectSmooth words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
