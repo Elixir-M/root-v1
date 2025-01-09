@@ -21,7 +21,6 @@ import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
 import { black } from "tailwindcss/colors";
 import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarousel";
 import { FeaturesSectionDemo } from "@/components/BentoGrid";
-import { Spotlight } from "@/components/ui/spotlight";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { FocusCardsDemo } from "@/components/FocusCardsDemo";
 
@@ -229,10 +228,6 @@ export default function Home() {
       {/* <TracingBeam> */}
 
       <Navbar className="top-2" />
-      {/* <Spotlight
-                      className="-top-40 left-0 md:left-60 md:-top-20"
-                       fill="white"
-                   /> */}
       {/* <Spline  scene="https://prod.spline.design/O4yYahnrB0FRliWO/scene.splinecode"  /> */}
 
       {/* <WavyBackgroundDemo className="p-10"/> */}
