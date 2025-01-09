@@ -1,6 +1,6 @@
 import React from "react";
 import Spline from "@splinetool/react-spline/next";
-import { Spotlight } from "./ui/spotlight";
+import { Spotlight } from "./ui/Spotlight";
 import { FocusCardsDemo } from "./FocusCardsDemo";
 
 const HeroSection = () => {
