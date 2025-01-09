@@ -225,13 +225,21 @@ export default function Home() {
       className="min-h-screen"
       style={{ backgroundColor: black }} // Lighter shade of black
     >
+      <div className="relative z-50">
+      <Navbar className="top-2" />
+    </div>
+    
+    {/* Lower z-index for main content */}
+    <main className="relative z-0 pt-8">
+      <HeroSection />
+    </main>
       {/* <TracingBeam> */}
 
-      <Navbar className="top-2" />
+      {/* <Navbar className="top-2" /> */}
       {/* <Spline  scene="https://prod.spline.design/O4yYahnrB0FRliWO/scene.splinecode"  /> */}
 
       {/* <WavyBackgroundDemo className="p-10"/> */}
-      <HeroSection />
+      {/* <HeroSection /> */}
       {/* <GridBackgroundDemo/> */}
       {/* <BackgroundBoxesDemo/> */}
 
