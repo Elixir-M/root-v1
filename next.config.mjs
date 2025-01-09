@@ -5,7 +5,7 @@ const nextConfig = {
       // Add your allowed image domains here
     },
     reactStrictMode: true,
-    swcMinify: true,
+    // swcMinify: true,
   };
 
   export default nextConfig;
