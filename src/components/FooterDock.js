@@ -35,6 +35,9 @@ const FooterDock = () => {
     { icon: Twitter, label: "Twitter", url: "https://twitter.com/" },
     { icon: Mail, label: "Contact", url: "mailto:contact@example.com" },
     { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
+    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
+    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
+    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
   ];
 
   return (
