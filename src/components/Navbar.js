@@ -252,7 +252,7 @@ export function Navbar({ className }) {
                 </motion.div>
 
                 {isMobileMenuOpen && (
-                    <div className="fixed inset-x-0 top-24 px-6 lg:hidden z-50">
+                    <div className="fixed inset-x-0 top-24 px-6 lg:hidden">
                         <div className="bg-black/80 backdrop-blur-sm border border-white/[0.2] rounded-2xl shadow-xl p-4">
                             <div className="flex justify-center mb-4 border-b border-white/10 pb-4">
                                 <Link href="/">
