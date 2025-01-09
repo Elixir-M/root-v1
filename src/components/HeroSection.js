@@ -6,10 +6,10 @@ import { FocusCardsDemo } from "./FocusCardsDemo";
 const HeroSection = () => {
   return (
     <div className="container mx-auto relative">
-      // <Spotlight
+      {/* // <Spotlight
       //   className="-top-40 left-0 md:left-60 md:-top-20"
       //   fill="white"
-      // />
+      // /> */}
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[800px]">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-16 space-y-4">
