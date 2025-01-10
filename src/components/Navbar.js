@@ -149,7 +149,7 @@ export function Navbar({ className }) {
                     )}>
                         <Link href="/">
                             <img
-                                src="output-onlinepngtools (2).png"
+                                src="/assets/img/Elixir_Logo.png"
                                 alt="Logo"
                                 className="h-12 w-auto cursor-pointer"
                             />
@@ -176,7 +176,7 @@ export function Navbar({ className }) {
                             <div className="hidden lg:flex items-center mr-8">
                                 <Link href="/">
                                     <img
-                                        src="output-onlinepngtools (1).png"
+                                        src="/assets/img/Elixir_Logo.png"
                                         alt="Logo"
                                         className="h-12 w-auto cursor-pointer"
                                     />
@@ -257,7 +257,7 @@ export function Navbar({ className }) {
                             <div className="flex justify-center mb-4 border-b border-white/10 pb-4">
                                 <Link href="/">
                                     <img 
-                                        src="output-onlinepngtools (2).png"  
+                                        src="/assets/img/Elixir_Logo.png"  
                                         alt="Logo"
                                         className="h-12 w-auto cursor-pointer"
                                     />
