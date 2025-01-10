@@ -13,7 +13,7 @@ export function FeaturesSectionDemo() {
       // description: `We specialize in emerging technologies like AI/ML, cloud-native apps, IoT, and blockchain, staying
       //  ahead of the curve since before they were mainstream. With certifications from AWS, Microsoft Azure, and Google
       //   Cloud, and strong partnerships with tech giants, we deliver next-gen solutions that set you apart.`,
-      description:"",
+      description:"We deliver next-gen solutions with expertise in AI/ML, cloud apps, IoT, and blockchain.",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-blue-800",
       accentColor: "bg-blue-500"
@@ -23,7 +23,7 @@ export function FeaturesSectionDemo() {
       // description: `We focus on delivering measurable outcomes that make a real impact, whether it’s cost
       //  savings, improved efficiency, or faster go-to-market. With case studies that showcase tangible ROI, we
       //   prove that our solutions consistently drive business success, transforming challenges into opportunities.`,
-      description:"",
+      description:"We drive measurable results, from cost savings to faster go-to-market, with proven ROI through impactful solutions.",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-purple-800",
       accentColor: "bg-purple-500"
@@ -33,7 +33,7 @@ export function FeaturesSectionDemo() {
       // description: `No two businesses are the same, and neither are our solutions. We design customized strategies that align
       //  perfectly with your industry’s unique challenges and goals, ensuring that every service we provide is a perfect fit for
       //   your needs—no one-size-fits-all here.`,
-      description:"",
+      description:"We create tailored solutions to meet your unique business challenges—no one-size-fits-all",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-green-800",
       accentColor: "bg-green-500"
@@ -42,7 +42,7 @@ export function FeaturesSectionDemo() {
       title: " Agility at the Speed of Business",
       // description: `In today’s fast-paced world, speed is everything. We pride ourselves on quickly deploying teams and solutions, enabling
       //  you to stay ahead of deadlines and tackle time-sensitive IT projects with confidence, ensuring fast and efficient execution every time.`,
-      description:"",
+      description:"We deliver fast, efficient solutions to help you meet tight deadlines and tackle time-sensitive projects with confidence",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-red-800",
       accentColor: "bg-red-500"
@@ -52,7 +52,7 @@ export function FeaturesSectionDemo() {
       // description: `We combine top-tier technical expertise with a deep understanding of business processes, ensuring
       //  that your IT strategy aligns with your overall business goals. This hybrid approach allows us to deliver solutions
       //   that drive real business value, not just technical outcomes.`,
-      description:"",
+      description:"We blend technical expertise with business insight to align IT strategies with your goals, delivering solutions that drive true value.",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-yellow-800",
       accentColor: "bg-yellow-500"
@@ -62,7 +62,7 @@ export function FeaturesSectionDemo() {
       // description: `We excel at finding the right talent, even for hard-to-fill tech roles. With low attrition rates, quick
       //  time-to-fill, and outstanding client satisfaction scores, our staffing solutions ensure that you get the best-fit talent
       //   that helps drive your projects forward with success.`,
-      description:"",
+      description:"We specialize in sourcing top talent for even the toughest tech roles, ensuring quick placements, low attrition, and high client satisfaction.",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-pink-800",
       accentColor: "bg-pink-500"
@@ -72,7 +72,7 @@ export function FeaturesSectionDemo() {
       // description: `From consulting and implementation to staffing and ongoing support, we offer a full suite of services
       //  that streamline your IT needs. By acting as your comprehensive, end-to-end service provider, we simplify the vendor
       //  ecosystem and make managing your tech requirements effortless.`,
-      description:"",
+      description:"We provide end-to-end IT services, from consulting to staffing and support, simplifying your tech needs with a seamless approach.",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-indigo-800",
       accentColor: "bg-indigo-500"
@@ -82,7 +82,7 @@ export function FeaturesSectionDemo() {
       // description: `We focus on unlocking potential in emerging markets—industries or geographies that are under-served 
       // by cutting-edge technologies. By bringing expertise in the latest innovations to these spaces, we help businesses gain
       //  a competitive edge in untapped areas.`,
-      description:"",
+      description:"We unlock potential in emerging markets by introducing cutting-edge technologies, giving businesses a competitive edge in untapped areas.",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-teal-800",
       accentColor: "bg-teal-500"
