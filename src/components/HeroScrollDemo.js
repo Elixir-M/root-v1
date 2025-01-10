@@ -26,7 +26,7 @@ export function HeroScrollDemo() {
         }
       >
         <Image
-          src="/ElixirCode.png"
+          src="/assets/img/resolution.png"
           alt="hero"
           height={1000}
           width={1400}
