@@ -25,8 +25,8 @@ export function FeaturesSectionDemo() {
       //   prove that our solutions consistently drive business success, transforming challenges into opportunities.`,
       description:"We drive measurable results, from cost savings to faster go-to-market, with proven ROI through impactful solutions.",
       image: "/assets/gridicons/results.png",
-      gradientColor: "from-purple-800",
-      accentColor: "bg-purple-500"
+      gradientColor: "from-neutral-500",
+      accentColor: "bg-neutral-500"
     },
     {
       title: " Solutions Tailored to You",
@@ -44,8 +44,8 @@ export function FeaturesSectionDemo() {
       //  you to stay ahead of deadlines and tackle time-sensitive IT projects with confidence, ensuring fast and efficient execution every time.`,
       description:"We deliver fast, efficient solutions to help you meet tight deadlines and tackle time-sensitive projects with confidence",
       image: "/assets/gridicons/agility.png",
-      gradientColor: "from-red-800",
-      accentColor: "bg-red-500"
+      gradientColor: "from-blue-400",
+      accentColor: "bg-blue-500"
     },
     {
       title: "Bridging Tech and Business",
@@ -54,7 +54,7 @@ export function FeaturesSectionDemo() {
       //   that drive real business value, not just technical outcomes.`,
       description:"We blend technical expertise with business insight to align IT strategies with your goals, delivering solutions that drive true value.",
       image: "/assets/gridicons/tech and business.png",
-      gradientColor: "from-yellow-800",
+      gradientColor: "from-yellow-600",
       accentColor: "bg-yellow-500"
     },
     {
@@ -64,7 +64,7 @@ export function FeaturesSectionDemo() {
       //   that helps drive your projects forward with success.`,
       description:"We specialize in sourcing top talent for even the toughest tech roles, ensuring quick placements, low attrition, and high client satisfaction.",
       image: "/assets/gridicons/staffing.png",
-      gradientColor: "from-pink-800",
+      gradientColor: "from-pink-300",
       accentColor: "bg-pink-500"
     },
     {
@@ -111,7 +111,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col min-h-[450px] lg:min-h-[500px] relative group/feature",
+        "flex flex-col min-h-[350px] lg:min-h-[400px] relative group/feature",
         index < 4 && "border-b dark:border-neutral-800",
         "lg:border-r dark:border-neutral-800",
         (index === 0 || index === 4) && "lg:border-l dark:border-neutral-800",
@@ -134,12 +134,12 @@ const Feature = ({
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col p-6 lg:p-8">
         {/* Image Section */}
-        <div className="mb-6 w-full h-48 relative">
+        <div className="mb-6 w-[5rem] h-[5.5rem] relative">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover rounded-lg"
+            className=" rounded-lg"
           />
         </div>
 
@@ -162,7 +162,7 @@ const Feature = ({
         </div>
 
          {/* Learn More Link */}
-         <div className="mt-6">
+         <div className="mt-4">
           <button className="text-sm text-blue-400 hover:text-blue-300 hover:underline transition-colors duration-300">
             Learn more →
           </button>
