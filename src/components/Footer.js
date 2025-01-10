@@ -705,7 +705,7 @@ import {
   IconTerminal2,
 } from "@tabler/icons-react";
 import AnimatedLogoCloud from "./AnimatedLogoCloud";
-// import { VortexDemo } from "./VortexDemo";
+import { VortexDemo } from "./VortexDemo";
 import IconCloud from "./IconCloud";
 import FooterDock from "./FooterDock";
 
