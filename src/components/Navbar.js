@@ -149,7 +149,7 @@ export function Navbar({ className }) {
                     )}>
                         <Link href="/">
                             <img
-                                src="output-onlinepngtools (2).png"
+                                src="/assets/img/Logo.png"
                                 alt="Logo"
                                 className="h-12 w-auto cursor-pointer"
                             />
@@ -176,7 +176,7 @@ export function Navbar({ className }) {
                             <div className="hidden lg:flex items-center mr-8">
                                 <Link href="/">
                                     <img
-                                        src="output-onlinepngtools (1).png"
+                                        src="/assets/img/Logo.png"
                                         alt="Logo"
                                         className="h-12 w-auto cursor-pointer"
                                     />
@@ -252,12 +252,12 @@ export function Navbar({ className }) {
                 </motion.div>
 
                 {isMobileMenuOpen && (
-                    <div className="fixed inset-x-0 top-24 px-6 lg:hidden z-50">
+                    <div className="fixed inset-x-0 top-24 px-6 lg:hidden">
                         <div className="bg-black/80 backdrop-blur-sm border border-white/[0.2] rounded-2xl shadow-xl p-4">
                             <div className="flex justify-center mb-4 border-b border-white/10 pb-4">
                                 <Link href="/">
                                     <img 
-                                        src="output-onlinepngtools (2).png"  
+                                        src="/assets/img/Logo.png"  
                                         alt="Logo"
                                         className="h-12 w-auto cursor-pointer"
                                     />

@@ -10,71 +10,79 @@ export function FeaturesSectionDemo() {
   const features = [
     {
       title: "Innovating with Cutting-Edge Technologies",
-      description: `We specialize in emerging technologies like AI/ML, cloud-native apps, IoT, and blockchain, staying
-       ahead of the curve since before they were mainstream. With certifications from AWS, Microsoft Azure, and Google
-        Cloud, and strong partnerships with tech giants, we deliver next-gen solutions that set you apart.`,
+      // description: `We specialize in emerging technologies like AI/ML, cloud-native apps, IoT, and blockchain, staying
+      //  ahead of the curve since before they were mainstream. With certifications from AWS, Microsoft Azure, and Google
+      //   Cloud, and strong partnerships with tech giants, we deliver next-gen solutions that set you apart.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-blue-800",
       accentColor: "bg-blue-500"
     },
     {
       title: "Delivering Results that Matter",
-      description: `We focus on delivering measurable outcomes that make a real impact, whether it’s cost
-       savings, improved efficiency, or faster go-to-market. With case studies that showcase tangible ROI, we
-        prove that our solutions consistently drive business success, transforming challenges into opportunities.`,
+      // description: `We focus on delivering measurable outcomes that make a real impact, whether it’s cost
+      //  savings, improved efficiency, or faster go-to-market. With case studies that showcase tangible ROI, we
+      //   prove that our solutions consistently drive business success, transforming challenges into opportunities.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-purple-800",
       accentColor: "bg-purple-500"
     },
     {
       title: " Solutions Tailored to You",
-      description: `No two businesses are the same, and neither are our solutions. We design customized strategies that align
-       perfectly with your industry’s unique challenges and goals, ensuring that every service we provide is a perfect fit for
-        your needs—no one-size-fits-all here.`,
+      // description: `No two businesses are the same, and neither are our solutions. We design customized strategies that align
+      //  perfectly with your industry’s unique challenges and goals, ensuring that every service we provide is a perfect fit for
+      //   your needs—no one-size-fits-all here.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-green-800",
       accentColor: "bg-green-500"
     },
     {
       title: " Agility at the Speed of Business",
-      description: `In today’s fast-paced world, speed is everything. We pride ourselves on quickly deploying teams and solutions, enabling
-       you to stay ahead of deadlines and tackle time-sensitive IT projects with confidence, ensuring fast and efficient execution every time.`,
+      // description: `In today’s fast-paced world, speed is everything. We pride ourselves on quickly deploying teams and solutions, enabling
+      //  you to stay ahead of deadlines and tackle time-sensitive IT projects with confidence, ensuring fast and efficient execution every time.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-red-800",
       accentColor: "bg-red-500"
     },
     {
       title: "Bridging Tech and Business",
-      description: `We combine top-tier technical expertise with a deep understanding of business processes, ensuring
-       that your IT strategy aligns with your overall business goals. This hybrid approach allows us to deliver solutions
-        that drive real business value, not just technical outcomes.`,
+      // description: `We combine top-tier technical expertise with a deep understanding of business processes, ensuring
+      //  that your IT strategy aligns with your overall business goals. This hybrid approach allows us to deliver solutions
+      //   that drive real business value, not just technical outcomes.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-yellow-800",
       accentColor: "bg-yellow-500"
     },
     {
       title: " Staffing Excellence, Guaranteed",
-      description: `We excel at finding the right talent, even for hard-to-fill tech roles. With low attrition rates, quick
-       time-to-fill, and outstanding client satisfaction scores, our staffing solutions ensure that you get the best-fit talent
-        that helps drive your projects forward with success.`,
+      // description: `We excel at finding the right talent, even for hard-to-fill tech roles. With low attrition rates, quick
+      //  time-to-fill, and outstanding client satisfaction scores, our staffing solutions ensure that you get the best-fit talent
+      //   that helps drive your projects forward with success.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-pink-800",
       accentColor: "bg-pink-500"
     },
     {
       title: " Your One-Stop IT Partner",
-      description: `From consulting and implementation to staffing and ongoing support, we offer a full suite of services
-       that streamline your IT needs. By acting as your comprehensive, end-to-end service provider, we simplify the vendor
-       ecosystem and make managing your tech requirements effortless.`,
+      // description: `From consulting and implementation to staffing and ongoing support, we offer a full suite of services
+      //  that streamline your IT needs. By acting as your comprehensive, end-to-end service provider, we simplify the vendor
+      //  ecosystem and make managing your tech requirements effortless.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-indigo-800",
       accentColor: "bg-indigo-500"
     },
     {
       title: "Tapping Into Emerging Markets",
-      description: `We focus on unlocking potential in emerging markets—industries or geographies that are under-served 
-      by cutting-edge technologies. By bringing expertise in the latest innovations to these spaces, we help businesses gain
-       a competitive edge in untapped areas.`,
+      // description: `We focus on unlocking potential in emerging markets—industries or geographies that are under-served 
+      // by cutting-edge technologies. By bringing expertise in the latest innovations to these spaces, we help businesses gain
+      //  a competitive edge in untapped areas.`,
+      description:"",
       image: "https://images.unsplash.com/photo-1729366791089-6c9643dee806?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       gradientColor: "from-teal-800",
       accentColor: "bg-teal-500"
@@ -154,11 +162,11 @@ const Feature = ({
         </div>
 
          {/* Learn More Link */}
-         {/* <div className="mt-6">
+         <div className="mt-6">
           <button className="text-sm text-blue-400 hover:text-blue-300 hover:underline transition-colors duration-300">
             Learn more →
           </button>
-        </div> */}
+        </div>
       </div>
     </div>
   );
