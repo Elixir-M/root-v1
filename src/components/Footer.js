@@ -860,11 +860,11 @@ return (
                   </ul>
                   {/* FooterDock aligned with text */}
                   
-                  <div className="-ml-6 pt-8">
+                  {/* <div className="-ml-6 pt-8">
                     <div className="hidden min-[400px]:block max-[800px]:block lg:hidden pt-4">
                       <IconCloud iconSlugs={iconSlugs}/>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -970,9 +970,9 @@ return (
             <IconCloud iconSlugs={iconSlugs}/>
           </div>
 
-        <div className="-ml-6 -pt-8">
-                <FooterDock mobileClassName="translate-y-20"/>
-        </div>
+          <div className="w-full flex justify-center items-center py-4">
+            <FooterDock mobileClassName="translate-y-20"/>
+          </div>
         {/* Divider */}
         <div className="px-5">
             <hr className="w-4/5 border-gray-400 mx-auto" />
