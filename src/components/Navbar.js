@@ -151,7 +151,7 @@ export function Navbar({ className }) {
                             <img
                                 src="/assets/img/Logo.png"
                                 alt="Logo"
-                                className="h-12 w-auto cursor-pointer"
+                                className="h-10 w-auto pb-2 cursor-pointer"
                             />
                         </Link>
                     </div>
@@ -178,7 +178,7 @@ export function Navbar({ className }) {
                                     <img
                                         src="/assets/img/Logo.png"
                                         alt="Logo"
-                                        className="h-12 w-auto cursor-pointer"
+                                        className="h-10 w-auto pb-2 cursor-pointer"
                                     />
                                 </Link>
                             </div>
@@ -259,7 +259,7 @@ export function Navbar({ className }) {
                                     <img 
                                         src="/assets/img/Logo.png"  
                                         alt="Logo"
-                                        className="h-12 w-auto cursor-pointer"
+                                        className="h-10 w-auto pb-2 cursor-pointer"
                                     />
                                 </Link>
                             </div>
