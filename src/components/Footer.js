@@ -826,7 +826,7 @@ const iconSlugs = [
 
 return (
   <div>
-      <VortexDemo/>
+      {/* <VortexDemo/> */}
       {/* <AnimatedLogoCloud /> */}
       <div className="w-full rounded-md bg-black relative flex md:flex-row flex-col items-center justify-center antialiased">
         {/* <BackgroundBeams /> */}
@@ -965,6 +965,10 @@ return (
             <div className="relative flex size-full max-w-xl items-center justify-center overflow-hidden rounded-lg px-8 min-w-64 sm:pb-0 pb-4 min-[400px]:hidden max-[800px]:hidden lg:flex">
               <IconCloud iconSlugs={iconSlugs}/>
             </div>
+          </div>
+
+          <div className="hidden min-[400px]:block max-[800px]:block lg:hidden pt-4">
+            <IconCloud iconSlugs={iconSlugs}/>
           </div>
 
         <div className="-ml-6 -pt-8">
