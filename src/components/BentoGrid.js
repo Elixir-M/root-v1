@@ -64,7 +64,7 @@ export function FeaturesSectionDemo() {
       //   that helps drive your projects forward with success.`,
       description:"We specialize in sourcing top talent for even the toughest tech roles, ensuring quick placements, low attrition, and high client satisfaction.",
       image: "/assets/gridicons/staffing.png",
-      gradientColor: "from-pink-300",
+      gradientColor: "from-pink-700",
       accentColor: "bg-pink-500"
     },
     {
