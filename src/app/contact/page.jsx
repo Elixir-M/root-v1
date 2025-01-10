@@ -248,7 +248,7 @@ export default function Signup() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#000000] flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-neutral-500 to-black flex flex-col">
       <Navbar className="z-50" />
       
       <div className="flex-1 relative">
@@ -271,7 +271,7 @@ export default function Signup() {
             return (
               <SwiperSlide key={id} className="flex flex-col">
                 {/* <Image alt="altText" src={slide.image} width="20" height="20" /> */}
-                <h1 className="text-green-300 text-4xl mt-4">{slide.title}</h1>
+                <h1 className="bg-gradient-to-br from-black to-blue-900 text-transparent bg-clip-text text-4xl mt-4 inline-block">{slide.title}</h1>
                 <div className="text-white text-lg mt-2">{slide.desc}</div>
               </SwiperSlide>
             )
@@ -282,10 +282,10 @@ export default function Signup() {
         {/* Desktop Form */}
         <div className="hidden sm:block absolute right-0 top-32 bottom-0 w-[600px] bg-white rounded-tl-[80px] z-10">
           <div className="p-12">
-            <h2 className="text-2xl font-bold mb-6 text-center">Contact Us</h2>
+            <h2 className="text-2xl font-bold mb-6 text-center text-black">Contact Us</h2>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block mb-1">Email:</label>
+                <label className="block mb-1 text-black">Email:</label>
                 <input
                   type="email"
                   name="email"
@@ -300,7 +300,7 @@ export default function Signup() {
               </div>
 
               <div>
-                <label className="block mb-1">Phone:</label>
+                <label className="block mb-1 text-black">Phone:</label>
                 <input
                   type="tel"
                   name="phone"
@@ -315,7 +315,7 @@ export default function Signup() {
               </div>
 
               <div>
-                <label className="block mb-1">Message:</label>
+                <label className="block mb-1 text-black">Message:</label>
                 <textarea
                   name="description"
                   value={formData.description}
@@ -340,7 +340,7 @@ export default function Signup() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 disabled:bg-blue-300"
+                className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-300 disabled:bg-green-300"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
