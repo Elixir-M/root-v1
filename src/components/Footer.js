@@ -716,32 +716,31 @@ function Footer() {
   const offices = [
     {
       title: 'INDIA OFFICE',
-      address: '407, Arulya IT Park, Bhawarkuan Main Rd,',
-      city: 'Indore, Madhya Pradesh 452010',
-      phone1: '+91 9770477295',
-      phone2: '+91 9713406972',
-      email: 'info@infoqainc.com'
-    },
-    {
-      title: 'UK OFFICE',
-      address: 'Apartment 410.5, 25 Arena Tower',
-      city: 'Crossharbour Plaza, London E14 9YF',
-      phone1: '+442401523165',
+      address: '60, Silver Oaks, Annapurna Rd,',
+      city: 'Indore, Madhya Pradesh, 452009,',
+      phone1: '+91 9584949494',
+      phone2: '+91 9111157581',
+      email: 'info@elixirmultinational.com'
     },
     {
       title: 'USA OFFICE',
-      address: '135-447 Broadway, 3rd Floor,',
-      city: 'New York, NY 10013, USA',
-      phone1: '+13312569197',
-      address2: '720 W Randolph Street Chicago, IL',
-      phone2: '+13312569197'
+      address: '15000 Dallas Parkwa,y',
+      city: 'Dallas, Texas, USA, 75254',
+      phone1: '+1 469-544-9746'
     },
     {
-      title: 'AUSTRALIA OFFICE',
-      address: '264 George Street,',
-      city: 'Sydney 2000',
-      phone1: '+61480045822',
-      email: 'info@infoqainc.com'
+      title: 'GERMANY OFFICE',
+      address: '38440 Wolfsburg',
+      city: 'Deutschland, Germany',
+      phone1: '+49 176 47645009'
+      
+    },
+    {
+      title: 'IRELAND OFFICE',
+      address: 'Dominick Street Lower Galway,',
+      city: 'Galway ',
+      phone1: '+353892701749'
+      
     }
   ];
   const links = [
