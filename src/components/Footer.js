@@ -152,22 +152,22 @@
 //                 <div className="flex flex-col space-y-2">
 //                   <ul className="space-y-2">
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Who We Are</a>
+//                       <a href="/test">Who We Are</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Get in Touch</a>
+//                       <a href="/test">Get in Touch</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Careers</a>
+//                       <a href="/test">Careers</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Our Mission & Vision</a>
+//                       <a href="/test">Our Mission & Vision</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Business Model</a>
+//                       <a href="/test">Business Model</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Our Consultants</a>
+//                       <a href="/test">Our Consultants</a>
 //                     </li>
 //                   </ul>
 //                   {/* FooterDock aligned with text */}
@@ -188,46 +188,46 @@
 //               <ul>
 //                 <p className="text-white font-bold text-2xl pb-4">Services</p>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Blockchain Solutions</a>
+//                   <a href="/test">Blockchain Solutions</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Mobile App Development</a>
+//                   <a href="/test">Mobile App Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Web Development</a>
+//                   <a href="/test">Web Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Application Development</a>
+//                   <a href="/test">Application Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">AI & Machine learning</a>
+//                   <a href="/test">AI & Machine learning</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Internet of Things</a>
+//                   <a href="/test">Internet of Things</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Graphic Design</a>
+//                   <a href="/test">Graphic Design</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Quality Assuarance & Testing</a>
+//                   <a href="/test">Quality Assuarance & Testing</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Game Development</a>
+//                   <a href="/test">Game Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Supply Chain Solutions</a>
+//                   <a href="/test">Supply Chain Solutions</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Cybersecurity Services</a>
+//                   <a href="/test">Cybersecurity Services</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Digital Marketing & Branding</a>
+//                   <a href="/test">Digital Marketing & Branding</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Cloud Solutions</a>
+//                   <a href="/test">Cloud Solutions</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">System Integeration Services</a>
+//                   <a href="/test">System Integeration Services</a>
 //                 </li>
 //               </ul>
 //             </div>
@@ -235,16 +235,16 @@
 //               <ul>
 //                 <p className="text-white font-bold text-2xl pb-4">About</p>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">About Company</a>
+//                   <a href="/test">About Company</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Vision & Mission</a>
+//                   <a href="/test">Vision & Mission</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Become our Partner</a>
+//                   <a href="/test">Become our Partner</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Our Technology Partners</a>
+//                   <a href="/test">Our Technology Partners</a>
 //                 </li>
 //               </ul>
 //               <br></br>
@@ -252,16 +252,16 @@
 //               <ul>
 //                 <p className="text-white font-bold text-2xl pb-4">Blogs</p>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">About Company</a>
+//                   <a href="/test">About Company</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Vision & Mission</a>
+//                   <a href="/test">Vision & Mission</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Become our Partner</a>
+//                   <a href="/test">Become our Partner</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Our Technology Partners</a>
+//                   <a href="/test">Our Technology Partners</a>
 //                 </li>
 //               </ul>
 //             </div>
@@ -497,22 +497,22 @@
 //                 <div className="flex flex-col space-y-2">
 //                   <ul className="space-y-2">
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Who We Are</a>
+//                       <a href="/test">Who We Are</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Get in Touch</a>
+//                       <a href="/test">Get in Touch</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Careers</a>
+//                       <a href="/test">Careers</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Our Mission & Vision</a>
+//                       <a href="/test">Our Mission & Vision</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Business Model</a>
+//                       <a href="/test">Business Model</a>
 //                     </li>
 //                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-//                       <a href="">Our Consultants</a>
+//                       <a href="/test">Our Consultants</a>
 //                     </li>
 //                   </ul>
 //                   {/* FooterDock aligned with text */}
@@ -533,46 +533,46 @@
 //               <ul>
 //                 <p className="text-white font-bold text-2xl pb-4">Services</p>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Blockchain Solutions</a>
+//                   <a href="/test">Blockchain Solutions</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Mobile App Development</a>
+//                   <a href="/test">Mobile App Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Web Development</a>
+//                   <a href="/test">Web Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Application Development</a>
+//                   <a href="/test">Application Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">AI & Machine learning</a>
+//                   <a href="/test">AI & Machine learning</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Internet of Things</a>
+//                   <a href="/test">Internet of Things</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Graphic Design</a>
+//                   <a href="/test">Graphic Design</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Quality Assuarance & Testing</a>
+//                   <a href="/test">Quality Assuarance & Testing</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Game Development</a>
+//                   <a href="/test">Game Development</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Supply Chain Solutions</a>
+//                   <a href="/test">Supply Chain Solutions</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Cybersecurity Services</a>
+//                   <a href="/test">Cybersecurity Services</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Digital Marketing & Branding</a>
+//                   <a href="/test">Digital Marketing & Branding</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Cloud Solutions</a>
+//                   <a href="/test">Cloud Solutions</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">System Integeration Services</a>
+//                   <a href="/test">System Integeration Services</a>
 //                 </li>
 //               </ul>
 //             </div>
@@ -580,16 +580,16 @@
 //               <ul>
 //                 <p className="text-white font-bold text-2xl pb-4">About</p>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">About Company</a>
+//                   <a href="/test">About Company</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Vision & Mission</a>
+//                   <a href="/test">Vision & Mission</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Become our Partner</a>
+//                   <a href="/test">Become our Partner</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Our Technology Partners</a>
+//                   <a href="/test">Our Technology Partners</a>
 //                 </li>
 //               </ul>
 //               <br></br>
@@ -597,16 +597,16 @@
 //               <ul>
 //                 <p className="text-white font-bold text-2xl pb-4">Blogs</p>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">About Company</a>
+//                   <a href="/test">About Company</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Vision & Mission</a>
+//                   <a href="/test">Vision & Mission</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Become our Partner</a>
+//                   <a href="/test">Become our Partner</a>
 //                 </li>
 //                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-//                   <a href="">Our Technology Partners</a>
+//                   <a href="/test">Our Technology Partners</a>
 //                 </li>
 //               </ul>
 //             </div>
@@ -825,13 +825,13 @@ const iconSlugs = [
 
 return (
   <div>
-    <Image
+    {/* <Image
     src="/assets/img/Elixir_Logo.png"
     alt="hero"
     height={20}
     width={1400}
     className="mx-auto rounded-2xl object-contain w-full h-10 object-center" 
-/>
+/> */}
       <VortexDemo/>
       {/* <AnimatedLogoCloud /> */}
       <div className="w-full rounded-md bg-black relative flex md:flex-row flex-col items-center justify-center antialiased">
@@ -847,22 +847,22 @@ return (
                 <div className="flex flex-col space-y-2">
                   <ul className="space-y-2 pt-4">
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Who We Are</a>
+                      <a href="/test">Who We Are</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Get in Touch</a>
+                      <a href="/test">Get in Touch</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Careers</a>
+                      <a href="/test">Careers</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Our Mission & Vision</a>
+                      <a href="/test">Our Mission & Vision</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Business Model</a>
+                      <a href="/test">Business Model</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Our Consultants</a>
+                      <a href="/test">Our Consultants</a>
                     </li>
                   </ul>
                   {/* FooterDock aligned with text */}
@@ -882,16 +882,16 @@ return (
                 <p className="text-white font-bold text-2xl py-4">About</p>
                   <div className="pt-4">
                     <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">About Company</a>
+                      <a href="/test">About Company</a>
                     </li>
                     <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Vision & Mission</a>
+                      <a href="/test">Vision & Mission</a>
                     </li>
                     <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Become our Partner</a>
+                      <a href="/test">Become our Partner</a>
                     </li>
                     <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="">Our Technology Partners</a>
+                      <a href="/test">Our Technology Partners</a>
                     </li>
                   </div>
               </ul>
@@ -899,16 +899,16 @@ return (
               <ul>
                 <p className="text-white font-bold text-2xl pb-4">Blogs</p>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">About Company</a>
+                  <a href="/test">About Company</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Vision & Mission</a>
+                  <a href="/test">Vision & Mission</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Become our Partner</a>
+                  <a href="/test">Become our Partner</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Our Technology Partners</a>
+                  <a href="/test">Our Technology Partners</a>
                 </li>
               </ul> */}
           </div>
@@ -918,49 +918,49 @@ return (
                 {/* First Services Column */}
                 <ul>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Blockchain Solutions</a>
+                    <a href="/test">Blockchain Solutions</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Mobile App Development</a>
+                    <a href="/test">Mobile App Development</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Web Development</a>
+                    <a href="/test">Web Development</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Application Development</a>
+                    <a href="/test">Application Development</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">AI & Machine learning</a>
+                    <a href="/test">AI & Machine learning</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Internet of Things</a>
+                    <a href="/test">Internet of Things</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Graphic Design</a>
+                    <a href="/test">Graphic Design</a>
                   </li>
                 </ul>
                 {/* Second Services Column */}
                 <ul>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Quality Assurance & Testing</a>
+                    <a href="/test">Quality Assurance & Testing</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Game Development</a>
+                    <a href="/test">Game Development</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Supply Chain Solutions</a>
+                    <a href="/test">Supply Chain Solutions</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Cybersecurity Services</a>
+                    <a href="/test">Cybersecurity Services</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Digital Marketing & Branding</a>
+                    <a href="/test">Digital Marketing & Branding</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">Cloud Solutions</a>
+                    <a href="/test">Cloud Solutions</a>
                   </li>
                   <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                    <a href="">System Integration Services</a>
+                    <a href="/test">System Integration Services</a>
                   </li>
                 </ul>
               </div>

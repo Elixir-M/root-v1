@@ -57,10 +57,10 @@ export function Navbar({ className }) {
         {
             title: "Our Company",
             items: [
-                { href: "/webDev", text: "Web Development" },
-                { href: "/cyberSec", text: "CyberSecurity" },
-                { href: "/gaming", text: "Game" },
-                { href: "/branding", text: "Branding" },
+                { href: "/test", text: "Web Development" },
+                { href: "/test", text: "CyberSecurity" },
+                { href: "/test", text: "Game" },
+                { href: "/test", text: "Branding" },
             ]
         },
         {
@@ -100,19 +100,19 @@ export function Navbar({ className }) {
         {
             title: "Hire Experts",
             items: [
-                { href: "/blog", text: "Blog" },
-                { href: "/documentation", text: "Documentation" },
-                { href: "/tutorials", text: "Tutorials" },
-                { href: "/guides", text: "Guides" },
+                { href: "/test", text: "Blog" },
+                { href: "/test", text: "Documentation" },
+                { href: "/test", text: "Tutorials" },
+                { href: "/test", text: "Guides" },
             ]
         },
         {
             title: "Our Solutions",
             items: [
-                { href: "/hobby", text: "Hobby" },
-                { href: "/individual", text: "Individual" },
-                { href: "/team", text: "Team" },
-                { href: "/enterprise", text: "Enterprise" },
+                { href: "/test", text: "Hobby" },
+                { href: "/test", text: "Individual" },
+                { href: "/test", text: "Team" },
+                { href: "/test", text: "Enterprise" },
             ]
         }
     ];
@@ -227,7 +227,7 @@ export function Navbar({ className }) {
                                 animate={{ opacity: 1 }}
                                 className="ml-8 px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-200"
                             >
-                                Get Started
+                                Blogs
                             </motion.button>
                         )}
                     </motion.div>
@@ -311,7 +311,7 @@ export function Navbar({ className }) {
                                 ))}
                             </nav>
                             <button className="w-full mt-4 px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors">
-                                Get Started
+                                Blogs
                             </button>
                         </div>
                     </div>
@@ -324,7 +324,7 @@ export function Navbar({ className }) {
                         exit={{ opacity: 0 }}
                         className="hidden lg:block px-4 py-2 rounded-full bg-white text-black hover:bg-gray-200 transition-colors duration-200"
                     >
-                        Get Started
+                        Blogs
                     </motion.button>
                 )}
             </motion.div>

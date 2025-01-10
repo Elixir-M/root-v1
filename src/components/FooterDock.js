@@ -28,9 +28,9 @@ const NavItem = ({ icon: Icon, label, href }) => {
 
 const FooterDock = () => {
   const navItems = [
-    { icon: Home, label: "Home", url: "https://www.example.com/home" },
+    { icon: Home, label: "Home", url: "/" },
     { icon: PenLine, label: "Blog", url: "https://www.example.com/blog" },
-    { icon: Github, label: "Github", url: "https://github.com/" },
+    { icon: Github, label: "Github", url: "https://github.com/Elixir-M" },
     { icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com/" },
     { icon: Twitter, label: "Twitter", url: "https://twitter.com/" },
     { icon: Mail, label: "Contact", url: "mailto:contact@example.com" },

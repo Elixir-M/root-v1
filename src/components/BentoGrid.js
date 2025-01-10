@@ -163,9 +163,12 @@ const Feature = ({
 
          {/* Learn More Link */}
          <div className="mt-4">
-          <button className="text-sm text-blue-400 hover:text-blue-300 hover:underline transition-colors duration-300">
-            Learn more →
-          </button>
+         <a 
+    href="/test" 
+    className="text-sm text-blue-400 hover:text-blue-300 hover:underline transition-colors duration-300"
+  >
+    Learn more →
+  </a>
         </div>
       </div>
     </div>
