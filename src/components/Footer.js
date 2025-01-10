@@ -708,7 +708,7 @@ import AnimatedLogoCloud from "./AnimatedLogoCloud";
 import { VortexDemo } from "./VortexDemo";
 import IconCloud from "./IconCloud";
 import FooterDock from "./FooterDock";
-
+import Image from "next/image";
 
 
 
@@ -825,6 +825,13 @@ const iconSlugs = [
 
 return (
   <div>
+    <Image
+    src="/assets/img/Elixir_Logo.png"
+    alt="hero"
+    height={20}
+    width={1400}
+    className="mx-auto rounded-2xl object-contain w-full h-10 object-center" 
+/>
       <VortexDemo/>
       {/* <AnimatedLogoCloud /> */}
       <div className="w-full rounded-md bg-black relative flex md:flex-row flex-col items-center justify-center antialiased">
