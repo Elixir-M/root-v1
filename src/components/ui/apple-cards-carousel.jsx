@@ -248,7 +248,7 @@ return (
   <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
     <div className="relative w-full"  ref={containerRef} >
       <div
-        className="flex w-full overflow-x-scroll overscroll-x-auto py-10 md:py-20 scroll-smooth [scrollbar-width:none]"
+        className="flex w-full overflow-x-scroll overscroll-x-auto py-4 md:py-6 scroll-smooth [scrollbar-width:none]"
         ref={carouselRef}>
         <div className={cn(
          "flex flex-row gap-4 md:gap-8 px-4 md:px-8",
@@ -280,7 +280,7 @@ return (
           ))}
         </div>
       </div>
-      <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 flex justify-center gap-4">
+      {/* <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2 flex justify-center gap-4">
         <button
           className="relative z-40 h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center"
           onClick={() => scrollTo('left')}>
@@ -291,7 +291,17 @@ return (
           onClick={() => scrollTo('right')}>
           <IconArrowNarrowRight className="h-6 w-6 text-gray-500" />
         </button>
-      </div>
+      </div> */}
+      <button
+  className="absolute left-4 top-1/2 -translate-y-1/2 z-40 h-10 w-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center backdrop-blur-sm transition-colors"
+  onClick={() => scrollTo('left')}>
+  <IconArrowNarrowLeft className="h-6 w-6 text-gray-700" />
+</button>
+<button
+  className="absolute right-4 top-1/2 -translate-y-1/2 z-40 h-10 w-10 rounded-full bg-white/80 hover:bg-white flex items-center justify-center backdrop-blur-sm transition-colors"
+  onClick={() => scrollTo('right')}>
+  <IconArrowNarrowRight className="h-6 w-6 text-gray-700" />
+</button>
     </div>
   </CarouselContext.Provider>
 );
