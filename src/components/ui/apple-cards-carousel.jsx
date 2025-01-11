@@ -248,7 +248,7 @@ return (
   <CarouselContext.Provider value={{ onCardClose: handleCardClose, currentIndex }}>
     <div className="relative w-full"  ref={containerRef} >
       <div
-        className="flex w-full overflow-x-scroll overscroll-x-auto py-4 md:py-6 scroll-smooth [scrollbar-width:none]"
+        className="flex w-full overflow-x-scroll overscroll-x-auto py-4 md:py-16 scroll-smooth [scrollbar-width:none]"
         ref={carouselRef}>
         <div className={cn(
          "flex flex-row gap-4 md:gap-8 px-4 md:px-8",
