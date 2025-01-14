@@ -19,7 +19,8 @@ export async function POST(request) {
       cookieStore.set('admin_token', token, {
         httpOnly: true,
         secure: process.env.NODE_ENV === 'production',
-        sameSite: 'strict',
+        sameSite: 'lax',
+        path: '/',
         maxAge: 3600 // 1 hour
       });
 
@@ -28,6 +29,7 @@ export async function POST(request) {
     
     return NextResponse.json({ error: 'Invalid credentials' }, { status: 401 });
   } catch (error) {
+    console.error('Login error:', error); // For debugging
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

@@ -11,16 +11,100 @@ export default function AdminCards() {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const router = useRouter();
-
   useEffect(() => {
-    fetchCards();
-  }, []);
+    let isMounted = true;
+
+    const checkAuthAndFetchCards = async () => {
+      try {
+        // Add delay before auth check to ensure cookie is set
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        const authResponse = await fetch('/api/check-auth', {
+          credentials: 'include',
+          headers: {
+            'Cache-Control': 'no-cache'
+          }
+        });
+
+        if (!authResponse.ok) {
+          console.log('Auth check failed:', await authResponse.json()); // For debugging
+          if (isMounted) {
+            router.push(`/admin/login?redirectTo=${encodeURIComponent('/admin/cards')}`);
+          }
+          return;
+        }
+
+        const cardsResponse = await fetch('/api/cards', {
+          credentials: 'include'
+        });
+
+        if (!cardsResponse.ok) {
+          throw new Error('Failed to fetch cards');
+        }
+
+        const data = await cardsResponse.json();
+        if (isMounted) {
+          setCards(data);
+          setIsLoading(false);
+        }
+      } catch (err) {
+        console.error('Error:', err); // For debugging
+        if (isMounted) {
+          setError(err.message);
+          setIsLoading(false);
+          router.push(`/admin/login?redirectTo=${encodeURIComponent('/admin/cards')}`);
+        }
+      }
+    };
+
+    checkAuthAndFetchCards();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [router]);
 
   const fetchCards = async () => {
-    const response = await fetch('/api/cards');
-    const data = await response.json();
-    setCards(data);
+    try {
+      const response = await fetch('/api/cards', {
+        credentials: 'include'
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch cards');
+      }
+
+      const data = await response.json();
+      setCards(data);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setIsLoading(false);
+    }
   };
+
+  // Add a logout handler
+  const handleLogout = async () => {
+    const response = await fetch('/api/admin/logout', {
+      method: 'POST',
+      credentials: 'include'
+    });
+
+    if (response.ok) {
+      router.push('/admin/login');
+    }
+  };
+
+//   useEffect(() => {
+//     fetchCards();
+//   }, []);
+
+//   const fetchCards = async () => {
+//     const response = await fetch('/api/cards');
+//     const data = await response.json();
+//     setCards(data);
+//   };
+  
 
   const uploadImage = async (file) => {
     const formData = new FormData();
@@ -87,6 +171,13 @@ export default function AdminCards() {
 
   return (
     <div className="container mx-auto px-4 py-8">
+         {/* Add logout button */}
+      <button
+        onClick={handleLogout}
+        className="absolute top-4 right-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+      >
+        Logout
+      </button>
       <h1 className="text-2xl font-bold mb-6">Card Management</h1>
       
       <form onSubmit={handleSubmit} className="mb-8 space-y-4">

@@ -1,6 +1,6 @@
 "use client"
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Eye, EyeOff } from 'lucide-react';
 
 const AdminLogin = () => {
@@ -9,6 +9,7 @@ const AdminLogin = () => {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
+  const searchParams = useSearchParams();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,7 +33,9 @@ const AdminLogin = () => {
       });
 
       if (response.ok) {
-        router.push('/admin/dashboard');
+        // Get the redirect URL from query parameters, default to dashboard
+        const redirectTo = searchParams.get('redirectTo') || '/admin/dashboard';
+        router.push(redirectTo);
       } else {
         const data = await response.json();
         setError(data.error || 'Login failed');
@@ -43,6 +46,7 @@ const AdminLogin = () => {
       setIsLoading(false);
     }
   };
+
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
