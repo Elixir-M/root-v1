@@ -38,8 +38,8 @@ export function VortexDemo() {
           Join now
         </button> */}
         <a 
-        // href="/contact" 
-        href="/test"
+        href="/contact" 
+        // href="/test"
         className="w-40 h-10 rounded-xl bg-black border border-white text-white text-sm flex justify-center items-center hover:bg-white hover:text-black"
         >
           Contact Us
