@@ -842,7 +842,7 @@ return (
             <div className="p-5 flex flex-col items-start">
               <div className="flex flex-col space-y-4">
                 <p className="text-white font-bold text-3xl">
-                <h4 class="text-5xl font-bold text-purple-600 glow-animation">Elixir</h4>
+                <h4 className="text-5xl font-bold text-purple-600 glow-animation">Elixir</h4>
                 </p>
                 <div className="flex flex-col space-y-2">
                   <ul className="space-y-2 pt-4">
