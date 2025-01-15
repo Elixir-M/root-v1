@@ -225,6 +225,7 @@ export default function Home() {
       className="min-h-screen"
       style={{ backgroundColor: black }} // Lighter shade of black
     >
+     
       {/* <TracingBeam> */}
 
       <Navbar className="top-2" />
