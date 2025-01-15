@@ -1,7 +1,7 @@
 // test-supabase.js
 import { PrismaClient } from '@prisma/client';
 
-const supabaseUrl = "postgresql://postgres:ypKeknbBnuU51tcN@db.ewriqxemjmqwetsyhmky.supabase.co:5432/postgres";
+const supabaseUrl = "postgresql://postgres.ewriqxemjmqwetsyhmky:ypKeknbBnuU51tcN@aws-0-ap-south-1.pooler.supabase.com:5432/postgres?pgbouncer=true";
 
 // Initialize Prisma with Supabase URL
 const prisma = new PrismaClient({
