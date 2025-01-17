@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { WobbleCardDemo } from './WobbleCard';
 import { ThreeDCard, ThreeDCardGrid } from "@/components/3DCardEffect";
 import { CaseStudyGrid, sampleCases } from "@/components/CaseStudyGrid";
+import WhiteScreenAnimation from './WhiteScreenAnimation';
 
 const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
   const [showContent, setShowContent] = useState(false);
@@ -35,7 +36,7 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Initial white screen with animations */}
-      <motion.div
+      {/* <motion.div
         initial={{ x: 0 }}
         animate={{ x: '-100%' }}
         transition={{ duration: 1, ease: "easeInOut", delay: 2.5 }}
@@ -79,7 +80,9 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
             )}
           </AnimatePresence>
         </div>
-      </motion.div>
+      </motion.div> */}
+
+     <WhiteScreenAnimation serviceName="serviceName" />
 
       {/* Main content */}
       <motion.div

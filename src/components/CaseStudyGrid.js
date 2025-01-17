@@ -39,8 +39,6 @@ const CaseStudyCard = ({ image, title, description, link }) => {
 const CaseStudyGrid = ({ cases }) => {
   return (
     <div className="relative w-full">
-      {/* Top gradient transition */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#001219] to-transparent z-10" />
       
       {/* Main content with white background */}
       <div className="relative bg-white pt-32 pb-32">
@@ -59,8 +57,6 @@ const CaseStudyGrid = ({ cases }) => {
         </div>
       </div>
 
-      {/* Bottom gradient transition */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent z-10" />
     </div>
   );
 };
