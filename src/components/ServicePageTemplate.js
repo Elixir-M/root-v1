@@ -36,7 +36,7 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
       {/* Initial white screen with animations */}
-      {/* <motion.div
+      <motion.div
         initial={{ x: 0 }}
         animate={{ x: '-100%' }}
         transition={{ duration: 1, ease: "easeInOut", delay: 2.5 }}
@@ -80,9 +80,8 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
             )}
           </AnimatePresence>
         </div>
-      </motion.div> */}
+      </motion.div>
 
-     <WhiteScreenAnimation serviceName="serviceName" />
 
       {/* Main content */}
       <motion.div
