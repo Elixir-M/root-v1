@@ -29,15 +29,15 @@ const NavItem = ({ icon: Icon, label, href }) => {
 const FooterDock = () => {
   const navItems = [
     { icon: Home, label: "Home", url: "/" },
-    { icon: PenLine, label: "Blog", url: "https://www.example.com/blog" },
+    { icon: PenLine, label: "Blog", url: "/test" },
     { icon: Github, label: "Github", url: "https://github.com/Elixir-M" },
-    { icon: Linkedin, label: "LinkedIn", url: "https://linkedin.com/" },
-    { icon: Twitter, label: "Twitter", url: "https://twitter.com/" },
+    { icon: Linkedin, label: "LinkedIn", url: "/test" },
+    { icon: Twitter, label: "Twitter", url: "/test" },
     { icon: Mail, label: "Contact", url: "mailto:contact@example.com" },
-    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
-    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
-    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
-    { icon: Sun, label: "Theme", url: "https://www.example.com/theme" },
+    { icon: Sun, label: "Theme", url: "/test" },
+    { icon: Sun, label: "Theme", url: "/test" },
+    { icon: Sun, label: "Theme", url: "/test" },
+    { icon: Sun, label: "Theme", url: "/test" },
   ];
 
   return (
