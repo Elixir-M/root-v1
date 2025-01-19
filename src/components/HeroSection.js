@@ -45,7 +45,6 @@
 //   );
 // };
 
-
 import React from "react";
 import Spline from "@splinetool/react-spline/next";
 import { Spotlight } from "./ui/Spotlight";
@@ -78,12 +77,7 @@ const HeroSection = () => {
       </div>
       <div
         style={{
-          position: "absolute",
-          top: "85%",
-          left: 0,
-          right: 0,
-          zIndex: 10,
-          background: "black",
+          marginTop: "-7%", // Adjust as needed
         }}
       >
         <FocusCardsDemo />
@@ -91,7 +85,6 @@ const HeroSection = () => {
     </div>
   );
 };
-
 
 // import React from "react";
 // import Spline from "@splinetool/react-spline/next";
