@@ -4,7 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { WobbleCardDemo } from './WobbleCard';
 import { ThreeDCard, ThreeDCardGrid } from "@/components/3DCardEffect";
 import { CaseStudyGrid, sampleCases } from "@/components/CaseStudyGrid";
-import WhiteScreenAnimation from './WhiteScreenAnimation';
+import caseStudiesData  from '@/data/caseStudiesData';
+
+
 
 const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
   const [showContent, setShowContent] = useState(false);
@@ -149,6 +151,7 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
         <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent via-[#001219]/80 to-[#001219]" />
       </motion.div>
 
+{/* Cards  */}
     <div className="relative w-full">
       <div className="absolute inset-0 bg-gradient-to-b from-[#001219] via-[#001219] to-black" />
       <div className='relative z-10'>
@@ -206,8 +209,9 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
       </div>
     </div>
 
-    <CaseStudyGrid cases={sampleCases} 
-    />
+
+{/* Case Study  */}
+<CaseStudyGrid cases={caseStudiesData.blockchain} />
 
     </div>
   );
