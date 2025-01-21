@@ -17,11 +17,11 @@ const WhiteScreenAnimation = ({ serviceName, onAnimationComplete }) => {
 
   return (
     <motion.div
-      initial={{ x: 0 }}
-      animate={{ x: '-100%' }}
-      transition={{ duration: 1, ease: "easeInOut", delay: 2.5 }}
+    initial={{ opacity: 1 }}
+    animate={{ opacity: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 2.5 }}
       onAnimationComplete={onAnimationComplete}
-      className="fixed inset-0 bg-white z-50 flex items-center justify-center"
+      className="fixed inset-0 bg-black z-50 flex items-center justify-center"
     >
       <div className="relative w-full flex justify-center items-center">
         <AnimatePresence mode="wait">
@@ -36,7 +36,7 @@ const WhiteScreenAnimation = ({ serviceName, onAnimationComplete }) => {
                 transition: { duration: 0.4, ease: "easeInOut" }
               }}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="text-black text-6xl md:text-7xl lg:text-8xl font-bold absolute"
+              className="text-white text-6xl md:text-7xl lg:text-8xl font-bold absolute"
             >
               {serviceName}
             </motion.h1>
@@ -54,8 +54,7 @@ const WhiteScreenAnimation = ({ serviceName, onAnimationComplete }) => {
               <motion.img
                 src="/assets/img/Logo.png"
                 alt="Company Logo"
-                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain invert"
-                style={{ filter: 'brightness(0)' }}
+                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain"
               />
             </motion.div>
           )}
