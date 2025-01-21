@@ -7,7 +7,7 @@ import caseStudiesData  from '@/data/caseStudiesData';
 
 
 
-const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
+const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) => {
   const [showContent, setShowContent] = useState(false);
   const [showLogo, setShowLogo] = useState(false);
 
@@ -104,7 +104,7 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl }) => {
             Your browser does not support the video tag.
           </video>
           {/* Overlay with gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-[#001219]" />
+          <div className={`absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-${gradientshade}`} />
           {/* Overlay to ensure text is readable */}
           <div className="absolute inset-0 bg-black bg-opacity-50" />
         </div>

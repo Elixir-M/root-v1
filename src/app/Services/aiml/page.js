@@ -10,9 +10,9 @@ const Page = () => {
       <Navbar className="top-2"/>
 
       <ServicePageTemplate 
-        serviceName="Blockchain Solutions"
-        tagline="Empowering Tomorrow with Secure and Scalable Blockchain Solutions"
-        videoUrl="https://videos.pexels.com/video-files/7565438/7565438-hd_1080_1920_25fps.mp4"
+        serviceName="AI & ML"
+        tagline="Empowering Innovation with Smarter AI & ML Solutions"
+        videoUrl="https://videos.pexels.com/video-files/3141210/3141210-uhd_2560_1440_25fps.mp4"
         gradientshade="#001219"
       />
 
