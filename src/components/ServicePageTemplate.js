@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { WobbleCardDemo } from './WobbleCard';
 import { ThreeDCard, ThreeDCardGrid } from "@/components/3DCardEffect";
 import { CaseStudyGrid, sampleCases } from "@/components/CaseStudyGrid";
 import caseStudiesData  from '@/data/caseStudiesData';
