@@ -53,7 +53,6 @@ import WhiteScreenAnimation from "./WhiteScreenAnimation";
 
 const HeroSection = () => {
   return (
-    
     <div className="container mx-auto relative">
       <WhiteScreenAnimation serviceName="Elixir-M" />
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[850px] pt-8">
@@ -77,6 +76,12 @@ const HeroSection = () => {
       </div>
       <div
         style={{
+          position: "absolute",
+          top: "85%",
+          left: 0,
+          right: 0,
+          zIndex: 10,
+          background: "black",
           marginTop: "-7%", // Adjust as needed
         }}
       >
