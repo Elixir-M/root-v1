@@ -6,6 +6,7 @@ import { black } from "tailwindcss/colors";
 import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarousel";
 import { FeaturesSectionDemo } from "@/components/BentoGrid";
 export default function Home() {
+  
   return (
     <div
       className="min-h-screen"
