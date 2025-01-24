@@ -16,6 +16,7 @@
     "@splinetool/runtime": "^1.9.54",
     "@tabler/icons-react": "^3.26.0",
     "autoprefixer": "^10.4.20",
+    "axios": "^1.7.9",
     "class-variance-authority": "^0.7.1",
     "cloudinary": "^2.5.1",
     "clsx": "^2.1.1",
