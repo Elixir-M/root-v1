@@ -54,7 +54,7 @@ import WhiteScreenAnimation from "./WhiteScreenAnimation";
 const HeroSection = () => {
   return (
     <div className="container mx-auto relative">
-      {/* <WhiteScreenAnimation serviceName="Elixir-M" /> */}
+      <WhiteScreenAnimation serviceName="Elixir-M" />
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[850px] pt-8">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-16 space-y-4">

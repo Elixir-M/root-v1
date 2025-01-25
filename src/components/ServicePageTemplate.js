@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ThreeDCard, ThreeDCardGrid } from "@/components/3DCardEffect";
 import { CaseStudyGrid, sampleCases } from "@/components/CaseStudyGrid";
 import caseStudiesData  from '@/data/caseStudiesData';
+import WhiteScreenAnimation from './WhiteScreenAnimation';
 
 
 
@@ -82,6 +83,10 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
           </AnimatePresence>
         </div>
       </motion.div>
+
+      {/* <WhiteScreenAnimation 
+        serviceName={serviceName} 
+      /> */}
 
 
       {/* Main content */}
