@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { cn } from "@/lib/utils";
 import React, {
   createContext,
@@ -38,9 +38,9 @@ export const CardContainer = ({
     containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
   };
   return (
-    (<MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
+    <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        className={cn("py-5 flex items-center justify-center", containerClassName)}
+        className={cn("py-4 flex items-center justify-center", containerClassName)}
         style={{
           perspective: "1000px",
         }}>
@@ -50,7 +50,7 @@ export const CardContainer = ({
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className={cn(
-            "flex items-center justify-center relative transition-all duration-200 ease-linear",
+            "flex items-center justify-center relative transition-all duration-200 ease-linear w-full",
             className
           )}
           style={{
@@ -59,7 +59,7 @@ export const CardContainer = ({
           {children}
         </div>
       </div>
-    </MouseEnterContext.Provider>)
+    </MouseEnterContext.Provider>
   );
 };
 
@@ -68,13 +68,13 @@ export const CardBody = ({
   className
 }) => {
   return (
-    (<div
+    <div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "min-h-[400px] w-full [transform-style:preserve-3d] [&>*]:[transform-style:preserve-3d]",
         className
       )}>
       {children}
-    </div>)
+    </div>
   );
 };
 
