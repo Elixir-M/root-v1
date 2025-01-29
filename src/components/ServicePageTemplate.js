@@ -160,48 +160,128 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
         <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
           <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
           <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />   
           <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
           <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
           <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
           <ThreeDCard
               imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
               title="First Card"
               description="Description for first card"
               tryNowLink="https://example.com/1"
+              modalContent={{
+                description: "Detailed modal description",
+                features: [
+                  "Feature point 1",
+                  "Feature point 2",
+                  "Feature point 3"
+                ],
+                expandedImage: "/expanded-image.jpg",  // Different image for modal
+                deployedLink: "https://your-deployed-site.com"  // Live site link
+              }}
           />
             
           </ThreeDCardGrid>
