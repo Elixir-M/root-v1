@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem, ProductItem, MenuItemsList } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { Menu as MenuIcon, X , ChevronDown } from 'lucide-react';
+import { Menu as MenuIcon, X, ChevronDown } from 'lucide-react';
 
 export function Navbar({ className }) {
     const [active, setActive] = useState(null);
@@ -57,14 +57,35 @@ export function Navbar({ className }) {
         {
             title: "Our Company",
             items: [
-                { href: "/test", text: "Web Development" },
-                { href: "/test", text: "CyberSecurity" },
-                { href: "/test", text: "Game" },
-                { href: "/test", text: "Branding" },
+                { href: "/test", text: "Who We Are" },
+                { href: "/test", text: "Get in Touch" },
+                { href: "/test", text: "Careers" },
+                { href: "/test", text: "Our Mission & Vision" },
+                { href: "/test", text: "Business Model" },
+                { href: "/test", text: "Our Consultants" },
             ]
         },
         {
             title: "Services",
+            items: [
+                { href: "/test", text: "Blockchain Solutions"},
+                { href: "/test", text: "Mobile App Development"},
+                { href: "/test", text: "Web Development"},
+                { href: "/test", text: "Application Development"},
+                { href: "/test", text: "AI & Machine learning"},
+                { href: "/test", text: "Internet of Thing"},
+                { href: "/test", text: "Graphic Design"},
+                { href: "/test", text: "Quality Assurance & Testing"},
+                { href: "/test", text: "Game Development"},
+                { href: "/test", text: "Supply Chain Solutions"},
+                { href: "/test", text: "Cybersecurity Services"},
+                { href: "/test", text: "Digital Marketing & Branding"},
+                { href: "/test", text: "Cloud Solutions"},
+                { href: "/test", text: "System Integration Services"},
+            ]
+        },
+        {
+            title: "Our Solutions",
             items: [
                 {
                     type: "product",
@@ -99,15 +120,6 @@ export function Navbar({ className }) {
         },
         {
             title: "Hire Experts",
-            items: [
-                { href: "/test", text: "Blog" },
-                { href: "/test", text: "Documentation" },
-                { href: "/test", text: "Tutorials" },
-                { href: "/test", text: "Guides" },
-            ]
-        },
-        {
-            title: "Our Solutions",
             items: [
                 { href: "/test", text: "Hobby" },
                 { href: "/test", text: "Individual" },
@@ -208,13 +220,7 @@ export function Navbar({ className }) {
                                                 ))}
                                             </div>
                                         ) : (
-                                            <div className="flex flex-col space-y-4 text-sm">
-                                                {menuItem.items.map((item) => (
-                                                    <HoveredLink key={item.href} href={item.href}>
-                                                        {item.text}
-                                                    </HoveredLink>
-                                                ))}
-                                            </div>
+                                            <MenuItemsList items={menuItem.items} />
                                         )}
                                     </MenuItem>
                                 ))}

@@ -14,21 +14,69 @@ const transition = {
   restSpeed: 0.001,
 };
 
+export const MenuItemsList = ({ items }) => {
+  const itemCount = items.length;
+  const shouldUseColumns = itemCount > 7;
+
+  // Get the maximum text length
+  const maxTextLength = Math.max(...items.map(item => item.text.length));
+  
+  // Calculate width class based on content
+  const getWidthClass = () => {
+    if (shouldUseColumns) return 'min-w-[24rem]';
+    if (maxTextLength <= 12) return 'min-w-[8rem]';
+    if (maxTextLength <= 20) return 'min-w-[12rem]';
+    return 'min-w-[16rem]';
+  };
+
+  if (!shouldUseColumns) {
+    return (
+      <div className={`flex flex-col space-y-2 ${getWidthClass()}`}>
+        {items.map((item) => (
+          <HoveredLink key={item.href} href={item.href}>
+            {item.text}
+          </HoveredLink>
+        ))}
+      </div>
+    );
+  }
+
+  const itemsPerColumn = Math.ceil(itemCount / 2);
+  const firstColumn = items.slice(0, itemsPerColumn);
+  const secondColumn = items.slice(itemsPerColumn);
+
+  return (
+    <div className={`grid grid-cols-2 gap-x-8 ${getWidthClass()}`}>
+      <div className="flex flex-col space-y-2">
+        {firstColumn.map((item) => (
+          <HoveredLink key={item.href} href={item.href}>
+            {item.text}
+          </HoveredLink>
+        ))}
+      </div>
+      <div className="flex flex-col space-y-2">
+        {secondColumn.map((item) => (
+          <HoveredLink key={item.href} href={item.href}>
+            {item.text}
+          </HoveredLink>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 export const MenuItem = ({
   setActive,
   active,
   item,
-  children
+  children,
+  onClick,
+  isOpen
 }) => {
-  const handleClick = (e) => {
-    e.stopPropagation();
-    setActive(active === item ? null : item);
-  };
-
   return (
-    <div onClick={handleClick} className="relative group">
+    <div className="relative group">
       <motion.div
-        transition={{ duration: 0.3 }}
+        onClick={onClick}
         className={`cursor-pointer text-white px-4 py-2 rounded-full 
           transition-all duration-200 ease-in-out
           hover:bg-gray-700/50 hover:text-gray-400
@@ -55,7 +103,7 @@ export const MenuItem = ({
                 className="bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-white/[0.2] shadow-xl">
                 <motion.div
                   layout
-                  className="w-max h-full p-4">
+                  className="w-max h-full p-6">
                   {children}
                 </motion.div>
               </motion.div>
@@ -122,7 +170,7 @@ export const HoveredLink = ({
   return (
     <Link
       {...rest}
-      className="block text-white transition-colors duration-200 hover:text-gray-400">
+      className="text-white transition-colors duration-200 hover:text-gray-400 py-1 px-2">
       {children}
     </Link>
   );

@@ -856,9 +856,6 @@ return (
                       <a href="/test">Careers</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
-                      <a href="/test">Our Mission & Vision</a>
-                    </li>
-                    <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
                       <a href="/test">Business Model</a>
                     </li>
                     <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
