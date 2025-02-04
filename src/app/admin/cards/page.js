@@ -172,6 +172,52 @@ export default function AdminCards() {
     }
   };
 
+  const [charts, setCharts] = useState([{ title: '', percentage: '' }]);
+  const [showBlogForm, setShowBlogForm] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+const [error, setError] = useState(null);
+const [blogContent, setBlogContent] = useState('');
+const [selectedPageName, setSelectedPageName] = useState('');
+const deleteChart = (index) => {
+  setCharts(charts.filter((_, i) => i !== index));
+};
+
+const addChart = () => {
+  setCharts([...charts, { title: '', percentage: '' }]);
+};
+
+const updateChart = (index, field, value) => {
+  const newCharts = [...charts];
+  newCharts[index][field] = value;
+  setCharts(newCharts);
+};
+
+const handleBlogSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch('/api/blog', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        pageName: selectedPageName,
+        content: blogContent,
+        charts: charts.map(chart => ({
+          title: chart.title,
+          percentage: parseFloat(chart.percentage)
+        }))
+      }),
+    });
+    if (response.ok) {
+      setShowBlogForm(false);
+      setCharts([{ title: '', percentage: '' }]);
+      setBlogContent('');
+    }
+  } catch (error) {
+    console.error('Error creating blog page:', error);
+    alert('Failed to create blog page');
+  }
+};
+
   return (
     <div className="container mx-auto px-4 py-8">
          {/* Add logout button */}
@@ -235,6 +281,84 @@ export default function AdminCards() {
           {uploading ? 'Creating...' : 'Create Card'}
         </button>
       </form>
+
+      
+      {showBlogForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center overflow-y-auto">
+          <div className="bg-white p-8 rounded-lg w-full max-w-2xl my-8">
+            <h2 className="text-xl font-bold mb-4 text-black">Create Blog Page</h2>
+            <form onSubmit={handleBlogSubmit} className="space-y-4">
+              <div>
+                <label className="block mb-2 text-black">Content</label>
+                <textarea
+                  value={blogContent}
+                  onChange={(e) => setBlogContent(e.target.value)}
+                  className="w-full p-2 border rounded h-32 text-white"
+                  required
+                />
+              </div>
+
+              {charts.map((chart, index) => (
+                <div key={index} className="space-y-4 relative text-black">
+                  <div>
+                    <label className="block mb-2">Chart {index + 1} Title</label>
+                    <input
+                      type="text"
+                      value={chart.title}
+                      onChange={(e) => updateChart(index, 'title', e.target.value)}
+                      className="w-full p-2 border rounded text-white"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label className="block mb-2">Percentage {index + 1}</label>
+                    <input
+                      type="number"
+                      value={chart.percentage}
+                      onChange={(e) => updateChart(index, 'percentage', e.target.value)}
+                      className="w-full p-2 border rounded text-white"
+                      required
+                    />
+                  </div>
+                  <button
+      type="button"
+      onClick={() => deleteChart(index)}
+      className="absolute top-0 right-0 text-red-500"
+    >
+      ✕
+    </button>
+  
+                </div>
+              ))}
+
+              <button
+                type="button"
+                onClick={addChart}
+                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+              >
+                Add Another Chart
+              </button>
+
+              <div className="flex justify-end space-x-4">
+                <button
+                  type="button"
+                  onClick={() => setShowBlogForm(false)}
+                  className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                >
+                  Create Blog Page
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {cards.map((card) => (
@@ -247,14 +371,25 @@ export default function AdminCards() {
             <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
             <p className="mb-4">{card.description}</p> 
             <a href={`/${card.pageName}`}>Click More</a><br></br>
-            
-            <button
-              onClick={() => handleDelete(card.id)}
-              className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
-            >
-              Delete
-            </button>
-          </div>
+            <br />
+      <div className="flex space-x-2 mt-4">
+        <button
+          onClick={() => {
+            setSelectedPageName(card.pageName);
+            setShowBlogForm(true);
+          }}
+          className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+        >
+          Create Blog Page
+        </button>
+        <button
+          onClick={() => handleDelete(card.id)}
+          className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
         ))}
       </div>
     </div>

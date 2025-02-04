@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import BlogsHeroSection from "@/components/BlogsHeroSection";
+import BlogCards from "@/components/BlogCards";
 
 
 
@@ -11,6 +12,7 @@ const Page = () => {
       <Navbar className="top-2"/>
 
       <BlogsHeroSection/>
+      <BlogCards/>
       {/* Footer Section */}
       <Footer />
     </div>
