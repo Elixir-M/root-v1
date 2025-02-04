@@ -25,7 +25,7 @@ export async function POST(req) {
         title: data.title,
         description: data.description,
         imageUrl: data.imageUrl,
-        pageName: data.pageName,
+        pageName: data.pageName || "test",
       },
     });
     return NextResponse.json(card);
