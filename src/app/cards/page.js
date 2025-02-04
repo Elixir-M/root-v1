@@ -47,6 +47,7 @@ export default function PublicCards() {
               />
               <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
               <p>{card.description}</p>
+              <a href={`/${card.pageName}`}>Click More</a>
             </div>
           ))}
         </div>

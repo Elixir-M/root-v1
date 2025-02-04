@@ -8,6 +8,7 @@ export default function AdminCards() {
   const [cards, setCards] = useState([]);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
+  const [pageName, setPageName] = useState('');
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const router = useRouter();
@@ -142,12 +143,14 @@ export default function AdminCards() {
           title,
           description,
           imageUrl,
+          pageName,
         }),
       });
 
       if (response.ok) {
         setTitle('');
         setDescription('');
+        setPageName('');
         setFile(null);
         fetchCards();
       }
@@ -212,6 +215,17 @@ export default function AdminCards() {
             required
           />
         </div>
+        <div>
+          <label className="block mb-2">Page Name</label>
+          <input
+            type="text"
+            value={pageName}
+            onChange={(e) => setPageName(e.target.value)}
+            className="w-full p-2 border rounded"
+            required
+          />
+        </div>
+        
         
         <button
           type="submit"
@@ -231,7 +245,9 @@ export default function AdminCards() {
               className="w-full h-48 object-cover mb-4"
             />
             <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
-            <p className="mb-4">{card.description}</p>
+            <p className="mb-4">{card.description}</p> 
+            <a href={`/${card.pageName}`}>Click More</a><br></br>
+            
             <button
               onClick={() => handleDelete(card.id)}
               className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
