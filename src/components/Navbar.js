@@ -262,7 +262,7 @@ export function Navbar({ className }) {
                     </div>
                 </motion.div>
 
-                {isMobileMenuOpen && (
+                {/* {isMobileMenuOpen && (
                     <div className="fixed inset-x-0 top-24 px-6 lg:hidden">
                         <div className="bg-black/80 backdrop-blur-sm border border-white/[0.2] rounded-2xl shadow-xl p-4">
                             <div className="flex justify-center mb-4 border-b border-white/10 pb-4">
@@ -305,6 +305,81 @@ export function Navbar({ className }) {
                                                             {product.title}
                                                         </Link>
                                                     ))
+                                                ) : (
+                                                    menuItem.items.map((item) => (
+                                                        <Link 
+                                                            key={item.href}
+                                                            href={item.href}
+                                                            className="text-gray-300 hover:text-white py-1"
+                                                        >
+                                                            {item.text}
+                                                        </Link>
+                                                    ))
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </nav>
+                            <button className="w-full mt-4 px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors">
+                                Blogs
+                            </button>
+                        </div>
+                    </div>
+                )} */}
+
+
+                {isMobileMenuOpen && (
+                    <div className="fixed inset-x-0 top-24 px-6 lg:hidden">
+                        <div className="bg-black/80 backdrop-blur-sm border border-white/[0.2] rounded-2xl shadow-xl p-4">
+                            <div className="flex justify-center mb-4 border-b border-white/10 pb-4">
+                                <Link href="/">
+                                    <img 
+                                        src="/assets/img/Logo.png"  
+                                        alt="Logo"
+                                        className="h-10 w-auto pb-2 cursor-pointer"
+                                    />
+                                </Link>
+                            </div>
+                            
+                            <nav className="flex flex-col space-y-2">
+                                {menuItems.map((menuItem) => (
+                                    <div key={menuItem.title} className="border-b border-white/10 last:border-none">
+                                        <button
+                                            onClick={() => toggleMobileItem(menuItem.title)}
+                                            className="flex items-center justify-between w-full py-3 text-white"
+                                        >
+                                            <span>{menuItem.title}</span>
+                                            <ChevronDown 
+                                                size={16} 
+                                                className={`transform transition-transform ${
+                                                    expandedMobileItems === menuItem.title ? 'rotate-180' : ''
+                                                }`}
+                                            />
+                                        </button>
+                                        
+                                        <div className={`overflow-hidden transition-all duration-300 ${
+                                            expandedMobileItems === menuItem.title ? 'max-h-96 pb-3' : 'max-h-0'
+                                        }`}>
+                                            <div className="pl-4 flex flex-col space-y-2">
+                                                {menuItem.items[0]?.type === "product" ? (
+                                                    <>
+                                                        {menuItem.items[0].products.map((product) => (
+                                                            <Link 
+                                                                key={product.title}
+                                                                href={product.href}
+                                                                className="text-gray-300 hover:text-white py-1"
+                                                            >
+                                                                {product.title}
+                                                            </Link>
+                                                        ))}
+                                                        <Link 
+                                                            href="test"
+                                                            className="mt-4 text-center bg-white/10 hover:bg-white/20 text-white py-2 rounded-full text-sm transition-colors duration-200"
+                                                        >
+                                                            View All Projects →
+                                                        </Link>
+                                                    </>
                                                 ) : (
                                                     menuItem.items.map((item) => (
                                                         <Link 
