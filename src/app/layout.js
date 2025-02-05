@@ -14,7 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Elixir"
+  title: "Elixir",
+  icons: {
+    icon: [
+      { url: '/assets/img/e-logo.png', sizes: '32x32' },
+      { url: '/assets/img/e-logo.png', sizes: '180x180', type: 'image/png', rel: 'apple-touch-icon' }
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {

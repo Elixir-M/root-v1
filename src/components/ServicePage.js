@@ -31,7 +31,7 @@ const ServicePage = ({ serviceData, projectsData }) => {
 
           <div
             onClick={scrollToNextSection}
-            className="absolute bottom-16 cursor-pointer hover:translate-y-[-5px] transition-transform duration-300"
+            className="absolute bottom-20 cursor-pointer hover:translate-y-[-5px] transition-transform duration-300"
           >
             <svg 
               className="w-12 h-12 text-white"
