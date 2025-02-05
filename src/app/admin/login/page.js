@@ -122,7 +122,7 @@
 // app/admin/login/page.js
 "use client"
 import { useState, Suspense } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Eye, EyeOff } from 'lucide-react';
 
 // Create a separate component for the login form
@@ -132,7 +132,7 @@ function LoginForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const router = useRouter();
-
+  const searchParams = useSearchParams();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setCredentials(prev => ({
@@ -155,7 +155,8 @@ function LoginForm() {
       });
 
       if (response.ok) {
-        router.push('/admin/dashboard');
+        const redirectTo = searchParams.get('redirectTo') || 'admin/dashboard';
+        router.push(redirectTo);
       } else {
         const data = await response.json();
         setError(data.error || 'Login failed');

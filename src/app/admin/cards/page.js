@@ -30,7 +30,8 @@ export default function AdminCards() {
         if (!authResponse.ok) {
           console.log('Auth check failed:', await authResponse.json()); // For debugging
           if (isMounted) {
-            router.push(`/admin/login?redirectTo=${encodeURIComponent('/admin/cards')}`);
+            const currentPath = window.location.pathname;
+            router.push(`/admin/login?redirectTo=${encodeURIComponent(currentPath)}`);
           }
           return;
         }
@@ -53,7 +54,8 @@ export default function AdminCards() {
         if (isMounted) {
           setError(err.message);
           setIsLoading(false);
-          router.push(`/admin/login?redirectTo=${encodeURIComponent('/admin/cards')}`);
+          const currentPath = window.location.pathname;
+          router.push(`/admin/login?redirectTo=${encodeURIComponent(currentPath)}`);
         }
       }
     };
