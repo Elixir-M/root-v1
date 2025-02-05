@@ -106,7 +106,7 @@ export const MenuItem = ({
                           {child}
                           <div className="flex justify-center mt-6">
                             <Link 
-                              href="/test"
+                              href="/portfolio"
                               className="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-full text-sm transition-colors duration-200"
                             >
                               View All Projects →
