@@ -115,6 +115,11 @@ export function Navbar({ className }) {
                             description: "Respond to RFPs, RFIs and RFQs 10x faster."
                         }
                     ]
+                },
+                {
+                    type: "more",
+                    href: "/projects",
+                    text: "View All Projects →"
                 }
             ]
         },

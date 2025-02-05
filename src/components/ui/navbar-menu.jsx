@@ -17,11 +17,8 @@ const transition = {
 export const MenuItemsList = ({ items }) => {
   const itemCount = items.length;
   const shouldUseColumns = itemCount > 7;
-
-  // Get the maximum text length
   const maxTextLength = Math.max(...items.map(item => item.text.length));
   
-  // Calculate width class based on content
   const getWidthClass = () => {
     if (shouldUseColumns) return 'min-w-[24rem]';
     if (maxTextLength <= 12) return 'min-w-[8rem]';
@@ -101,10 +98,25 @@ export const MenuItem = ({
                 transition={transition}
                 layoutId="active"
                 className="bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-white/[0.2] shadow-xl">
-                <motion.div
-                  layout
-                  className="w-max h-full p-6">
-                  {children}
+                <motion.div layout className="w-max h-full p-6">
+                  {React.Children.map(children, child => {
+                    if (React.isValidElement(child) && child.props.className?.includes('text-sm grid grid-cols-2')) {
+                      return (
+                        <div className="flex flex-col">
+                          {child}
+                          <div className="flex justify-center mt-6">
+                            <Link 
+                              href="/test"
+                              className="bg-white/10 hover:bg-white/20 text-white px-6 py-2 rounded-full text-sm transition-colors duration-200"
+                            >
+                              View All Projects →
+                            </Link>
+                          </div>
+                        </div>
+                      );
+                    }
+                    return child;
+                  })}
                 </motion.div>
               </motion.div>
             </div>
