@@ -116,11 +116,6 @@ export function Navbar({ className }) {
                         }
                     ]
                 },
-                {
-                    type: "more",
-                    href: "/projects",
-                    text: "View All Projects →"
-                }
             ]
         },
         {
