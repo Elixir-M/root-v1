@@ -11,6 +11,7 @@ generator client {
 datasource db {
   provider = "postgresql"  // or "mongodb" if you prefer
   url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
 model ContactSubmission {
