@@ -1,6 +1,6 @@
-// app/api/cards/route.js
-import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
+// // app/api/cards/route.js
+// import { NextResponse } from 'next/server';
+// import { PrismaClient } from '@prisma/client';
 
 // const prisma = new PrismaClient();
 
@@ -17,79 +17,262 @@ import { PrismaClient } from '@prisma/client';
 //   }
 // }
 
-const prisma = new PrismaClient({
-  log: ['query', 'info', 'warn', 'error'],
-});
+// export async function POST(req) {
+//   try {
+//     const data = await req.json();
+//     const card = await prisma.card.create({
+//       data: {
+//         title: data.title,
+//         description: data.description,
+//         imageUrl: data.imageUrl,
+//         pageName: data.pageName || "test",
+//       },
+//     });
+//     return NextResponse.json(card);
+//   } catch (error) {
+//     return NextResponse.json({ error: 'Failed to create card' }, { status: 500 });
+//   }
+// }
+
+// import { NextResponse } from 'next/server';
+// import { PrismaClient } from '@prisma/client';
+
+// const prisma = new PrismaClient();
+
+// export async function GET() {
+//   try {
+//     const cards = await prisma.card.findMany({
+//       orderBy: {
+//         createdAt: 'desc',
+//       },
+//     });
+
+//     return new NextResponse(JSON.stringify({ 
+//       success: true, 
+//       data: cards 
+//     }), {
+//       status: 200,
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//     });
+//   } catch (error) {
+//     console.error('GET Error:', error);
+//     return new NextResponse(JSON.stringify({
+//       success: false,
+//       error: 'Failed to fetch cards',
+//       details: error.message
+//     }), {
+//       status: 500,
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//     });
+//   }
+// }
+
+// export async function POST(req) {
+//   try {
+//     const data = await req.json();
+//     console.log('Received data:', data);
+
+//     // Validate required fields
+//     if (!data.title || !data.description) {
+//       return new NextResponse(JSON.stringify({
+//         success: false,
+//         error: 'Missing required fields'
+//       }), {
+//         status: 400,
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//       });
+//     }
+
+//     const card = await prisma.card.create({
+//       data: {
+//         title: data.title,
+//         description: data.description,
+//         imageUrl: data.imageUrl || '',
+//         pageName: data.pageName || 'default',
+//       },
+//     });
+
+//     console.log('Created card:', card);
+
+//     return new NextResponse(JSON.stringify({
+//       success: true,
+//       data: card
+//     }), {
+//       status: 200,
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//     });
+
+//   } catch (error) {
+//     console.error('POST Error:', error);
+//     return new NextResponse(JSON.stringify({
+//       success: false,
+//       error: 'Failed to create card',
+//       details: error.message
+//     }), {
+//       status: 500,
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//     });
+//   } finally {
+//     await prisma.$disconnect();
+//   }
+// }
+
+import { NextResponse } from 'next/server';
+import { PrismaClient } from '@prisma/client';
+
+// Create prisma client outside the handler to reuse connections
+const prisma = new PrismaClient();
 
 export async function GET() {
+  console.log('GET /api/cards - Starting request');
+  
   try {
-    // 1. Test database connection
+    // Test database connection explicitly
     console.log('Testing database connection...');
     await prisma.$connect();
     console.log('Database connection successful');
 
-    // 2. Check if tables exist
-    const tables = await prisma.$queryRaw`
-      SELECT table_name 
-      FROM information_schema.tables 
-      WHERE table_schema='public'
-    `;
-    console.log('Available tables:', tables);
-
-    // 3. Try to count records
-    const cardCount = await prisma.card.count();
-    console.log('Number of cards:', cardCount);
-
-    // 4. Fetch cards with specific fields
+    // Attempt to query the database
+    console.log('Querying database for cards...');
     const cards = await prisma.card.findMany({
-      select: {
-        id: true,
-        title: true,
-        description: true,
-        imageUrl: true,
-        pageName: true,
-        createdAt: true,
-      },
       orderBy: {
         createdAt: 'desc',
       },
     });
+    console.log('Query successful, found', cards.length, 'cards');
 
-    console.log('Successfully fetched cards:', cards.length);
-    return NextResponse.json(cards);
+    // Ensure we're returning a valid response even with empty results
+    return new NextResponse(
+      JSON.stringify({
+        success: true,
+        data: cards || [],
+        timestamp: new Date().toISOString()
+      }),
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }
+    );
 
   } catch (error) {
-    console.error('Detailed error:', {
-      name: error.name,
+    // Log the full error details
+    console.error('Detailed error in GET /api/cards:', {
       message: error.message,
       code: error.code,
-      stack: error.stack
+      stack: error.stack,
     });
 
-    // Return more detailed error to client
-    return NextResponse.json({
-      error: 'Failed to fetch cards',
-      details: error.message,
-      code: error.code
-    }, { status: 500 });
+    // Return a properly structured error response
+    return new NextResponse(
+      JSON.stringify({
+        success: false,
+        error: 'Failed to fetch cards',
+        details: error.message,
+        code: error.code,
+        timestamp: new Date().toISOString()
+      }),
+      {
+        status: 500,
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }
+    );
+
   } finally {
-    await prisma.$disconnect();
+    // Cleanup
+    try {
+      await prisma.$disconnect();
+      console.log('Database disconnected successfully');
+    } catch (error) {
+      console.error('Error disconnecting from database:', error);
+    }
   }
 }
 
 export async function POST(req) {
+  console.log('POST /api/cards - Starting request');
+  
   try {
     const data = await req.json();
+    console.log('Received data:', data);
+
+    // Validate input
+    if (!data.title || !data.description) {
+      return new NextResponse(
+        JSON.stringify({
+          success: false,
+          error: 'Missing required fields',
+          timestamp: new Date().toISOString()
+        }),
+        {
+          status: 400,
+          headers: {
+            'Content-Type': 'application/json',
+          }
+        }
+      );
+    }
+
+    // Create the card
     const card = await prisma.card.create({
       data: {
         title: data.title,
         description: data.description,
-        imageUrl: data.imageUrl,
-        pageName: data.pageName || "test",
+        imageUrl: data.imageUrl || '',
+        pageName: data.pageName || 'default',
       },
     });
-    return NextResponse.json(card);
+
+    console.log('Card created successfully:', card);
+
+    return new NextResponse(
+      JSON.stringify({
+        success: true,
+        data: card,
+        timestamp: new Date().toISOString()
+      }),
+      {
+        status: 201,
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }
+    );
+
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to create card' }, { status: 500 });
+    console.error('Detailed error in POST /api/cards:', {
+      message: error.message,
+      code: error.code,
+      stack: error.stack,
+    });
+
+    return new NextResponse(
+      JSON.stringify({
+        success: false,
+        error: 'Failed to create card',
+        details: error.message,
+        code: error.code,
+        timestamp: new Date().toISOString()
+      }),
+      {
+        status: 500,
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }
+    );
   }
 }

@@ -27,7 +27,7 @@ model Card {
   title       String
   description String
   imageUrl    String
-  pageName    String?
+  pageName    String   @default("default")
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
 }
