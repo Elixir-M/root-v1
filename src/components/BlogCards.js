@@ -29,14 +29,16 @@ export default function BlogCards() {
   useEffect(() => {
     fetch('/api/cards')
       .then(res => res.json())
-      .then(data => setCards(data))
+      .then(data => setCards(data.data))
       .catch(err => console.error('Error fetching cards:', err));
   }, []);
+  console.log("cards",cards);
   
     return (
       <div className="container mx-auto px-4 py-8">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
           {cards.map((card) => (
             <div key={card.id} className="border rounded p-4">
               <img
