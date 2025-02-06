@@ -116,6 +116,11 @@ export function Navbar({ className }) {
                         }
                     ]
                 },
+                {
+                    type: "more",
+                    href: "/projects",
+                    text: "View All Projects →"
+                }
             ]
         },
         {
@@ -290,16 +295,24 @@ export function Navbar({ className }) {
                                             expandedMobileItems === menuItem.title ? 'max-h-96 pb-3' : 'max-h-0'
                                         }`}>
                                             <div className="pl-4 flex flex-col space-y-2">
-                                                {menuItem.items[0].type === "product" ? (
-                                                    menuItem.items[0].products.map((product) => (
+                                                {menuItem.items[0]?.type === "product" ? (
+                                                    <>
+                                                        {menuItem.items[0].products.map((product) => (
+                                                            <Link 
+                                                                key={product.title}
+                                                                href={product.href}
+                                                                className="text-gray-300 hover:text-white py-1"
+                                                            >
+                                                                {product.title}
+                                                            </Link>
+                                                        ))}
                                                         <Link 
-                                                            key={product.title}
-                                                            href={product.href}
-                                                            className="text-gray-300 hover:text-white py-1"
+                                                            href="/portfolio"
+                                                            className="mt-4 text-center bg-white/10 hover:bg-white/20 text-white py-2 rounded-full text-sm transition-colors duration-200"
                                                         >
-                                                            {product.title}
+                                                            View All Projects →
                                                         </Link>
-                                                    ))
+                                                    </>
                                                 ) : (
                                                     menuItem.items.map((item) => (
                                                         <Link 
