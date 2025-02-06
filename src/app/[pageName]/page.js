@@ -1,6 +1,7 @@
 // app/[pageName]/page.js
 
 import { PrismaClient } from '@prisma/client';
+import ReactMarkdown from 'react-markdown';
 
 // Create prisma client outside component to prevent multiple instances
 const prisma = new PrismaClient();
@@ -34,8 +35,8 @@ export default async function BlogPage({ params }) {
    
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <div className="prose max-w-none text-black">
-              {blogData.content}
+            <div className="prose max-w-none text-black whitespace-pre-wrap">
+              <ReactMarkdown>{blogData.content}</ReactMarkdown>
             </div>
           </div>
    

@@ -718,7 +718,7 @@ export default function AdminCards() {
           <div className="bg-white p-8 rounded-lg w-full max-w-2xl my-8">
             <h2 className="text-xl font-bold mb-4 text-black">Create Blog Page</h2>
             <form onSubmit={handleBlogSubmit} className="space-y-4">
-              <div>
+              {/* <div>
                 <label className="block mb-2 text-black">Content</label>
                 <textarea
                   value={blogContent}
@@ -726,7 +726,61 @@ export default function AdminCards() {
                   className="w-full p-2 border rounded h-32 text-black bg-white"
                   required
                 />
-              </div>
+              </div> */}
+              <div className="space-y-2">
+  <label className="block mb-2 text-black">Content</label>
+  <div className="border rounded">
+    <div className="flex gap-2 p-2 border-b bg-gray-50">
+      <button
+        type="button"
+        onClick={() => {
+          const textarea = document.getElementById('blogContent');
+          const start = textarea.selectionStart;
+          const end = textarea.selectionEnd;
+          const text = textarea.value;
+          setBlogContent(
+            text.substring(0, start) +
+            '**' + text.substring(start, end) + '**' +
+            text.substring(end)
+          );
+        }}
+        className="px-3 py-1 rounded bg-white border hover:bg-gray-100 text-black"
+      >
+        B
+      </button>
+      <button
+        type="button"
+        onClick={() => {
+          const textarea = document.getElementById('blogContent');
+          const start = textarea.selectionStart;
+          const end = textarea.selectionEnd;
+          const text = textarea.value;
+          setBlogContent(
+            text.substring(0, start) +
+            '*' + text.substring(start, end) + '*' +
+            text.substring(end)
+          );
+        }}
+        className="px-3 py-1 rounded bg-white border hover:bg-gray-100 italic text-black"
+      >
+        I
+      </button>
+    </div>
+    <textarea
+      id="blogContent"
+      value={blogContent}
+      onChange={(e) => setBlogContent(e.target.value)}
+      className="w-full p-2 text-black bg-white min-h-[200px]"
+      required
+    />
+  </div>
+  <p className="text-sm text-gray-500">
+    Formatting tips: 
+    Use **text** for bold
+    Use *text* for italic
+    Press Enter for new lines
+  </p>
+</div>
 
               {charts.map((chart, index) => (
                 <div key={index} className="space-y-4 relative text-black">
