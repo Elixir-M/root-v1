@@ -74,6 +74,18 @@ export default function BlogCards() {
       .then(data => setCards(data.data))
       .catch(err => console.error('Error fetching cards:', err));
   }, []);
+
+  if (!cards || cards.length === 0) {
+    return (
+      <div className="min-h-screen bg-black py-12">
+        <div className="max-w-screen-xl mx-auto px-4">
+          <div className="text-center text-white">
+            <p>No blog posts available</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
   
   return (
     <div className="relative bg-black py-4">
