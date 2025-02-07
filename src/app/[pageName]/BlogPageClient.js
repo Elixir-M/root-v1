@@ -113,7 +113,7 @@ export default function BlogPageClient({ blogData, cardData }) {
           </div>
 
           {/* Content Section */}
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none text-white">
             <ReactMarkdown>{blogData.content}</ReactMarkdown>
           </div>
           
