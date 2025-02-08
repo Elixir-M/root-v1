@@ -79,7 +79,7 @@ const AnimatedCircleChart = ({ percentage, title, color = '#2563EB' }) => {
           <span className="text-5xl font-bold text-white">{Math.round(animatedPercentage)}%</span>
         </div>
       </div>
-      <h2 className="text-3xl font-bold mt-8 text-center text-white"><ReactMarkdown>{title || ''}</ReactMarkdown></h2>
+      <h2 className="text-xl font-bold mt-8 text-center text-white italic"><ReactMarkdown>{title || ''}</ReactMarkdown></h2>
     </div>
   );
 };
@@ -103,12 +103,12 @@ export default function BlogPageClient({ blogData, cardData }) {
             </span>
           </div> */}
           {/* Subheading - NEW */}
-          <div className="text-2xl text-gray-300 mb-6">
+          <div className="text-xl text-gray-400 mb-6">
             <ReactMarkdown>{blogData.subheading}</ReactMarkdown>
           </div>
 
           {/* Author, Read Time, and Date - MODIFIED */}
-          <div className="mb-8 flex items-center text-gray-400">
+          <div className="mb-8 flex items-center text-gray-500">
             <span>{blogData.author}</span>
             <span className="mx-2">•</span>
             <span>{blogData.minuteRead} min read</span>
@@ -136,6 +136,7 @@ export default function BlogPageClient({ blogData, cardData }) {
 
           {/* Introduction - NEW */}
           <div className="prose prose-invert prose-lg max-w-none text-white mb-12">
+          <h2 className="text-3xl font-bold mb-6">Introduction</h2>
             <ReactMarkdown>{blogData.intro}</ReactMarkdown>
           </div>
 
