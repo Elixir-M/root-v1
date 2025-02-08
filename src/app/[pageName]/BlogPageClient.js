@@ -79,7 +79,7 @@ const AnimatedCircleChart = ({ percentage, title, color = '#2563EB' }) => {
           <span className="text-5xl font-bold text-white">{Math.round(animatedPercentage)}%</span>
         </div>
       </div>
-      <h2 className="text-3xl font-bold mt-8 text-center text-white">{title}</h2>
+      <h2 className="text-3xl font-bold mt-8 text-center text-white"><ReactMarkdown>{title || ''}</ReactMarkdown></h2>
     </div>
   );
 };
@@ -93,7 +93,7 @@ export default function BlogPageClient({ blogData, cardData }) {
           <h1 className="text-5xl font-bold text-white mb-4 mt-11">
             {cardData.title}
           </h1>
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <span className="text-gray-400">
               {new Date(blogData.createdAt).toLocaleDateString('en-US', {
                 year: 'numeric',
@@ -101,6 +101,23 @@ export default function BlogPageClient({ blogData, cardData }) {
                 day: 'numeric'
               })}
             </span>
+          </div> */}
+          {/* Subheading - NEW */}
+          <div className="text-2xl text-gray-300 mb-6">
+            <ReactMarkdown>{blogData.subheading}</ReactMarkdown>
+          </div>
+
+          {/* Author, Read Time, and Date - MODIFIED */}
+          <div className="mb-8 flex items-center text-gray-400">
+            <span>{blogData.author}</span>
+            <span className="mx-2">•</span>
+            <span>{blogData.minuteRead} min read</span>
+            <span className="mx-2">•</span>
+            <span>{new Date(blogData.createdAt).toLocaleDateString('en-US', {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}</span>
           </div>
 
           {/* Hero Image */}
@@ -113,26 +130,50 @@ export default function BlogPageClient({ blogData, cardData }) {
           </div>
 
           {/* Content Section */}
-          <div className="prose prose-invert prose-lg max-w-none text-white">
+          {/* <div className="prose prose-invert prose-lg max-w-none text-white">
             <ReactMarkdown>{blogData.content}</ReactMarkdown>
+          </div> */}
+
+          {/* Introduction - NEW */}
+          <div className="prose prose-invert prose-lg max-w-none text-white mb-12">
+            <ReactMarkdown>{blogData.intro}</ReactMarkdown>
+          </div>
+
+          {/* Solution - NEW */}
+          <div className="prose prose-invert prose-lg max-w-none text-white mb-12">
+            <h2 className="text-3xl font-bold mb-6">Solution</h2>
+            <ReactMarkdown>{blogData.solution}</ReactMarkdown>
           </div>
           
           {/* Charts Section */}
           {blogData.charts && blogData.charts.length > 0 && (
             <div className="mt-16">
-              <h2 className="text-3xl font-bold mb-16 text-center text-white">Key Statistics</h2>
+              {/* <h2 className="text-3xl font-bold mb-16 text-center text-white">Key Statistics</h2> */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                {blogData.charts.map((chart, index) => (
-                  <AnimatedCircleChart
-                    key={index}
-                    percentage={chart.percentage}
-                    title={chart.title}
-                    color={index === 0 ? '#2563EB' : '#F97316'}
-                  />
-                ))}
+          {blogData.charts.map((chart, index) => {
+            // Add debug log for each chart
+            console.log('Rendering chart:', chart);
+            if (!chart.title || !chart.percentage) {
+              console.warn('Invalid chart data:', chart);
+            }
+            return (
+              <AnimatedCircleChart
+                key={index}
+                percentage={chart.percentage || 0}
+                title={chart.title || ""}
+                color={index === 0 ? '#2563EB' : '#F97316'}
+              />
+            );
+          })}
               </div>
             </div>
           )}
+
+          {/* Conclusion - NEW */}
+          <div className="prose prose-invert prose-lg max-w-none text-white mt-16 mb-12">
+            <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
+            <ReactMarkdown>{blogData.conclusion}</ReactMarkdown>
+          </div>
 
           {/* Button */}
           <div className="mt-16 text-center">

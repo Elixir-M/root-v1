@@ -33,11 +33,18 @@ model Card {
 }
 
 model BlogPage {
-  id        String   @id @default(cuid())
-  pageName  String   @unique
-  content   String
-  charts    Json     // Will store array of {title, percentage} objects
-  createdAt DateTime @default(now())
+  id          String   @id @default(cuid())
+  pageName    String   @unique
+  // Highlighted new fields
+  subheading  String   // NEW
+  minuteRead  Int      // NEW
+  author      String   // NEW
+  intro       String   // NEW
+  solution    String   // NEW
+  conclusion  String   // NEW
+  // End of new fields
+  charts      Json     // Will store array of {title, percentage} objects
+  createdAt   DateTime @default(now())
 }
 
 
