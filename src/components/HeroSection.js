@@ -76,13 +76,7 @@ const HeroSection = () => {
       </div>
       <div
         style={{
-          position: "absolute",
-          top: "85%",
-          left: 0,
-          right: 0,
-          zIndex: 10,
-          background: "black",
-          // marginTop: "-7%", 
+          marginTop: "-7%",
         }}
       >
         <FocusCardsDemo />
