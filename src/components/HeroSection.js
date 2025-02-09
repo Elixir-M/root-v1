@@ -74,11 +74,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div
-        style={{
-          marginTop: "-7%",
-        }}
-      >
+      <div className="mt-[-10vh] sm:mt-[-17vh]">
         <FocusCardsDemo />
       </div>
     </div>
