@@ -58,12 +58,11 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 min-h-[850px] pt-8">
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-16 space-y-4">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
-            Innovate. Transform. Excel.
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
+          Empowering Innovation, Driving Transformation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg">
-            Empowering businesses with end-to-end IT consultation, development,
-            and services. Your success is our mission.
+          Unlock the power of end-to-end IT consultation, development, and digital transformation. Your success is our mission.
           </p>
         </div>
         {/* Right Section */}

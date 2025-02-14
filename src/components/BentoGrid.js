@@ -9,80 +9,79 @@ import Image from "next/image";
 export function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Innovating with Cutting-Edge Technologies",
+      title: "Pioneering the Future with Advanced Technologies",
       // description: `We specialize in emerging technologies like AI/ML, cloud-native apps, IoT, and blockchain, staying
       //  ahead of the curve since before they were mainstream. With certifications from AWS, Microsoft Azure, and Google
       //   Cloud, and strong partnerships with tech giants, we deliver next-gen solutions that set you apart.`,
-      description:"We deliver next-gen solutions with expertise in AI/ML, cloud apps, IoT, and blockchain.",
+      description:"We specialize in AI, cloud, IoT, and blockchain to deliver next-gen solutions that drive innovation.",
       image: "/assets/gridicons/artificial-intelligence-5.png",
       gradientColor: "from-blue-800",
       accentColor: "bg-blue-500"
     },
     {
-      title: "Delivering Results that Matter",
+      title: "Driving Impactful Outcomes with Smart Solutions",
       // description: `We focus on delivering measurable outcomes that make a real impact, whether it’s cost
       //  savings, improved efficiency, or faster go-to-market. With case studies that showcase tangible ROI, we
       //   prove that our solutions consistently drive business success, transforming challenges into opportunities.`,
-      description:"We drive measurable results, from cost savings to faster go-to-market, with proven ROI through impactful solutions.",
+      description:"Our tailored strategies maximize efficiency, reduce costs, and ensure measurable business growth.",
       image: "/assets/gridicons/results.png",
       gradientColor: "from-neutral-500",
       accentColor: "bg-neutral-500"
     },
     {
-      title: " Solutions Tailored to You",
+      title: "Custom-Built Strategies for Your Success",
       // description: `No two businesses are the same, and neither are our solutions. We design customized strategies that align
       //  perfectly with your industry’s unique challenges and goals, ensuring that every service we provide is a perfect fit for
       //   your needs—no one-size-fits-all here.`,
-      description:"We create tailored solutions to meet your unique business challenges—no one-size-fits-all",
-      image: "/assets/gridicons/solutions tailor.png",
+      description:"Every business is unique—our personalized solutions align with your specific challenges and goals." ,     image: "/assets/gridicons/solutions tailor.png",
       gradientColor: "from-green-800",
       accentColor: "bg-green-500"
     },
     {
-      title: " Agility at the Speed of Business",
+      title: "Accelerating Business with Agile Innovation",
       // description: `In today’s fast-paced world, speed is everything. We pride ourselves on quickly deploying teams and solutions, enabling
       //  you to stay ahead of deadlines and tackle time-sensitive IT projects with confidence, ensuring fast and efficient execution every time.`,
-      description:"We deliver fast, efficient solutions to help you meet tight deadlines and tackle time-sensitive projects with confidence",
+      description:"Speed and precision define our approach, ensuring fast, adaptable solutions for evolving markets.",
       image: "/assets/gridicons/agility.png",
       gradientColor: "from-blue-400",
       accentColor: "bg-blue-500"
     },
     {
-      title: "Bridging Tech and Business",
+      title: "Seamlessly Connecting Technology & Business",
       // description: `We combine top-tier technical expertise with a deep understanding of business processes, ensuring
       //  that your IT strategy aligns with your overall business goals. This hybrid approach allows us to deliver solutions
       //   that drive real business value, not just technical outcomes.`,
-      description:"We blend technical expertise with business insight to align IT strategies with your goals, delivering solutions that drive true value.",
+      description:"Bridging IT expertise with strategic insights, we deliver solutions that create real business value.",
       image: "/assets/gridicons/tech and business.png",
       gradientColor: "from-yellow-600",
       accentColor: "bg-yellow-500"
     },
     {
-      title: " Staffing Excellence, Guaranteed",
+      title: "Top-Tier Talent for Exceptional IT Excellence",
       // description: `We excel at finding the right talent, even for hard-to-fill tech roles. With low attrition rates, quick
       //  time-to-fill, and outstanding client satisfaction scores, our staffing solutions ensure that you get the best-fit talent
       //   that helps drive your projects forward with success.`,
-      description:"We specialize in sourcing top talent for even the toughest tech roles, ensuring quick placements, low attrition, and high client satisfaction.",
+      description:"We source elite IT professionals to fill even the most complex roles, ensuring quality and retention.",
       image: "/assets/gridicons/staffing.png",
       gradientColor: "from-pink-700",
       accentColor: "bg-pink-500"
     },
     {
-      title: " Your One-Stop IT Partner",
+      title: "Comprehensive IT Solutions, All in One Place",
       // description: `From consulting and implementation to staffing and ongoing support, we offer a full suite of services
       //  that streamline your IT needs. By acting as your comprehensive, end-to-end service provider, we simplify the vendor
       //  ecosystem and make managing your tech requirements effortless.`,
-      description:"We provide end-to-end IT services, from consulting to staffing and support, simplifying your tech needs with a seamless approach.",
+      description:"From consulting to staffing and support, we simplify IT management for seamless operations.",
       image: "/assets/gridicons/one stop.png",
       gradientColor: "from-indigo-800",
       accentColor: "bg-indigo-500"
     },
     {
-      title: "Tapping Into Emerging Markets",
+      title: "Unlocking New Opportunities in Emerging Markets",
       // description: `We focus on unlocking potential in emerging markets—industries or geographies that are under-served 
       // by cutting-edge technologies. By bringing expertise in the latest innovations to these spaces, we help businesses gain
       //  a competitive edge in untapped areas.`,
-      description:"We unlock potential in emerging markets by introducing cutting-edge technologies, giving businesses a competitive edge in untapped areas.",
+      description:"We introduce cutting-edge technologies to untapped markets, helping businesses gain a competitive edge.",
       image: "/assets/gridicons/it market.png",
       gradientColor: "from-teal-800",
       accentColor: "bg-teal-500"
