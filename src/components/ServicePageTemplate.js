@@ -289,7 +289,8 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
 
 
 {/* Case Study  */}
-<CaseStudyGrid cases={caseStudiesData.blockchain} />
+{/* <CaseStudyGrid cases={caseStudiesData.blockchain} /> */}
+<CaseStudyGrid service="blockchain" />
 
     </div>
   );
