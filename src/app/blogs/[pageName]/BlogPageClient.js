@@ -136,13 +136,13 @@ export default function BlogPageClient({ blogData, cardData }) {
 
           {/* Introduction - NEW */}
           <div className="prose prose-invert prose-lg max-w-none text-white mb-12">
-          <h2 className="text-3xl font-bold mb-6">Introduction</h2>
+          {/* <h2 className="text-3xl font-bold mb-6">Introduction</h2> */}
             <ReactMarkdown>{blogData.intro}</ReactMarkdown>
           </div>
 
           {/* Solution - NEW */}
           <div className="prose prose-invert prose-lg max-w-none text-white mb-12">
-            <h2 className="text-3xl font-bold mb-6">Solution</h2>
+            {/* <h2 className="text-3xl font-bold mb-6">Solution</h2> */}
             <ReactMarkdown>{blogData.solution}</ReactMarkdown>
           </div>
           
@@ -172,7 +172,7 @@ export default function BlogPageClient({ blogData, cardData }) {
 
           {/* Conclusion - NEW */}
           <div className="prose prose-invert prose-lg max-w-none text-white mt-16 mb-12">
-            <h2 className="text-3xl font-bold mb-6">Conclusion</h2>
+            {/* <h2 className="text-3xl font-bold mb-6">Conclusion</h2> */}
             <ReactMarkdown>{blogData.conclusion}</ReactMarkdown>
           </div>
 
