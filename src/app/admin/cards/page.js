@@ -1101,7 +1101,7 @@ export default function AdminCards() {
               />
               <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
               <p className="mb-4">{card.description}</p> 
-              <a href={`/${card.pageName}`} className="text-blue-500 hover:text-blue-700">
+              <a href={`/blogs/${card.pageName}`} className="text-blue-500 hover:text-blue-700">
                 Click More
               </a>
               <div className="flex space-x-2 mt-4">

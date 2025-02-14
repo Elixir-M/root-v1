@@ -93,7 +93,7 @@ export default function BlogCards() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card) => (
             <article key={card.id} className="flex flex-col group border border-white/20 rounded-2xl p-4">
-              <a href={`/${card.pageName}`} className="w-full">
+              <a href={`/blogs/${card.pageName}`} className="w-full">
                 <div className="overflow-hidden rounded-lg">
                   <img
                     src={card.imageUrl}
@@ -108,7 +108,7 @@ export default function BlogCards() {
                 <p className="text-gray-400 text-base">{card.description}</p>
                 
                 <a 
-                  href={`/${card.pageName}`} 
+                  href={`/blogs/${card.pageName}`} 
                   className="inline-flex items-center mt-2"
                 >
                   <span className="text-base font-semibold text-white relative">
