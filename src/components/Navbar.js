@@ -68,11 +68,11 @@ export function Navbar({ className }) {
         {
             title: "Services",
             items: [
-                { href: "/test", text: "Blockchain Solutions"},
-                { href: "/test", text: "Mobile App Development"},
-                { href: "/test", text: "Web Development"},
-                { href: "/test", text: "Application Development"},
-                { href: "/test", text: "AI & Machine learning"},
+                { href: "/services/blockchain", text: "Blockchain Solutions"},
+                { href: "/services/mobdev", text: "Mobile App Development"},
+                { href: "/services/webdev", text: "Web Development"},
+                { href: "/services/appdev", text: "Application Development"},
+                { href: "/services/aiml", text: "AI & Machine learning"},
                 { href: "/test", text: "Internet of Thing"},
                 { href: "/test", text: "Graphic Design"},
                 { href: "/test", text: "Quality Assurance & Testing"},
@@ -233,6 +233,7 @@ export function Navbar({ className }) {
                         </Menu>
 
                         {isScrolled && (
+                            <Link href="/blogs">
                             <motion.button
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
@@ -240,6 +241,7 @@ export function Navbar({ className }) {
                             >
                                 Blogs
                             </motion.button>
+                            </Link>
                         )}
                     </motion.div>
 
@@ -329,14 +331,18 @@ export function Navbar({ className }) {
                                     </div>
                                 ))}
                             </nav>
+                            <Link href="/blogs">
                             <button className="w-full mt-4 px-4 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition-colors">
                                 Blogs
                             </button>
+                            </Link>
+                            
                         </div>
                     </div>
                 )}
 
                 {!isScrolled && !isMobileMenuOpen && (
+                    <Link href="/blogs">
                     <motion.button
                         initial={false}
                         animate={{ opacity: 1 }}
@@ -345,6 +351,7 @@ export function Navbar({ className }) {
                     >
                         Blogs
                     </motion.button>
+                    </Link>
                 )}
             </motion.div>
         </div>
