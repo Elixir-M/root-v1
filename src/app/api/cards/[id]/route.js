@@ -1,24 +1,54 @@
-// app/api/cards/[id]/route.js
-import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
+// // app/api/cards/[id]/route.js
+// import { NextResponse } from 'next/server';
+// import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+// const prisma = new PrismaClient();
 
-// export async function DELETE(req, { params }) {
+// export async function DELETE(req, { params }){
 //   try {
-//     await prisma.card.delete({
+//     const card = await prisma.card.findUnique({
 //       where: {
 //         id: params.id,
 //       },
+//       select: {
+//         pageName: true
+//       }
 //     });
-//     return NextResponse.json({ message: 'Card deleted successfully' });
-//   } catch (error) {
-//     return NextResponse.json({ error: 'Failed to delete card' }, { status: 500 });
+
+//     if (!card){
+//       return NextResponse.json({error: 'Card not found'}, {status: 404});
+//     }
+
+//     await prisma.$transaction([
+//       prisma.card.delete({
+//         where: {
+//           id: params.id,
+//         },
+//       }),
+//       prisma.blogPage.delete({
+//         where: {
+//           pageName: card.pageName,
+//         },
+//       }),
+//     ]);
+
+//     return NextResponse.json({message: 'Card and BlogPage deleted successfully'});    
+//   } catch (error){
+//     console.error('Delete error:', error);
+//     return NextResponse.json({ error: 'Failed to delete records'}, { status: 500});
 //   }
 // }
 
-export async function DELETE(req, { params }){
+// app/api/cards/[id]/route.js
+import { NextResponse } from 'next/server';
+import { PrismaClient } from '@prisma/client';
+import { Prisma } from '@prisma/client';
+
+const prisma = new PrismaClient();
+
+export async function DELETE(req, { params }) {
   try {
+    // First find the card
     const card = await prisma.card.findUnique({
       where: {
         id: params.id,
@@ -28,26 +58,38 @@ export async function DELETE(req, { params }){
       }
     });
 
-    if (!card){
-      return NextResponse.json({error: 'Card not found'}, {status: 404});
+    if (!card) {
+      return NextResponse.json({ error: 'Card not found' }, { status: 404 });
     }
 
-    await prisma.$transaction([
-      prisma.card.delete({
-        where: {
-          id: params.id,
-        },
-      }),
-      prisma.blogPage.delete({
+    // Delete the card first
+    await prisma.card.delete({
+      where: {
+        id: params.id,
+      },
+    });
+
+    // Check if BlogPage exists before trying to delete it
+    const blogPage = await prisma.blogPage.findUnique({
+      where: {
+        pageName: card.pageName,
+      },
+    });
+
+    // Only try to delete BlogPage if it exists
+    if (blogPage) {
+      await prisma.blogPage.delete({
         where: {
           pageName: card.pageName,
         },
-      }),
-    ]);
+      });
+    }
 
-    return NextResponse.json({message: 'Card and BlogPage deleted successfully'});    
-  } catch (error){
+    return NextResponse.json({ message: 'Card deleted successfully' });
+  } catch (error) {
     console.error('Delete error:', error);
-    return NextResponse.json({ error: 'Failes to delete records'}, { status: 500});
+    return NextResponse.json({ 
+      error: error instanceof Error ? error.message : 'Failed to delete records' 
+    }, { status: 500 });
   }
 }

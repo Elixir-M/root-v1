@@ -36,6 +36,7 @@
 //   );
 // };
 
+"use client"
 import React from 'react';
 
 const CaseStudyCard = ({ imageUrl, title, description, pageName }) => {

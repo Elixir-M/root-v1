@@ -151,7 +151,7 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
       </motion.div>
 
 {/* Cards  */}
-    <div className="relative w-full">
+    {/* <div className="relative w-full">
       <div className="absolute inset-0 bg-gradient-to-b from-[#001219] via-[#001219] to-black" />
       <div className='relative z-10'>
           <ThreeDCardGrid>
@@ -285,12 +285,12 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
           />
           </ThreeDCardGrid>
       </div>
-    </div>
+    </div> */}
 
 
 {/* Case Study  */}
 {/* <CaseStudyGrid cases={caseStudiesData.blockchain} /> */}
-<CaseStudyGrid service="blockchain" />
+{/* <CaseStudyGrid service="blockchain" /> */}
 
     </div>
   );

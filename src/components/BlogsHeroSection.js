@@ -131,9 +131,7 @@ const BlogsHeroSection = () => {
           <p className="text-xl md:text-2xl mb-8">
             {sections[activeIndex].subheading}
           </p>
-          <button className="px-8 py-3 bg-white text-gray-800 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-            CREATE YOUR BLOG
-          </button>
+          
         </div>
 
         {/* Images Container */}
