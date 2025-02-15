@@ -23,7 +23,11 @@ const BlockchainContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Leverage the power of decentralized technologies to enhance security, streamline operations, and innovate business processes. With blockchain, ensure trust and transparency in transactions, automate processes through smart contracts, and reduce dependency on intermediaries.<br />
+          __html: `At Elixir Multinational, we specialize in harnessing the power of blockchain to enhance
+           transparency and security in your operations. Our expertise with Solidity, Hyperledger, and Ethereum enables
+            us to develop tailored solutions that address your unique business challenges. By integrating blockchain technology,
+             we help streamline processes, reduce fraud, and establish trust across your network. Partner with us to unlock the full
+              potential of blockchain and drive innovation within your industry.<br />
             <strong>Tech/Tools:</strong> Solidity, Ethereum, Hyperledger, Web3.js, IPFS, Truffle Suite, Chainlink.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -66,8 +70,11 @@ const AIMLContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Unlock the potential of data-driven insights, predictive analytics, and automation to solve complex challenges and enhance decision-making. We build advanced AI/ML models that leverage big data for smarter predictions,
-             automation, and insights, empowering businesses to make data-driven decisions.<br />
+          __html: `Elixir Multinational harnesses the power of AI and Machine Learning
+           to transform businesses with intelligent solutions. Our experts develop smart
+            algorithms, predictive analytics, and automation tools that enhance efficiency
+             and decision-making. From chatbots to deep learning models, we create AI-driven
+              applications tailored to your needs. Stay ahead of the competition with cutting-edge technology that optimizes operations and drives growth. Let’s shape the future with AI! 🚀<br />
             <strong>Tech/Tools:</strong> TensorFlow, PyTorch, Scikit-Learn, Keras, Hugging Face, Pandas, Apache Spark, OpenCV, Jupyter Notebooks, Google Cloud AI.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -87,8 +94,7 @@ const IotContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Enable smart devices to communicate, optimize operations, and drive innovation with IoT solutions that provide real-time data and control. We create
-             custom IoT systems that connect physical devices to the internet, enabling automation, real-time data collection, and remote control.<br />
+          __html: `Elixir Multinational empowers businesses with cutting-edge Internet of Things (IoT) solutions for seamless connectivity and automation. Our expertise spans smart devices, real-time data analytics, and secure IoT ecosystems that enhance efficiency and innovation. From industrial automation to smart homes, we develop scalable solutions tailored to your needs. Leverage the power of IoT to optimize operations and drive business growth. Let’s build a smarter, connected future together! 🚀<br />
             <strong>Tech/Tools:</strong> Raspberry Pi, Arduino, MQTT, Node-RED, Google Cloud IoT, AWS IoT, Microsoft Azure IoT, Zigbee, LoRaWAN.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -109,8 +115,7 @@ const DesignContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Creating visually appealing and intuitive designs that elevate user experience and engage your audience across
-             digital platforms. Our designs are focused on simplicity, user-centric interactions, and maximizing conversions through aesthetically pleasing interfaces and graphics.<br />
+          __html: `Elixir Multinational brings creativity to life with stunning graphic design solutions tailored to your brand. Our expert designers craft eye-catching visuals, logos, marketing materials, and UI/UX designs that captivate and engage your audience. Whether for digital or print, we ensure designs that leave a lasting impression. Elevate your brand identity with professional and innovative graphics. Let’s create visuals that inspire! 🎨🚀<br />
             <strong>Tech/Tools:</strong>Adobe XD, Figma, Sketch, InVision, Illustrator, Photoshop, Zeplin, Principle, Marvel App.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -131,8 +136,7 @@ const STContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Delivering Excellence Through Rigorous Testing Ensure the highest quality of your software with comprehensive testing
-             services that identify and resolve issues, ensuring flawless performance. We perform unit testing, integration testing, regression testing, and performance testing to make sure your solution works seamlessly.<br />
+          __html: `Elixir Multinational delivers top-tier Quality Assurance and Testing services to ensure flawless performance across applications and software. Our experts conduct rigorous testing, including functional, performance, security, and automation testing, to detect and eliminate bugs. We guarantee seamless user experiences with high reliability and efficiency. From startups to enterprises, we help you launch error-free, high-quality solutions. Let’s build perfection together! ✅🚀<br />
             <strong>Tech/Tools:</strong> Selenium, JUnit, Appium, TestNG, Jenkins, Postman, Katalon Studio, LoadRunner, Cucumber, SonarQube.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -153,8 +157,7 @@ const GameDevContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Design and develop interactive and engaging games that captivate audiences, with cutting-edge graphics and
-             intuitive gameplay. We create fully immersive, high-performance games across different platforms, from mobile to PC and VR/AR.<br />
+          __html: `Elixir Multinational specializes in creating immersive and high-performance games across mobile, PC, and console platforms. Our expert developers and designers craft visually stunning, engaging, and interactive gaming experiences. From concept to launch, we use cutting-edge technology to bring your ideas to life. Whether it’s casual, AR/VR, or multiplayer games, we deliver seamless gameplay and innovation. Let’s build the next gaming sensation together! 🎮🚀<br />
             <strong>Tech/Tools:</strong> Unity, Unreal Engine, Cocos2d, Blender, Autodesk Maya, Adobe Animate, VR/AR SDKs, GameMaker Studio, CryEngine.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -175,8 +178,7 @@ const SCMContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Streamline your supply chain processes with innovative technology solutions that ensure efficiency, reduce costs, and enhance performance.
-           Our solutions provide real-time tracking, demand forecasting, and optimized inventory management for smoother and more efficient operations.<br />
+          __html: `Elixir Multinational delivers smart and scalable Supply Chain Solutions to streamline operations and enhance productivity. Our expertise covers logistics management, inventory optimization, and real-time tracking for seamless workflow integration. Using cutting-edge technology and data-driven insights, we help businesses reduce costs and improve efficiency. Whether for retail, manufacturing, or distribution, we tailor solutions to meet your needs. Let’s build a smarter, more connected supply chain! 🚛📦🚀<br />
             <strong>Tech/Tools:</strong> SAP SCM, Oracle SCM Cloud, Microsoft Dynamics 365, Tableau, IBM Watson Supply Chain, IoT Sensors, AI-driven Analytics, RPA.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -196,8 +198,7 @@ const CybersecContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Fortify your digital asset designed to prevent breaches, data loss, and cyberattacks. Our proactive approach includes threat detection, encryption, vulnerability assessments,
- and 24/7 monitoring to safeguard your systems.<br />
+          __html: `Elixir Multinational provides top-tier cybersecurity services to protect your business from evolving digital threats. Our experts specialize in threat detection, risk assessment, penetration testing, and data encryption to ensure maximum security. We safeguard your networks, applications, and sensitive data with cutting-edge cybersecurity solutions. Stay ahead of cyber risks with proactive protection and compliance-driven strategies. Let’s build a safer digital future together! 🔒🚀<br />
             <strong>Tech/Tools:</strong> Firewalls (Cisco, Palo Alto), SIEM Tools (Splunk, LogRhythm), Intrusion Detection Systems (Snort, Suricata), Endpoint Protection (CrowdStrike, McAfee), SSL/TLS, Encryption (AES, RSA), IAM Solutions (Okta, Auth0), Penetration Testing (Metasploit, Burp Suite).`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -217,8 +218,7 @@ const DigitalMContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Crafting impactful digital marketing strategies and branding solutions that amplify your brand’s presence and drive customer engagement. Our
-           services include SEO, content marketing, social media strategies, and online advertising, tailored to boost your business visibility and performance.<br />
+          __html: `Elixir Multinational transforms businesses with cutting-edge digital marketing and branding solutions. From SEO and social media to content marketing and brand strategy, we craft compelling online experiences. Our data-driven approach ensures maximum visibility, engagement, and growth. Whether you're a startup or an established brand, we help you stand out in the digital world. Let’s create, innovate, and lead together! 🚀<br />
             <strong>Tech/Tools:</strong> Google Analytics, Google Ads, Facebook Ads, HubSpot, SEMrush, Moz, Hootsuite, MailChimp, Canva, Ahrefs, Buffer.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -239,8 +239,7 @@ const CloudContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Harness the power of cloud computing with flexible, reliable, and secure solutions on AWS and Azure to enhance performance and scalability.
-           We design and deploy cloud-native applications that ensure seamless scalability and cost optimization for businesses of all sizes.<br />
+          __html: `Elixir Multinational empowers businesses with cutting-edge cloud solutions for agility and efficiency. We offer cloud migration, storage, security, and infrastructure management tailored to your needs. Our solutions ensure scalability, cost-effectiveness, and seamless integration. Unlock the power of cloud computing with reliability and innovation. Future-proof your business with us today!<br />
             <strong>Tech/Tools:</strong> AWS EC2, Azure Virtual Machines, AWS S3, Azure Blob Storage, AWS Lambda, Azure Functions, Kubernetes, Docker, CloudFormation, Terraform, CI/CD Pipelines.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"
@@ -261,8 +260,7 @@ const SystemIContent = () => {
     <div className="bg-gradient-to-b backdrop-blur-3xl from-blue-400 to-violet-400 p-8 md:p-14 rounded-3xl mb-4">
       <p
         dangerouslySetInnerHTML={{
-          __html: `Ensure all your systems work harmoniously with our expert integration services, optimizing workflows and data flow across platforms. Whether it’s connecting legacy
-           systems or integrating modern SaaS solutions, we create cohesive ecosystems that maximize operational efficiency.<br />
+          __html: `Elixir Multinational specializes in seamless system integration to enhance business efficiency. We connect applications, data, and technology for smooth operations and scalability. Our expert solutions streamline workflows, reduce complexity, and boost performance. Whether cloud, on-premise, or hybrid, we ensure flawless connectivity. Experience seamless digital transformation with our integration expertise! 🚀<br />
             <strong>Tech/Tools:</strong> MuleSoft, Apache Camel, Dell Boomi, Microsoft Power Automate, Zapier, API Management, GraphQL, REST APIs, ServiceNow, IBM Integration Bus.`,
         }}
         className=" text-white text-base md:text-2xl font-sans max-w-3xl mx-auto"

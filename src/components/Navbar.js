@@ -58,11 +58,14 @@ export function Navbar({ className }) {
             title: "Our Company",
             items: [
                 { href: "/test", text: "Who We Are" },
-                { href: "/test", text: "Get in Touch" },
-                { href: "/test", text: "Careers" },
-                { href: "/test", text: "Our Mission & Vision" },
-                { href: "/test", text: "Business Model" },
-                { href: "/test", text: "Our Consultants" },
+                { href: "/test", text: "About us" },
+                { href: "/test", text: "Company Overview" },
+                { href: "/test", text: "Our Story" },
+                { href: "/test", text: "Get to Know Us" },
+                { href: "/test", text: "Our Business Model" },
+                { href: "/test", text: "How We Work" },
+                { href: "/test", text: "Our Approach" },
+
             ]
         },
         {
@@ -85,7 +88,7 @@ export function Navbar({ className }) {
             ]
         },
         {
-            title: "Our Solutions",
+            title: "Innovations & Solutions",
             items: [
                 {
                     type: "product",
