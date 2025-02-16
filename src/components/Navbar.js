@@ -83,8 +83,8 @@ export function Navbar({ className }) {
                 { href: "/test", text: "Supply Chain Solutions"},
                 { href: "/test", text: "Cybersecurity Services"},
                 { href: "/test", text: "Digital Marketing & Branding"},
-                { href: "/test", text: "Cloud Solutions"},
-                { href: "/test", text: "System Integration Services"},
+                { href: "/Services/cloudsolutions", text: "Cloud Solutions"},
+                { href: "/Services/systemintegration", text: "System Integration Services"},
             ]
         },
         {

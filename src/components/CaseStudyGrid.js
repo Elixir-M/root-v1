@@ -132,7 +132,7 @@ const CaseStudyGrid = ({ service }) => {
 
   return (
     <div className="relative w-full">
-      <div className="relative bg-white pt-32 pb-32">
+      <div className="relative bg-white pt-8 pb-8">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {cards.map((card) => (
