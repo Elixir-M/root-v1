@@ -278,7 +278,7 @@ return (
 
 
             <div className="relative flex size-full max-w-xl items-center justify-center overflow-hidden rounded-lg px-8 min-w-64 sm:pb-0 pb-4 min-[400px]:hidden max-[800px]:hidden lg:flex">
-              <IconCloud iconSlugs={iconSlugs}/>
+                <IconCloud iconSlugs={iconSlugs}/>
             </div>
           </div>
 

@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { ThreeDCardGrid, ThreeDCard } from "@/components/3DCardEffect";
 import { CaseStudyGrid } from "@/components/CaseStudyGrid";
+import ServiceSection from "@/components/ServicesContent";
 
 
 const Page = () => {
@@ -152,7 +153,28 @@ const Page = () => {
                 </ThreeDCardGrid>
             </div>
           </div>
+          
+
+          <div>   
+            <ServiceSection 
+              heading="AI EVERYWHERE, ALL AT ONCE"
+              description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
+              animateFrom="right"
+            />
+
+            <ServiceSection 
+              heading="AI EVERYWHERE, ALL AT ONCE"
+              description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration. In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration.In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
+              animateFrom="left"
+            />
+          </div> 
+
+          
           <CaseStudyGrid service="blockchain" />
+
+     
+      
+     
 
       {/* Footer Section */}
       <Footer />
