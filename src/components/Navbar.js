@@ -54,18 +54,31 @@ export function Navbar({ className }) {
     };
 
     const menuItems = [
+        // {
+        //     title: "Our Company",
+        //     items: [
+        //         { href: "/test", text: "Who We Are" },
+        //         { href: "/test", text: "About us" },
+        //         { href: "/test", text: "Company Overview" },
+        //         { href: "/test", text: "Our Story" },
+        //         { href: "/test", text: "Get to Know Us" },
+        //         { href: "/test", text: "Our Business Model" },
+        //         { href: "/test", text: "How We Work" },
+        //         { href: "/test", text: "Our Approach" },
+
+        //     ]
+        // },
         {
             title: "Our Company",
             items: [
-                { href: "/test", text: "Who We Are" },
-                { href: "/test", text: "About us" },
-                { href: "/test", text: "Company Overview" },
-                { href: "/test", text: "Our Story" },
-                { href: "/test", text: "Get to Know Us" },
-                { href: "/test", text: "Our Business Model" },
-                { href: "/test", text: "How We Work" },
-                { href: "/test", text: "Our Approach" },
-
+                { href: "/ourcompany#home", text: "Who We Are" },
+                { href: "/ourcompany#about", text: "About us" },
+                { href: "/ourcompany#overview", text: "Company Overview" },
+                { href: "/ourcompany#story", text: "Our Story" },
+                { href: "/ourcompany#team", text: "Get to Know Us" },
+                { href: "/ourcompany#business-model", text: "Business Model" },
+                { href: "/ourcompany#workflow", text: "How We Work" },
+                { href: "/ourcompany#approach", text: "Our Approach" },
             ]
         },
         {
