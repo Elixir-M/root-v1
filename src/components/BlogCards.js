@@ -90,7 +90,7 @@ export default function BlogCards() {
   return (
     <div className="relative bg-black py-4">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
           {cards.map((card) => (
             <article key={card.id} className="flex flex-col group border border-white/20 rounded-2xl p-4">
               <a href={`/blogs/${card.pageName}`} className="w-full">
