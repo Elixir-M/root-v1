@@ -3,8 +3,19 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
-const ServiceSection = ({ heading, description, animateFrom = 'right' }) => {
+const ServiceSection = ({ 
+  heading, 
+  description, 
+  animateFrom = 'right',
+  image1Path,
+  image2Path,
+  image1Size = { width: 200, height: 200 },
+  image2Size = { width: 150, height: 150 },
+  image1Position = { top: '20%' },
+  image2Position = { bottom: '20%' }
+}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -17,13 +28,13 @@ const ServiceSection = ({ heading, description, animateFrom = 'right' }) => {
     }
   }, [controls, inView]);
 
-  const shapeVariants = {
+  const imageVariants = {
     hidden: { opacity: 0, x: animateFrom === 'right' ? 100 : -100 },
     visible: (i) => ({
       opacity: 1,
       x: 0,
       transition: {
-        delay: i * 0.2,
+        delay: i * 0.3,
         duration: 0.8,
         ease: "easeOut"
       }
@@ -33,53 +44,67 @@ const ServiceSection = ({ heading, description, animateFrom = 'right' }) => {
   const isFromRight = animateFrom === 'right';
 
   return (
-    <div ref={ref} className="relative min-h-screen w-full overflow-hidden bg-white flex items-center justify-center">
-      {/* Animated Geometric Shapes */}
+    <div ref={ref} className="relative min-h-screen w-full overflow-hidden bg-black flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      {/* Background gradient overlay for enhanced depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 to-blue-900/10" />
+      
+      {/* Animated SVG Images with responsive positioning */}
       <div className="absolute inset-0 w-full h-full">
-        {/* Main Rectangle - Black gradient */}
+        {/* First Image */}
         <motion.div
           custom={0}
           initial="hidden"
           animate={controls}
-          variants={shapeVariants}
-          className={`absolute ${isFromRight ? 'right-0' : 'left-0'} top-0 h-full w-2/5`}
+          variants={imageVariants}
+          className={`absolute ${isFromRight ? 'right-[5%] lg:right-[10%]' : 'left-[5%] lg:left-[10%]'} 
+            transition-all duration-300 ease-in-out`}
           style={{
-            background: 'linear-gradient(135deg, #000000 0%, #333333 100%)'
+            ...image1Position,
+            width: image1Size.width,
+            height: image1Size.height,
+            maxWidth: '25vw',
+            maxHeight: '25vw'
           }}
-        />
+        >
+          <Image
+            src={image1Path}
+            alt="Decorative SVG 1"
+            width={image1Size.width}
+            height={image1Size.height}
+            className="w-full h-full object-contain"
+            priority
+          />
+        </motion.div>
         
-        {/* Triangle - Black with transparency */}
+        {/* Second Image */}
         <motion.div
           custom={1}
           initial="hidden"
           animate={controls}
-          variants={shapeVariants}
-          className={`absolute ${isFromRight ? 'right-20' : 'left-20'} top-40`}
+          variants={imageVariants}
+          className={`absolute ${isFromRight ? 'right-[15%] lg:right-[25%]' : 'left-[15%] lg:left-[25%]'} 
+            transition-all duration-300 ease-in-out`}
           style={{
-            width: '200px',
-            height: '200px',
-            background: 'rgba(0, 0, 0, 0.7)',
-            clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)'
+            ...image2Position,
+            width: image2Size.width,
+            height: image2Size.height,
+            maxWidth: '20vw',
+            maxHeight: '20vw'
           }}
-        />
-        
-        {/* Circle - Lighter black */}
-        <motion.div
-          custom={2}
-          initial="hidden"
-          animate={controls}
-          variants={shapeVariants}
-          className={`absolute ${isFromRight ? 'right-60' : 'left-60'} bottom-40 rounded-full`}
-          style={{
-            width: '150px',
-            height: '150px',
-            background: 'linear-gradient(45deg, #1a1a1a 0%, #4d4d4d 100%)'
-          }}
-        />
+        >
+          <Image
+            src={image2Path}
+            alt="Decorative SVG 2"
+            width={image2Size.width}
+            height={image2Size.height}
+            className="w-full h-full object-contain"
+            priority
+          />
+        </motion.div>
       </div>
 
       {/* Enhanced Glassmorphism Content */}
-      <div className="relative z-10 container mx-auto px-6 flex justify-center items-center">
+      <div className="relative z-10 w-full max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-[60%] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={controls}
@@ -90,20 +115,22 @@ const ServiceSection = ({ heading, description, animateFrom = 'right' }) => {
               transition: { delay: 0.5, duration: 0.7 }
             }
           }}
-          className="max-w-3xl backdrop-blur-md bg-white/60 rounded-xl p-10 shadow-xl border border-white/40"
+          className="w-full backdrop-blur-xl bg-white/5 rounded-2xl p-8 md:p-12 lg:p-16 
+            shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] border border-white/20
+            hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.47)] 
+            transition-all duration-300 ease-in-out"
           style={{
-            boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.05)',
-            backdropFilter: 'blur(12px)'
+            backdropFilter: 'blur(10px)',
+            WebkitBackdropFilter: 'blur(10px)',
           }}
         >
-          <h1 className="text-5xl font-bold mb-6 text-gray-900">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8 text-white leading-tight">
             {heading}
           </h1>
           
-          {/* Line Divider - Darker for better contrast */}
-          <div className="w-full h-px bg-gray-400 mb-6"></div>
+          <div className="w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mb-8" />
           
-          <p className="text-xl text-gray-800 leading-relaxed">
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 leading-relaxed">
             {description}
           </p>
         </motion.div>

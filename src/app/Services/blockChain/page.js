@@ -156,18 +156,30 @@ const Page = () => {
           
 
           <div>   
-            <ServiceSection 
-              heading="AI EVERYWHERE, ALL AT ONCE"
-              description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
-              animateFrom="right"
-            />
+          <ServiceSection
+            heading="AI EVERYWHERE, ALL AT ONCE"
+            description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
+            animateFrom="left"
+            image1Path="/assets/img/e-logo.png"
+            image2Path="/assets/img/Elixir_Logo.png"
+            image1Size={{ width: 200, height: 200 }}
+            image2Size={{ width: 150, height: 150 }}
+            image1Position={{ top: '20%' }}
+            image2Position={{ bottom: '20%' }}
+          />
 
-            <ServiceSection 
-              heading="AI EVERYWHERE, ALL AT ONCE"
-              description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration. In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration.In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
-              animateFrom="left"
-            />
-          </div> 
+          <ServiceSection
+            heading="AI EVERYWHERE, ALL AT ONCE"
+            description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
+            animateFrom="right"
+            image1Path="/assets/img/e-logo.png"
+            image2Path="/assets/img/Elixir_Logo.png"
+            image1Size={{ width: 200, height: 200 }}
+            image2Size={{ width: 150, height: 150 }}
+            image1Position={{ top: '20%' }}
+            image2Position={{ bottom: '20%' }}
+          />
+          </div>
 
           
           <CaseStudyGrid service="blockchain" />
