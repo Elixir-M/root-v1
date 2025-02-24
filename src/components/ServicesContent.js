@@ -46,7 +46,7 @@ const ServiceSection = ({
   return (
     <div ref={ref} className="relative min-h-screen w-full overflow-hidden bg-black flex items-center justify-center px-4 sm:px-6 lg:px-8">
       {/* Background gradient overlay for enhanced depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 to-blue-900/10" />
+      <div className="absolute inset-0 bg-black" />
       
       {/* Animated SVG Images with responsive positioning */}
       <div className="absolute inset-0 w-full h-full">
