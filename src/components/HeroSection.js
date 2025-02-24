@@ -59,10 +59,11 @@ const HeroSection = () => {
         {/* Left Section */}
         <div className="flex flex-col justify-center items-center md:items-start text-center md:text-left p-8 md:p-16 space-y-4">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-          Empowering Innovation, Driving Transformation
+            Empowering Innovation, Driving Transformation
           </h1>
           <p className="text-sm sm:text-base lg:text-lg">
-          Unlock the power of end-to-end IT consultation, development, and digital transformation. Your success is our mission.
+            Unlock the power of end-to-end IT consultation, development, and
+            digital transformation. Your success is our mission.
           </p>
         </div>
         {/* Right Section */}
@@ -73,7 +74,7 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="mt-[-10vh] sm:mt-[-17vh]">
+      <div className="mt-[calc(-20vh+5vw)]">
         <FocusCardsDemo />
       </div>
     </div>
