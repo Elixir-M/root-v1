@@ -24,7 +24,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 bg-white bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-white bg-clip-text text-transparent">
               Architects of the Digital Revolution
             </h1>
           </motion.div>
@@ -34,13 +34,13 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <p className="text-xl sm:text-2xl text-white mb-10 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white mb-10 leading-relaxed">
             Our expertise spans across Artificial Intelligence (AI), Blockchain, Software Development, Cloud Computing, and IoT, enabling businesses to embrace innovation, optimize operations, and scale efficiently.
             </p>
-            <p className="text-xl sm:text-2xl text-white mb-10 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white mb-10 leading-relaxed">
             We believe in the power of technology to transform industries, enhance human experiences, and create a smarter, more connected world. Our mission is to help businesses navigate the complexities of digital transformation with cutting-edge solutions, turning challenges into opportunities and ideas into reality.
             </p>
-            <p className="text-xl sm:text-2xl text-white mb-10 leading-relaxed">
+            <p className="text-lg sm:text-xl text-white mb-10 leading-relaxed">
             With a team of passionate technologists, strategists, and industry experts, we work closely with organizations to build intelligent, future-ready solutions that drive business success.
             </p>
           </motion.div>
@@ -72,7 +72,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 1 }}
-        className="absolute left-0 top-1/4 w-64 h-64 rounded-full bg-gradient-to-b from-green-900 to-transparent opacity-5"
+        className="absolute left-0 top-1/4 w-64 h-64 rounded-full bg-gradient-to-b from-[#660549] to-transparent opacity-5"
       />
     </div>
   );

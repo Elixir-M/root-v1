@@ -363,7 +363,7 @@ const OurStory = () => {
             variants={lineVariants}
             initial="hidden"
             animate={itemInView ? "visible" : "hidden"}
-            className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-pink-600 via-blue-500 to-green-500 shadow-glow z-0"
+            className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#c73e9e] via-[#2f0aa8] to-green-500 shadow-glow z-0"
             style={{ 
               top: 0,
               originY: 0
