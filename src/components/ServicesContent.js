@@ -124,15 +124,42 @@ const ServiceSection = ({
             WebkitBackdropFilter: 'blur(10px)',
           }}
         >
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 text-white leading-tight">
+          <h1 className="text-lg sm:text-xl lg:text-2xl font-bold mb-8 text-white leading-tight">
             {heading}
           </h1>
           
           <div className="w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent mb-8" />
           
-          <p className="text-sm sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
+          {/* <p className="text-sm sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
             {description}
+          </p> */}
+          <div>
+  {Array.isArray(description) ? (
+    // Render description as a list
+    description.map((item, index) => {
+      const [boldText, normalText] = item.split(":"); // Splitting at `:`
+
+      return (
+        <div key={index} className="flex items-start relative space-x-3">
+          {/* Beautiful Blue Gradient Line */}
+          <div className="w-1 absolute left-0 top-1 h-6   bg-gradient-to-b from-blue-400 via-blue-500 to-blue-700 rounded-full" />
+          
+          {/* List Item Text */}
+          <p className="text-sm sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
+            <span className="font-bold text-white">{boldText}</span>: {normalText}
           </p>
+        </div>
+      );
+    })
+  ) : (
+    // Render description as a normal paragraph
+    <p className="text-sm sm:text-lg lg:text-xl text-gray-200 leading-relaxed">
+      {description}
+    </p>
+  )}
+</div>
+
+
         </motion.div>
       </div>
     </div>

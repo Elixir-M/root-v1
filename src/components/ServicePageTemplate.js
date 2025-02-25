@@ -1,10 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ThreeDCard, ThreeDCardGrid } from "@/components/3DCardEffect";
-import { CaseStudyGrid, sampleCases } from "@/components/CaseStudyGrid";
-import caseStudiesData  from '@/data/caseStudiesData';
-
 
 
 const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) => {
@@ -104,7 +100,7 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
             Your browser does not support the video tag.
           </video>
           {/* Overlay with gradient */}
-          <div className={`absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-${gradientshade}`} />
+          <div className={`absolute inset-0 bg-gradient-to-b from-black/50 via-black/50 to-[${gradientshade}]`} />
           {/* Overlay to ensure text is readable */}
           <div className="absolute inset-0 bg-black bg-opacity-50" />
         </div>
@@ -147,150 +143,8 @@ const ServicePageTemplate = ({ serviceName, tagline, videoUrl, gradientshade }) 
                 className="absolute bottom-8 w-16 h-16 cursor-pointer"
             />
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent via-[#001219]/80 to-[#001219]" />
+        <div className={`absolute bottom-0 left-0 w-full h-64 bg-gradient-to-b from-transparent via-[${gradientshade}]/80 to-[${gradientshade}]`} />
       </motion.div>
-
-{/* Cards  */}
-    {/* <div className="relative w-full">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#001219] via-[#001219] to-black" />
-      <div className='relative z-10'>
-          <ThreeDCardGrid>
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-        <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          <ThreeDCard
-              imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-              title="First Card"
-              description="Description for first card"
-              tryNowLink="https://example.com/1"
-              modalContent={{
-                description: "Detailed modal description",
-                features: [
-                  "Feature point 1",
-                  "Feature point 2",
-                  "Feature point 3"
-                ],
-                expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                deployedLink: "https://your-deployed-site.com"  // Live site link
-              }}
-          />
-          </ThreeDCardGrid>
-      </div>
-    </div> */}
-
-
-{/* Case Study  */}
-{/* <CaseStudyGrid cases={caseStudiesData.blockchain} /> */}
-{/* <CaseStudyGrid service="blockchain" /> */}
 
     </div>
   );

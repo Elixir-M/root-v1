@@ -14,140 +14,44 @@ const Page = () => {
 
       <ServicePageTemplate 
         serviceName="Blockchain Solutions"
-        tagline="Empowering Tomorrow with Secure and Scalable Blockchain Solutions"
-        videoUrl="https://videos.pexels.com/video-files/7565438/7565438-hd_1080_1920_25fps.mp4"
-        gradientshade="#001219"
+        tagline="Beyond Boundaries: Smarter, Safer Blockchain Solutions."
+        videoUrl="https://videos.pexels.com/video-files/4389377/4389377-uhd_2732_1440_30fps.mp4"
+        gradientshade="#000000"
       />
       <div className="relative w-full">
-            <div className="absolute inset-0 bg-gradient-to-b from-[#001219] via-[#001219] to-black" />
+            <div className="absolute inset-0 bg-black" />
             <div className='relative z-10'>
                 <ThreeDCardGrid>
                 <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
+                    imgSrc="/assets/img/SmartContracts.avif"
+                    title="Smart Contracts"
+                    description="Automating Trust"
+                    // tryNowLink="https://example.com/1"
                     modalContent={{
-                      description: "Detailed modal description",
+                      // description: "Detailed modal description",
                       features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
+                        "Smart contracts are transforming how agreements are executed by automating transactions and enforcing contract terms on blockchain networks. These self-executing contracts eliminate intermediaries, reducing costs and ensuring transparency.",
+                        "Once deployed, smart contracts operate autonomously, executing predefined conditions securely and immutably. They play a pivotal role in decentralizing finance (DeFi), supply chain management, and digital identity verification, among other applications. ",
+                        "With smart contracts, trust is built into the code, mitigating risks associated with traditional contract management. Embrace automation, enhance security, and unlock new business potentials by integrating smart contracts into your digital strategy."
                       ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
+                      // expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
+                      deployedLink: "https://your-deployed-site.com"  // Link to Poject
                     }}
                 />
               <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
+                    imgSrc="/assets/img/solidity.jpg"
+                    title="Solidity"
+                    description="Empowering Blockchain Innovation"
+                    // tryNowLink="https://example.com/1"
                     modalContent={{
-                      description: "Detailed modal description",
+                      // description: "Detailed modal description",
                       features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
+                        "Solidity is the primary programming language for developing smart contracts on blockchain platforms like Ethereum. Designed specifically for decentralized applications, Solidity allows developers to write secure, robust contracts that facilitate trustless transactions and automate complex processes. ",
+                        "Its syntax, similar to JavaScript, makes it accessible to web developers transitioning to blockchain development. Solidity’s strong typing and contract-oriented features reduce vulnerabilities, ensuring safer deployments. ",
+                        "With an ever-growing ecosystem, Solidity continues to evolve, driving innovation in decentralized finance, NFTs, and beyond. Harness the power of blockchain with Solidity, and build next-generation applications that redefine how we interact, transact, and trust in the digital world."
                       ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
-                    }}
-                />
-                <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
-                    modalContent={{
-                      description: "Detailed modal description",
-                      features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
-                      ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
-                    }}
-                />
-                <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
-                    modalContent={{
-                      description: "Detailed modal description",
-                      features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
-                      ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
-                    }}
-                />
-                <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
-                    modalContent={{
-                      description: "Detailed modal description",
-                      features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
-                      ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
-                    }}
-                />
-                <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
-                    modalContent={{
-                      description: "Detailed modal description",
-                      features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
-                      ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
-                    }}
-                />
-                <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
-                    modalContent={{
-                      description: "Detailed modal description",
-                      features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
-                      ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
-                    }}
-                />
-                <ThreeDCard
-                    imgSrc="https://images.unsplash.com/photo-1735064812359-b0dde30d4323?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
-                    title="First Card"
-                    description="Description for first card"
-                    tryNowLink="https://example.com/1"
-                    modalContent={{
-                      description: "Detailed modal description",
-                      features: [
-                        "Feature point 1",
-                        "Feature point 2",
-                        "Feature point 3"
-                      ],
-                      expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
-                      deployedLink: "https://your-deployed-site.com"  // Live site link
+                      // expandedImage:"https://images.unsplash.com/photo-1735767975829-71496633d499?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D",  // Different image for modal
+                      deployedLink: "https://your-deployed-site.com"  // Link to Project
                     }}
                 />
                 </ThreeDCardGrid>
@@ -157,22 +61,18 @@ const Page = () => {
 
           <div>   
           <ServiceSection
-            heading="AI EVERYWHERE, ALL AT ONCE"
-            description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
+            heading="Blockchain technology is reshaping industries by offering security, transparency, and decentralization. Our blockchain services include:"
+            // description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
+            description = {[
+              "Smart Contract Development: Automate processes without intermediaries.",
+              "Decentralized Applications (DApps): Secure and efficient blockchain applications.",
+              "Token & Cryptocurrency Development: Secure, scalable digital assets.",
+              "NFT Development: Build and manage unique digital assets.",
+              "Blockchain Consulting & Auditing: Optimize blockchain strategies for businesses."
+            ]}
+            
             animateFrom="left"
             image1Path="/assets/img/e-logo.png"
-            image2Path="/assets/img/Elixir_Logo.png"
-            image1Size={{ width: 200, height: 200 }}
-            image2Size={{ width: 150, height: 150 }}
-            image1Position={{ top: '20%' }}
-            image2Position={{ bottom: '20%' }}
-          />
-
-          <ServiceSection
-            heading="AI EVERYWHERE, ALL AT ONCE"
-            description="In an era characterized by unprecedented technological advancement, digital transformation trends like the pervasive influence of AI have become a focal point for businesses worldwide. As we explore the impact of AI on organizations, the data reveals an overwhelming trend as the vast majority strategically prioritize AI integration."
-            animateFrom="right"
-            image1Path="/assets/img/ChevronRight.png"
             image2Path="/assets/img/Elixir_Logo.png"
             image1Size={{ width: 200, height: 200 }}
             image2Size={{ width: 150, height: 150 }}
