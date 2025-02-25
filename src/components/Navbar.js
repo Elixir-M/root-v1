@@ -85,7 +85,7 @@ export function Navbar({ className }) {
             title: "Services",
             items: [
                 { href: "/Services/blockChain", text: "Blockchain Solutions"},
-                { href: "/Services/mobdev", text: "Mobile App Development"},
+                { href: "/Services/mobile-app-development", text: "Mobile App Development"},
                 { href: "/Services/webdev", text: "Web Development"},
                 { href: "/Services/appdev", text: "Application Development"},
                 { href: "/Services/aiml", text: "AI & Machine learning"},
