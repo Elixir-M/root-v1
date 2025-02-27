@@ -37,6 +37,7 @@ export default function AdminCards() {
     'app dev',
     'web dev',
     'ai and ml',
+    'cms',
     'iot',
     'graphic design',
     'quality assurance and testing',
