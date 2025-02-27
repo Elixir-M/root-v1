@@ -11,8 +11,8 @@ const BlogsHeroSection = () => {
       mainImage: '/api/placeholder/800/500',
       sideElements: {
         left: [
-          { src: '/api/placeholder/200/200', exitDelay: 100, size: 'w-24' },
-          { src: '/api/placeholder/200/200', exitDelay: 200, size: 'w-32' },
+          { src: '/assets/img/R.png', exitDelay: 100, size: 'w-24' },
+          { src: '/assets/img/R(1).png', exitDelay: 200, size: 'w-32' },
           { src: '/api/placeholder/200/200', exitDelay: 300, size: 'w-28' },
           { src: '/api/placeholder/200/200', exitDelay: 400, size: 'w-36' },
           { src: '/api/placeholder/200/200', exitDelay: 500, size: 'w-24' },
