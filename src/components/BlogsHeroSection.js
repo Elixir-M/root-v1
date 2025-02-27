@@ -12,11 +12,11 @@ const BlogsHeroSection = () => {
       sideElements: {
         left: [
           { src: '/assets/img/R.png', exitDelay: 100, size: 'w-24' },
-          { src: '/assets/img/R(1).png', exitDelay: 200, size: 'w-32' },
-          { src: '/api/placeholder/200/200', exitDelay: 300, size: 'w-28' },
-          { src: '/api/placeholder/200/200', exitDelay: 400, size: 'w-36' },
-          { src: '/api/placeholder/200/200', exitDelay: 500, size: 'w-24' },
-          { src: '/api/placeholder/200/200', exitDelay: 600, size: 'w-32' }
+          { src: '/assets/tech1.png', exitDelay: 200, size: 'w-32' },
+          { src: '/assets/img/tech3.png', exitDelay: 300, size: 'w-28' },
+          { src: '/assets/img/crypto1.png', exitDelay: 400, size: 'w-36' },
+          { src: '/assets/img/blockchain.png', exitDelay: 500, size: 'w-24' },
+          { src: '/assets/img/brain.png', exitDelay: 600, size: 'w-32' }
         ],
         right: [
           { src: '/api/placeholder/200/200', exitDelay: 150, size: 'w-32' },
