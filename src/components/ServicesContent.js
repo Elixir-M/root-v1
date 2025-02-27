@@ -10,11 +10,13 @@ const ServiceSection = ({
   description, 
   animateFrom = 'right',
   image1Path,
-  image2Path,
-  image1Size = { width: 200, height: 200 },
-  image2Size = { width: 150, height: 150 },
-  image1Position = { top: '20%' },
-  image2Position = { bottom: '20%' }
+  // image2Path,
+  // image1Size = { width: 200, height: 200 },
+  // image2Size = { width: 150, height: 150 },
+  // image1Position = { top: '20%' },
+  image1Size = { width: 400, height: 400 }, // Increased default size
+  image1Position = { top: '50%', left: '50%', transform: 'translate(-50%, -50%)' },
+  // image2Position = { bottom: '20%' }
 }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
@@ -63,21 +65,22 @@ const ServiceSection = ({
             width: image1Size.width,
             height: image1Size.height,
             maxWidth: '25vw',
-            maxHeight: '25vw'
+            maxHeight: '50vw'
           }}
         >
+          <div className="absolute inset-0  bg-gradient-radial from-transparent to-black z-10"></div>
           <Image
             src={image1Path}
             alt="Decorative SVG 1"
             width={image1Size.width}
             height={image1Size.height}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain z-0 opacity-80 mix-blend-screen"
             priority
           />
         </motion.div>
         
         {/* Second Image */}
-        <motion.div
+        {/* <motion.div
           custom={1}
           initial="hidden"
           animate={controls}
@@ -100,7 +103,7 @@ const ServiceSection = ({
             className="w-full h-full object-contain"
             priority
           />
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Enhanced Glassmorphism Content */}

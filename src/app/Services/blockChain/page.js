@@ -72,12 +72,12 @@ const Page = () => {
             ]}
             
             animateFrom="left"
-            image1Path="/assets/img/e-logo.png"
-            image2Path="/assets/img/Elixir_Logo.png"
+            image1Path="/assets/img/bt.webp"
+            // image2Path="/assets/img/Elixir_Logo.png"
             image1Size={{ width: 200, height: 200 }}
-            image2Size={{ width: 150, height: 150 }}
+            // image2Size={{ width: 150, height: 150 }}
             image1Position={{ top: '20%' }}
-            image2Position={{ bottom: '20%' }}
+            // image2Position={{ bottom: '20%' }}
           />
           </div>
 
