@@ -122,7 +122,7 @@ const BlogsHeroSection = () => {
       />
 
       {/* Content Container */}
-      <div className="relative h-full max-w-7xl mx-auto px-4">
+      <div className="relative h-full max-w-full mx-auto px-4">
         {/* Header Text */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 text-center text-white z-10 w-full">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
