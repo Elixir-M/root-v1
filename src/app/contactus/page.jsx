@@ -20,7 +20,7 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: black }}>
       <div
-        className="relative overflow-hidden cursor-none"
+        className="relative overflow-hidden"
         onMouseMove={handleMouseMove}
       >
         {/* White Glow Cursor Effect */}

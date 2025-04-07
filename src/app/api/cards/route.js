@@ -98,7 +98,7 @@ export async function POST(req) {
         }
       );
     }
-
+    const services = Array.isArray(data.services) ? data.services : (data.services ? [data.services] : []);
     // Create the card
     const card = await prisma.card.create({
       data: {
@@ -106,7 +106,7 @@ export async function POST(req) {
         description: data.description,
         imageUrl: data.imageUrl || '',
         pageName: data.pageName || 'default',
-        services: data.services || 'default',
+        services: services,
       },
     });
 

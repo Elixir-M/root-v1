@@ -1,16 +1,10 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"  // or "mongodb" if you prefer
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
   directUrl = env("DIRECT_URL")
 }
 
@@ -27,25 +21,21 @@ model Card {
   title       String
   description String
   imageUrl    String
-  pageName    String   @default("default")
-  services    String   @default("default")  // New field
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  pageName    String   @default("default")
+  services    String[] @default(["default"])
 }
 
 model BlogPage {
-  id          String   @id @default(cuid())
-  pageName    String   @unique
-  // Highlighted new fields
-  subheading  String   // NEW
-  minuteRead  Int      // NEW
-  author      String   // NEW
-  intro       String   // NEW
-  solution    String   // NEW
-  conclusion  String   // NEW
-  // End of new fields
-  charts      Json     // Will store array of {title, percentage} objects
-  createdAt   DateTime @default(now())
+  id         String   @id @default(cuid())
+  pageName   String   @unique
+  charts     Json
+  createdAt  DateTime @default(now())
+  subheading String
+  minuteRead Int
+  author     String
+  intro      String
+  solution   String
+  conclusion String
 }
-
-

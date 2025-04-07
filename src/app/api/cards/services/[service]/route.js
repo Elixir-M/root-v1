@@ -8,7 +8,9 @@ export async function GET(request, { params }) {
   try {
     const cards = await prisma.card.findMany({
       where: {
-        services: params.service  // using services field
+        services: {
+          has: params.service
+        }
       },
       select: {
         title: true,

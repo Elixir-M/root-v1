@@ -26,7 +26,8 @@ export default function AdminCards() {
   const [intro, setIntro] = useState('');            // NEW
   const [solution, setSolution] = useState('');       // NEW
   const [conclusion, setConclusion] = useState('');   // NEW
-  const [services, setServices] = useState('');
+  // const [services, setServices] = useState('');
+  const [services, setServices] = useState(['default']);
   
   const router = useRouter();
 
@@ -135,8 +136,22 @@ export default function AdminCards() {
     return data.secure_url;
   };
 
+  const handleServiceToggle = (service) => {
+    if (services.includes(service)) {
+      // Remove service if already selected
+      setServices(services.filter(s => s !== service));
+    } else {
+      // Add service if not selected
+      setServices([...services, service]);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (services.length === 0) {
+      alert('Please select at least one service');
+      return;
+    }
     setUploading(true);
 
     try {
@@ -164,7 +179,7 @@ export default function AdminCards() {
         setTitle('');
         setDescription('');
         setPageName('');
-        setServices('default');
+        setServices(['default']);
         setFile(null);
         await fetchCards();
       } else {
@@ -219,6 +234,8 @@ export default function AdminCards() {
   const deleteChart = (index) => {
     setCharts(charts.filter((_, i) => i !== index));
   };
+
+  
 
   const addChart = () => {
     setCharts([...charts, { title: '', percentage: '' }]);
@@ -343,6 +360,8 @@ export default function AdminCards() {
     );
   }
 
+  
+
   return (
     <div className="container mx-auto px-4 py-8">
       <button
@@ -404,25 +423,33 @@ export default function AdminCards() {
           />
         </div>
 
-         {/* New Services Dropdown */}
-         <div>
-          <label className="block mb-2">Services</label>
-          <select
-            value={services}
-            onChange={(e) => setServices(e.target.value)}
-            className="w-full p-2 border rounded"
-          >
+         {/* Multiple Services Selection */}
+        <div>
+          <label className="block mb-2">Services (select multiple)</label>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 border rounded p-3">
             {serviceOptions.map(option => (
-              <option key={option} value={option}>
-                {option.charAt(0).toUpperCase() + option.slice(1).replace('-', ' ')}
-              </option>
+              <div key={option} className="flex items-center">
+                <input
+                  type="checkbox"
+                  id={`service-${option}`}
+                  checked={services.includes(option)}
+                  onChange={() => handleServiceToggle(option)}
+                  className="mr-2"
+                />
+                <label htmlFor={`service-${option}`} className="text-sm">
+                  {option.charAt(0).toUpperCase() + option.slice(1).replace('-', ' ')}
+                </label>
+              </div>
             ))}
-          </select>
+          </div>
+          {services.length === 0 && (
+            <p className="text-red-500 text-sm mt-1">Please select at least one service</p>
+          )}
         </div>
         
         <button
           type="submit"
-          disabled={uploading}
+          disabled={uploading || services.length === 0}
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 disabled:bg-blue-300"
         >
           {uploading ? 'Creating...' : 'Create Card'}
@@ -739,10 +766,25 @@ export default function AdminCards() {
               />
               <h2 className="text-xl font-semibold mb-2">{card.title}</h2>
               <p className="mb-4">{card.description}</p> 
-              {/* You can optionally show the service here if you want */}
-              {card.services && card.services !== 'default' && (
-                <p className="text-sm text-gray-600 mb-2">Service: {card.services.replace('-', ' ')}</p>
-              )}
+              <div className="mb-4">
+                <p className="text-sm text-gray-600 mb-1">Services:</p>
+                <div className="flex flex-wrap gap-1">
+                  {Array.isArray(card.services) 
+                    ? card.services.map((service, idx) => (
+                        service !== 'default' && (
+                          <span key={idx} className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">
+                            {service.replace('-', ' ')}
+                          </span>
+                        )
+                      ))
+                    : card.services !== 'default' && (
+                        <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">
+                          {card.services.replace('-', ' ')}
+                        </span>
+                      )
+                  }
+                </div>
+              </div>
               <a href={`/blogs/${card.pageName}`} className="text-blue-500 hover:text-blue-700">
                 Click More
               </a>
