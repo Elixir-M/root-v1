@@ -233,6 +233,7 @@ export default function BlogCards() {
       try {
         const res = await fetch(url);
         const data = await res.json();
+        console.log("API response:", data);
         setCards(data.data || []);
       } catch (err) {
         console.error('Error fetching cards:', err);
@@ -244,6 +245,10 @@ export default function BlogCards() {
 
   const handleServiceChange = (selectedOptions) => {
     setSelectedServices(selectedOptions);
+  };
+  const getServiceLabel = (value) => {
+    const match = serviceOptions.find(option => option.value === value);
+    return match ? match.label : value;
   };
 
   return (
@@ -281,6 +286,23 @@ export default function BlogCards() {
                 <div className="flex flex-col mt-6 space-y-2">
                   <h3 className="text-xl font-bold text-white">{card.title}</h3>
                   <p className="text-gray-400 text-base">{card.description}</p>
+                  <div className="mb-4">
+  <p className="text-sm text-gray-600 mb-1">Services:</p>
+  <div className="flex flex-wrap gap-1">
+    {card.services
+      .filter(service => service !== 'default')
+      .map((service, idx) => (
+        <span
+          key={idx}
+          className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs"
+        >
+          {getServiceLabel(service)}
+        </span>
+      ))}
+  </div>
+</div>
+
+
                   <a href={`/blogs/${card.pageName}`} className="inline-flex items-center mt-2">
                     <span className="text-base font-semibold text-white relative">
                       <span className="relative">

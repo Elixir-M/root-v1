@@ -74,6 +74,7 @@ export async function GET(request) {
           description: true,
           imageUrl: true,
           pageName: true,
+          services: true,
         },
       });
     } else {
@@ -84,6 +85,7 @@ export async function GET(request) {
           description: true,
           imageUrl: true,
           pageName: true,
+          services : true,
         },
       });
     }
