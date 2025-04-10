@@ -1,10 +1,7 @@
 
 
 import { NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
-
-// Create prisma client outside the handler to reuse connections
-const prisma = new PrismaClient();
+import { prisma } from '@/lib/prisma';
 
 export async function GET() {
   console.log('GET /api/cards - Starting request');
