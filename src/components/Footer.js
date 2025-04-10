@@ -111,7 +111,7 @@ function Footer() {
 
   return (
     <div>
-      <VortexDemo />
+      {/* <VortexDemo /> */}
       {/* <AnimatedLogoCloud /> */}
       <div className="w-full rounded-md bg-black relative flex md:flex-row flex-col items-center justify-center antialiased">
         {/* <BackgroundBeams /> */}
