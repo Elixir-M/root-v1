@@ -43,9 +43,9 @@ const uploadAllImages = async () => {
   }
 
   // Output results to a JSON file in project root
-  const outputPath = path.resolve(__dirname, '../cloudinary_urls.json');
+  const outputPath = path.resolve(__dirname, '../cloudinary_urls1.json');
   fs.writeFileSync(outputPath, JSON.stringify(uploadedUrls, null, 2));
-  console.log('\n🎉 Upload complete! URLs saved to cloudinary_urls.json');
+  console.log('\n🎉 Upload complete! URLs saved to cloudinary_urls1.json');
 };
 
 uploadAllImages();

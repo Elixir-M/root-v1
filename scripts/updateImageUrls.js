@@ -4,7 +4,7 @@ const xlsx = require('xlsx');
 const { PrismaClient } = require('@prisma/client');
 
 const prisma = new PrismaClient();
-const CLOUDINARY_JSON_PATH = path.resolve(__dirname, '../cloudinary_urls.json');
+const CLOUDINARY_JSON_PATH = path.resolve(__dirname, '../cloudinary_urls1.json');
 const EXCEL_PATH = path.resolve(__dirname, './data/blogImages.xlsx');
 const EXCEL_SHEET_NAME = 'Blog (Final)';
 async function main() {
