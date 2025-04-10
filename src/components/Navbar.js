@@ -139,15 +139,15 @@ export function Navbar({ className }) {
                 }
             ]
         },
-        {
-            title: "Hire Experts",
-            items: [
-                { href: "/test", text: "Hobby" },
-                { href: "/test", text: "Individual" },
-                { href: "/test", text: "Team" },
-                { href: "/test", text: "Enterprise" },
-            ]
-        }
+        // {
+        //     title: "Hire Experts",
+        //     items: [
+        //         { href: "/test", text: "Hobby" },
+        //         { href: "/test", text: "Individual" },
+        //         { href: "/test", text: "Team" },
+        //         { href: "/test", text: "Enterprise" },
+        //     ]
+        // }
     ];
 
     return (
