@@ -21,6 +21,8 @@ export async function GET() {
       orderBy: {
         createdAt: 'desc',
       },
+      take: 10,
+      skip: 10,
     });
     console.log('Query successful, found', cards.length, 'cards');
 

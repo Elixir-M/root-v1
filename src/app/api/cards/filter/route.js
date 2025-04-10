@@ -76,6 +76,10 @@ export async function GET(request) {
           pageName: true,
           services: true,
         },
+        orderBy: {
+          createdAt: 'desc',
+        },
+        take: 10,
       });
     } else {
       // If no services are selected, fetch all cards
@@ -87,7 +91,13 @@ export async function GET(request) {
           pageName: true,
           services : true,
         },
-      });
+        orderBy: {
+          createdAt: 'desc',
+        },
+        take: 10,
+      }
+      
+    );
     }
 
     return NextResponse.json({ data: cards });
