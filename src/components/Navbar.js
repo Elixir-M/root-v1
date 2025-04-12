@@ -54,20 +54,7 @@ export function Navbar({ className }) {
     };
 
     const menuItems = [
-        // {
-        //     title: "Our Company",
-        //     items: [
-        //         { href: "/test", text: "Who We Are" },
-        //         { href: "/test", text: "About us" },
-        //         { href: "/test", text: "Company Overview" },
-        //         { href: "/test", text: "Our Story" },
-        //         { href: "/test", text: "Get to Know Us" },
-        //         { href: "/test", text: "Our Business Model" },
-        //         { href: "/test", text: "How We Work" },
-        //         { href: "/test", text: "Our Approach" },
 
-        //     ]
-        // },
         {
             title: "Our Company",
             items: [
@@ -84,20 +71,22 @@ export function Navbar({ className }) {
         {
             title: "Services",
             items: [
-                { href: "/Services/blockChain", text: "Blockchain Solutions"},
-                { href: "/Services/mobile-app-development", text: "Mobile App Development"},
-                { href: "/Services/webdev", text: "Web Development"},
-                { href: "/Services/appdev", text: "Application Development"},
-                { href: "/Services/aiml", text: "AI & Machine learning"},
+                { href: "/services/blockchain", text: "Blockchain Solutions" },
+{ href: "/services/mobileAppDev", text: "Mobile App Development" },
+{ href: "/services/webDev", text: "Web Development" },
+{ href: "/services/appDev", text: "Application Development" },
+{ href: "/services/aiml", text: "AI & Machine Learning" },
+{ href: "/services/cloudsolutions", text: "Cloud Solutions" },
+{ href: "/services/systemintegration", text: "System Integration Services" },
                 { href: "/test", text: "Internet of Thing"},
                 { href: "/test", text: "Graphic Design"},
-                { href: "/test", text: "Quality Assurance & Testing"},
-                { href: "/test", text: "Game Development"},
-                { href: "/test", text: "Supply Chain Solutions"},
-                { href: "/test", text: "Cybersecurity Services"},
-                { href: "/test", text: "Digital Marketing & Branding"},
-                { href: "/Services/cloudsolutions", text: "Cloud Solutions"},
-                { href: "/Services/systemintegration", text: "System Integration Services"},
+                {href: "/services/cms", text: "Content Management System"},
+                { href: "/services/qatesting", text: "Quality Assurance & Testing"},
+                { href: "/services/gamedev", text: "Game Development"},
+                { href: "/services/supplychain", text: "Supply Chain Solutions"},
+                { href: "/services/cybersec", text: "Cybersecurity Services"},
+                { href: "/services/digitalmarketing", text: "Digital Marketing & Branding"},
+               
             ]
         },
         {
@@ -139,15 +128,7 @@ export function Navbar({ className }) {
                 }
             ]
         },
-        // {
-        //     title: "Hire Experts",
-        //     items: [
-        //         { href: "/test", text: "Hobby" },
-        //         { href: "/test", text: "Individual" },
-        //         { href: "/test", text: "Team" },
-        //         { href: "/test", text: "Enterprise" },
-        //     ]
-        // }
+
     ];
 
     return (

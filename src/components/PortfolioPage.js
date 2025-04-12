@@ -14,21 +14,21 @@ const PortfolioPage = () => {
       image: 'https://plus.unsplash.com/premium_photo-1663931932716-3086b87f2ed1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Blockchain Solutions',
       description: 'Secure, transparent, and decentralized systems for modern business needs. Implementing smart contracts and distributed ledger technologies.',
-      href: '/portfolio/blockchain'
+      href: '/services/blockchain#projects'
     },
     {
       id: 2,
       image: 'https://images.unsplash.com/photo-1558885544-2defc62e2e2b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Mobile App Development',
       description: 'Native and cross-platform mobile applications with intuitive UX/UI design for iOS and Android platforms.',
-      href: '/portfolio/mobile-dev'
+      href: '/services/mobile-dev#projects'
     },
     {
       id: 3,
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Web Development',
       description: 'Responsive, scalable web applications using cutting-edge technologies and frameworks for optimal performance.',
-      href: '/portfolio/web-dev'
+      href: '/services/web-dev#projects'
     },
     // {
     //   id: 4,
@@ -42,70 +42,70 @@ const PortfolioPage = () => {
       image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'AI & Machine Learning',
       description: 'Advanced AI solutions for automation, prediction, and data analysis to drive intelligent decision-making.',
-      href: '/portfolio/ai-ml'
+      href: '/services/ai-ml#projects'
     },
     {
       id: 6,
       image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Internet of Things',
       description: 'Connected device solutions and IoT infrastructure for smart homes, industries, and cities.',
-      href: '/portfolio/iot'
+      href: '/services/iot#projects'
     },
     {
       id: 7,
       image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Graphic Design',
       description: 'Creative visual solutions including branding, UI/UX design, and marketing materials that capture your vision.',
-      href: '/portfolio/design'
+      href: '/services/design#projects'
     },
     {
       id: 8,
       image: 'https://plus.unsplash.com/premium_photo-1661783512537-95fd8d054fa7?q=80&w=1787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Quality Assurance & Testing',
       description: 'Comprehensive testing services ensuring software reliability, performance, and security.',
-      href: '/portfolio/qa'
+      href: '/services/qa#projects'
     },
     {
       id: 9,
       image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Game Development',
       description: 'Immersive gaming experiences across multiple platforms using latest game development technologies.',
-      href: '/portfolio/game-dev'
+      href: '/services/game-dev#projects'
     },
     {
       id: 10,
       image: 'https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Supply Chain Solutions',
       description: 'Digital transformation of supply chains with blockchain, IoT, and advanced analytics integration.',
-      href: '/portfolio/supply-chain'
+      href: '/services/supply-chain#projects'
     },
     {
       id: 11,
       image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Cybersecurity Services',
       description: 'Comprehensive security solutions protecting your digital assets from modern cyber threats.',
-      href: '/portfolio/security'
+      href: '/services/security#projects'
     },
     {
       id: 12,
       image: 'https://plus.unsplash.com/premium_photo-1680700221535-a7aa2aa40a7c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Digital Marketing & Branding',
       description: 'Strategic digital marketing solutions to enhance your brand presence and reach target audiences.',
-      href: '/portfolio/marketing'
+      href: '/services/marketing#projects'
     },
     {
       id: 13,
       image: 'https://plus.unsplash.com/premium_photo-1683836722608-60ab4d1b58e5?q=80&w=3424&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Cloud Solutions',
       description: 'Scalable cloud infrastructure and migration services for optimal business operations.',
-      href: '/portfolio/cloud'
+      href: '/services/cloud#projects'
     },
     {
       id: 14,
       image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'System Integration Services',
       description: 'Seamless integration of multiple systems and applications for enhanced business efficiency.',
-      href: '/portfolio/integration'
+      href: '/services/integration#projects'
     }
   ];
 
@@ -165,33 +165,7 @@ const PortfolioPage = () => {
         </div>
       </div>
 
-      {/* Portfolio Grid
-      <div id="portfolio-grid" className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {portfolioItems.map((item) => (
-            <div
-              key={item.id}
-              className="relative group cursor-pointer overflow-hidden rounded-lg"
-              onClick={() => handleItemClick(item.href)}
-            >
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-[#001219]/0 group-hover:bg-[#001219]/80 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center p-4">
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-sm">{item.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}; */}
+    
 
 
 

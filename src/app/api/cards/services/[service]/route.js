@@ -3,6 +3,7 @@ import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
 export async function GET(request, { params }) {
+ 
   try {
     const cards = await prisma.card.findMany({
       where: {
@@ -15,7 +16,8 @@ export async function GET(request, { params }) {
         description: true,
         imageUrl: true,
         pageName: true
-      }
+      },
+      
     });
     return NextResponse.json(cards);
   } catch (error) {
