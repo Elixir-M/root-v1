@@ -17,7 +17,7 @@ export function HeroScrollDemo() {
               <br />
               <br />
               <span className="text-3xl md:text-[4.5rem] font-bold mt-1 leading-none">
-              Code the Future, Build with Confidence
+                Code the Future, Build with Confidence
               </span>
               <br />
               <br />
@@ -30,7 +30,7 @@ export function HeroScrollDemo() {
           alt="hero"
           height={1000}
           width={1400}
-          className="mx-auto rounded-2xl object-cover w-full h-full object-center"
+          className="mx-auto rounded-2xl w-full h-auto object-contain sm:h-full sm:object-cover object-center"
           draggable={false}
         />
       </ContainerScroll>

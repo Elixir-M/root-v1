@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 import { black } from "tailwindcss/colors";
 import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarousel";
 import { FeaturesSectionDemo } from "@/components/BentoGrid";
+import { WobbleCardDemo } from "@/components/WobbleCard";
 export default function Home() {
-  
   return (
     <div
       className="min-h-screen"
@@ -14,7 +14,8 @@ export default function Home() {
     >
       <Navbar className="top-2" />
       <HeroSection />
-      <HeroScrollDemo />
+      <WobbleCardDemo />
+      {/* <HeroScrollDemo /> */}
       <FeaturesSectionDemo />
       <AppleCardsCarouselDemo />
       <Footer />
