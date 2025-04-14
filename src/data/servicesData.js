@@ -965,328 +965,109 @@ const servicesData = {
       "https://videos.pexels.com/video-files/7689914/7689914-hd_1920_1080_25fps.mp4", // Example cybersecurity/network video
     gradientshade: "#E74C3C", // Example red/alert shade
     cards: [
-      // Network Security
+      // --- Highest Demand / Foundational Tier ---
       {
-        imgSrc: "/assets/img/firewall_ngfw.png", // Placeholder
-        techName: "Firewalls (NGFW)",
-        description: "Network Traffic Filtering",
-        features: [
-          "Monitor and control incoming/outgoing network traffic based on security rules.",
-          "Next-Generation Firewalls (NGFW) add application awareness, IPS, threat intelligence.",
-          "Essential perimeter defense mechanism.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/ids_ips.png", // Placeholder
-        techName: "IDS/IPS",
-        description: "Intrusion Detection & Prevention",
-        features: [
-          "Intrusion Detection Systems (IDS) monitor network/system activity for malicious actions.",
-          "Intrusion Prevention Systems (IPS) actively block detected threats.",
-          "Analyze traffic patterns, signatures, and anomalies.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/vpn_zerotrust.png", // Placeholder
-        techName: "VPNs & Zero Trust Architecture",
-        description: "Secure Access & Modern Security Model",
-        features: [
-          "VPNs (Virtual Private Networks) create secure encrypted connections over public networks.",
-          "Zero Trust Architecture (ZTA): 'Never trust, always verify' security model.",
-          "ZTA focuses on strict identity verification, micro-segmentation, least privilege.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/network_segmentation.png", // Placeholder
-        techName: "Network Segmentation",
-        description: "Dividing Network into Zones",
-        features: [
-          "Splitting a network into smaller, isolated segments or zones.",
-          "Limits the blast radius of security breaches; enhances security.",
-          "Implemented using VLANs, firewalls, micro-segmentation.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Endpoint Security
-      {
-        imgSrc: "/assets/img/edr_xdr.png", // Placeholder
-        techName: "EDR / XDR",
-        description: "Advanced Endpoint/Threat Detection",
-        features: [
-          "Endpoint Detection & Response (EDR): Monitors endpoints, detects threats, enables response.",
-          "Extended Detection & Response (XDR): Integrates data from endpoints, network, cloud, email.",
-          "Provides holistic threat visibility and coordinated response.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/antivirus_antimalware.png", // Placeholder
-        techName: "Antivirus / Anti-Malware",
-        description: "Endpoint Malware Protection",
-        features: [
-          "Detects and removes known viruses, worms, trojans, ransomware, spyware.",
-          "Uses signature-based detection, heuristics, behavioral analysis.",
-          "Fundamental layer of endpoint security.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/mdm_uem.png", // Placeholder
-        techName: "MDM / UEM",
-        description: "Mobile & Unified Endpoint Management",
-        features: [
-          "Mobile Device Management (MDM): Manages and secures mobile devices (smartphones, tablets).",
-          "Unified Endpoint Management (UEM): Extends management to laptops, desktops, IoT.",
-          "Enforces security policies, configurations, application management.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Cloud Security
-      {
-        imgSrc: "/assets/img/cspm_cwpp.png", // Placeholder
-        techName: "CSPM / CWPP",
-        description: "Cloud Security Management",
-        features: [
-          "Cloud Security Posture Management (CSPM): Identifies misconfigurations, compliance risks.",
-          "Cloud Workload Protection Platform (CWPP): Secures workloads (VMs, containers, serverless).",
-          "Essential for managing security in AWS, Azure, GCP environments.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_iam.png", // Placeholder
-        techName: "Cloud IAM",
-        description: "Identity Management in Cloud",
-        features: [
-          "Managing identities and access permissions within cloud platforms (AWS IAM, Azure AD, GCP IAM).",
-          "Controls who can access which cloud resources.",
-          "Utilizes roles, policies, and conditions for fine-grained control.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Application Security (AppSec)
-      {
-        imgSrc: "/assets/img/waf_logo.png", // Placeholder
-        techName: "Web Application Firewall (WAF)",
-        description: "Filtering Web Traffic",
-        features: [
-          "Filters, monitors, and blocks HTTP traffic to and from a web application.",
-          "Protects against common web exploits like SQL injection, XSS.",
-          "Deployed in front of web servers.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/sast_dast.png", // Placeholder
-        techName: "SAST & DAST",
-        description: "Application Security Testing",
-        features: [
-          "Static Application Security Testing (SAST): Analyzes source code for vulnerabilities.",
-          "Dynamic Application Security Testing (DAST): Tests running applications for flaws.",
-          "Integral parts of a Secure Software Development Lifecycle (SSDLC).",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/owasp_top10.png", // Placeholder
-        techName: "OWASP Top 10",
-        description: "Web App Security Risks Standard",
-        features: [
-          "Standard awareness document outlining the most critical web app security risks.",
-          "Includes risks like Injection, Broken Authentication, Sensitive Data Exposure.",
-          "Widely used guide for developers and security professionals.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/ssdlc.png", // Placeholder
-        techName: "Secure SDLC (SSDLC)",
-        description: "Integrating Security into Development",
-        features: [
-          "Building security practices into every phase of the software development lifecycle.",
-          "Includes threat modeling, secure coding standards, security testing (SAST/DAST).",
-          "Aims to build more secure software from the ground up.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Data Security
-      {
-        imgSrc: "/assets/img/encryption.png", // Placeholder
-        techName: "Encryption (At Rest & In Transit)",
-        description: "Protecting Data Confidentiality",
-        features: [
-          "Encoding data so only authorized parties can access it.",
-          "Encryption At Rest: Securing stored data (databases, files).",
-          "Encryption In Transit: Securing data moving across networks (TLS/SSL, VPNs).",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/dlp_logo.png", // Placeholder
-        techName: "Data Loss Prevention (DLP)",
-        description: "Preventing Data Breaches",
-        features: [
-          "Tools and processes to prevent sensitive data from leaving organizational control.",
-          "Monitors data in use, in motion, and at rest.",
-          "Detects and blocks unauthorized data exfiltration attempts.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Identity & Access Management (IAM)
-      {
-        imgSrc: "/assets/img/iam_concept.png", // Placeholder
+        imgSrc: "/assets/img/iam_mfa_sso_pam.png", // Placeholder: Combined IAM concepts
         techName: "Identity & Access Management (IAM)",
-        description: "Managing Digital Identities",
+        description: "Securing Digital Identities & Access",
         features: [
-          "Framework of policies and technologies for managing digital identities.",
-          "Ensures the right individuals access the right resources at the right times.",
-          "Includes authentication, authorization, identity lifecycle management.",
+          "Implementing core IAM frameworks for managing user identities and permissions.",
+          "Deploying Multi-Factor Authentication (MFA) for enhanced security.",
+          "Enabling seamless and secure access with Single Sign-On (SSO).",
+          "Managing and monitoring privileged accounts with Privileged Access Management (PAM).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/mfa_logo.png", // Placeholder
-        techName: "Multi-Factor Authentication (MFA)",
-        description: "Layered Authentication Security",
+        imgSrc: "/assets/img/secops_threat_mgmt.png", // Placeholder: Combined SecOps concepts
+        techName: "Security Operations (SecOps) & Threat Management",
+        description: "Detection, Response & Proactive Defense",
         features: [
-          "Requires users to provide two or more verification factors to gain access.",
-          "Factors include something you know (password), something you have (token), something you are (biometric).",
-          "Significantly increases account security.",
+          "Implementing SIEM for centralized logging and threat detection.",
+          "Leveraging SOAR for automated incident response workflows.",
+          "Conducting Vulnerability Management and Penetration Testing to identify weaknesses.",
+          "Developing Incident Response (IR) plans and utilizing Threat Intelligence.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/sso_logo.png", // Placeholder
-        techName: "Single Sign-On (SSO)",
-        description: "Centralized User Authentication",
+        imgSrc: "/assets/img/network_sec_zerotrust.png", // Placeholder: Combined Network Security concepts
+        techName: "Network Security & Secure Access",
+        description: "Protecting Infrastructure & Controlling Access",
         features: [
-          "Allows users to log in once and access multiple related applications.",
-          "Improves user experience and simplifies credential management.",
-          "Protocols include SAML, OAuth 2.0, OpenID Connect.",
+          "Deploying and managing Firewalls (NGFW) and IDS/IPS systems.",
+          "Implementing Network Segmentation to limit breach impact.",
+          "Securing remote and internal access using VPNs and Zero Trust Architecture (ZTA) principles.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/pam_logo.png", // Placeholder
-        techName: "Privileged Access Management (PAM)",
-        description: "Securing Privileged Accounts",
+        imgSrc: "/assets/img/endpoint_sec_mgmt.png", // Placeholder: Combined Endpoint Security concepts
+        techName: "Endpoint Security & Management",
+        description: "Protecting User Devices & Data",
         features: [
-          "Manages and monitors accounts with elevated privileges (admin accounts).",
-          "Includes features like password vaulting, session monitoring, least privilege enforcement.",
-          "Critical for preventing misuse of powerful accounts.",
+          "Deploying advanced Endpoint Detection & Response (EDR/XDR) solutions.",
+          "Providing foundational Antivirus/Anti-Malware protection.",
+          "Managing and securing diverse endpoints (desktops, laptops, mobile) with MDM/UEM.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
-
-      // Security Operations (SecOps)
+      // --- High/Medium Demand / Context-Driven Tier ---
       {
-        imgSrc: "/assets/img/siem_logo.png", // Placeholder
-        techName: "SIEM",
-        description: "Security Information & Event Management",
+        imgSrc: "/assets/img/compliance_grc.png", // Placeholder: Compliance/GRC concepts
+        techName: "Compliance, Governance & Risk Management",
+        description: "Meeting Standards & Managing Security Risk",
         features: [
-          "Collects and aggregates log data from various sources.",
-          "Analyzes data for security threats, provides real-time alerts.",
-          "Enables security monitoring, incident investigation, compliance reporting.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/soar_logo.png", // Placeholder
-        techName: "SOAR",
-        description: "Security Orchestration, Automation, Response",
-        features: [
-          "Integrates security tools and automates incident response workflows.",
-          "Uses playbooks to define automated actions for specific alerts.",
-          "Improves response times and efficiency of security teams.",
+          "Assisting with adherence to major Compliance Frameworks (ISO 27001, NIST, SOC 2, GDPR, HIPAA, PCI DSS).",
+          "Establishing security Governance structures and policies.",
+          "Conducting Risk Assessments and developing mitigation strategies.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/vulnerability_management.png", // Placeholder
-        techName: "Vulnerability Management",
-        description: "Identifying & Remediating Weaknesses",
+        imgSrc: "/assets/img/cloud_sec_cspm_cwpp_iam.png", // Placeholder: Combined Cloud Security concepts
+        techName: "Cloud Security (Posture, Workloads, IAM)",
+        description: "Securing Cloud Environments (AWS, Azure, GCP)",
         features: [
-          "Process of identifying, classifying, prioritizing, and remediating vulnerabilities.",
-          "Involves regular scanning using tools like Nessus, Qualys, OpenVAS.",
-          "Continuous process to reduce attack surface.",
+          "Implementing Cloud Security Posture Management (CSPM) to identify misconfigurations.",
+          "Deploying Cloud Workload Protection Platforms (CWPP) for VMs, containers, serverless.",
+          "Managing identities and access securely within cloud platforms using Cloud IAM.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/pentesting.png", // Placeholder
-        techName: "Penetration Testing",
-        description: "Ethical Hacking Simulation",
+        imgSrc: "/assets/img/appsec_devsecops.png", // Placeholder: AppSec/DevSecOps concepts
+        techName: "Application Security (AppSec) & DevSecOps",
+        description: "Securing Software & Development Lifecycle",
         features: [
-          "Authorized simulated cyberattack to evaluate system security.",
-          "Identifies exploitable vulnerabilities from an attacker's perspective.",
-          "Different types: black-box, white-box, grey-box.",
+          "Integrating security into the SDLC (SSDLC / DevSecOps).",
+          "Protecting web applications with Web Application Firewalls (WAF).",
+          "Conducting Static (SAST) and Dynamic (DAST) Application Security Testing.",
+          "Applying secure coding practices based on standards like OWASP Top 10.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/incident_response.png", // Placeholder
-        techName: "Incident Response (IR)",
-        description: "Managing Security Breaches",
+        imgSrc: "/assets/img/data_sec_privacy.png", // Placeholder: Data Security/Privacy concepts
+        techName: "Data Security & Privacy",
+        description: "Protecting Sensitive Information",
         features: [
-          "Process for handling cybersecurity incidents and data breaches.",
-          "Phases include preparation, identification, containment, eradication, recovery, lessons learned.",
-          "Aims to minimize damage and restore normal operations quickly.",
+          "Implementing Encryption for data at rest and in transit (TLS/SSL).",
+          "Deploying Data Loss Prevention (DLP) solutions to prevent data exfiltration.",
+          "Developing data classification and handling policies.",
+          "Assisting with data privacy regulation compliance.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
+      // --- Specialized / Emerging Tier ---
       {
-        imgSrc: "/assets/img/threat_intelligence.png", // Placeholder
-        techName: "Threat Intelligence",
-        description: "Understanding Cyber Threats",
+        imgSrc: "/assets/img/emerging_sec_ai_iot.png", // Placeholder: AI/IoT security concepts
+        techName: "Emerging Security Challenges (AI, IoT/OT)",
+        description: "Addressing Advanced & Specialized Threats",
         features: [
-          "Collecting and analyzing information about current and potential threats.",
-          "Provides context on attackers, motivations, TTPs (Tactics, Techniques, Procedures).",
-          "Helps organizations make informed security decisions.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Compliance & Governance
-      {
-        imgSrc: "/assets/img/compliance_frameworks.png", // Placeholder
-        techName: "Compliance Frameworks",
-        description: "Standards & Regulations",
-        features: [
-          "Guidelines and requirements for information security management.",
-          "Examples: ISO 27001 (ISMS), NIST CSF, GDPR (Data Privacy), HIPAA (Healthcare), PCI DSS (Payments), SOC 2.",
-          "Ensuring adherence is crucial for trust and avoiding penalties.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Emerging Areas
-      {
-        imgSrc: "/assets/img/ai_cybersecurity.png", // Placeholder
-        techName: "AI in Cybersecurity",
-        description: "Leveraging AI for Defense",
-        features: [
-          "Using AI/ML for enhanced threat detection, anomaly analysis, automated response.",
-          "Analyzing vast datasets to identify sophisticated attacks.",
-          "Also presents new challenges (adversarial AI).",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/iot_ot_security.png", // Placeholder
-        techName: "IoT / OT Security",
-        description: "Securing Connected Devices & Industrial Systems",
-        features: [
-          "Addressing security challenges specific to Internet of Things (IoT) devices.",
-          "Protecting Operational Technology (OT) used in industrial control systems (ICS).",
-          "Requires specialized approaches due to device constraints and criticality.",
+          "Leveraging AI/ML for enhanced threat detection and response in cybersecurity.",
+          "Developing security strategies for Internet of Things (IoT) deployments.",
+          "Securing Operational Technology (OT) and Industrial Control Systems (ICS).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
@@ -1317,203 +1098,81 @@ const servicesData = {
       "https://videos.pexels.com/video-files/8093278/8093278-hd_1920_1080_25fps.mp4", // Example cloud/data center video
     gradientshade: "#3498DB", // Example blue/cloud shade
     cards: [
-      // Compute Services
+      // --- Highest Demand Tier ---
       {
-        imgSrc: "/assets/img/cloud_vms.png", // Placeholder
-        techName: "Virtual Machines (IaaS)",
-        description: "Scalable On-Demand Computing",
+        imgSrc: "/assets/img/cloud_compute_all.png", // Placeholder: Combined Compute icons
+        techName: "Cloud Compute Services (VMs, Containers, Serverless)",
+        description: "Flexible & Scalable Application Hosting",
         features: [
-          "Provision virtual servers (Linux, Windows) with customizable CPU, RAM, storage.",
-          "Foundation of Infrastructure as a Service (IaaS) offering flexibility and control.",
-          "Examples: AWS EC2, Azure Virtual Machines, Google Compute Engine.",
+          "Provisioning traditional Virtual Machines (IaaS) for full control (EC2, Azure VM, GCE).",
+          "Deploying containerized applications with orchestration (Kubernetes - EKS, AKS, GKE).",
+          "Utilizing event-driven Serverless functions for cost efficiency and auto-scaling (Lambda, Azure Functions, Cloud Functions).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_containers.png", // Placeholder
-        techName: "Containers & Orchestration (e.g., Kubernetes)",
-        description: "Application Packaging & Management",
+        imgSrc: "/assets/img/cloud_mgmt_migrate_monitor.png", // Placeholder: Mgmt/Migrate/Monitor concepts
+        techName: "Cloud Management, Migration & Monitoring",
+        description: "Operations, Transitioning & Observability",
         features: [
-          "Package applications and dependencies for consistent deployment (Docker).",
-          "Orchestration platforms (Kubernetes, EKS, AKS, GKE) automate deployment, scaling, management.",
-          "Enables microservices architectures and efficient resource utilization.",
+          "Executing Cloud Migration strategies (Rehost, Replatform, Refactor).",
+          "Implementing Monitoring & Observability for performance and health (CloudWatch, Azure Monitor, Google Cloud Ops).",
+          "Managing Hybrid & Multi-Cloud environments for consistency and governance (Azure Arc, Anthos).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_serverless.png", // Placeholder
-        techName: "Serverless Computing (FaaS)",
-        description: "Event-Driven Code Execution",
+        imgSrc: "/assets/img/cloud_dev_devops_iac.png", // Placeholder: Dev/DevOps/IaC concepts
+        techName: "Cloud Development & DevOps Enablement",
+        description: "Modern Application Delivery & Automation",
         features: [
-          "Run code without provisioning or managing servers (Functions as a Service).",
-          "Pay only for compute time consumed; scales automatically.",
-          "Examples: AWS Lambda, Azure Functions, Google Cloud Functions.",
+          "Leveraging Platform as a Service (PaaS) for simplified deployments (Elastic Beanstalk, App Service, App Engine).",
+          "Building automated CI/CD pipelines for rapid and reliable software delivery (CodePipeline, Azure DevOps, Cloud Build).",
+          "Managing infrastructure efficiently and consistently using Infrastructure as Code (Terraform, CloudFormation, ARM).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
-
-      // Storage Services
+      // --- High/Medium Demand Tier ---
       {
-        imgSrc: "/assets/img/cloud_object_storage.png", // Placeholder
-        techName: "Object Storage",
-        description: "Scalable Data Storage",
+        imgSrc: "/assets/img/cloud_storage_object_block.png", // Placeholder: Combined Storage icons
+        techName: "Cloud Storage Solutions (Object & Block)",
+        description: "Scalable, Durable, and Performant Data Storage",
         features: [
-          "Highly durable and scalable storage for unstructured data (images, videos, backups).",
-          "Accessed via APIs; cost-effective for large volumes.",
-          "Examples: AWS S3, Azure Blob Storage, Google Cloud Storage.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_block_storage.png", // Placeholder
-        techName: "Block Storage",
-        description: "Persistent VM Storage",
-        features: [
-          "Provides persistent block-level storage volumes for use with VMs.",
-          "Ideal for databases, file systems, applications requiring low-latency access.",
-          "Examples: AWS EBS, Azure Managed Disks, Google Persistent Disk.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Database Services
-      {
-        imgSrc: "/assets/img/cloud_managed_db.png", // Placeholder
-        techName: "Managed Databases (SQL & NoSQL)",
-        description: "Simplified Database Operations",
-        features: [
-          "Cloud providers manage patching, backups, scaling, high availability for databases.",
-          "Supports various engines: Relational (RDS, Azure SQL, Cloud SQL) & NoSQL (DynamoDB, Cosmos DB, Firestore).",
-          "Reduces operational overhead for database administrators.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Networking Services
-      {
-        imgSrc: "/assets/img/cloud_vpc.png", // Placeholder
-        techName: "Virtual Private Cloud (VPC)",
-        description: "Isolated Network Environments",
-        features: [
-          "Logically isolated section of the public cloud to launch resources in a virtual network.",
-          "Provides control over IP addressing, subnets, route tables, network gateways.",
-          "Fundamental for network security and organization in the cloud.",
+          "Utilizing highly scalable Object Storage for unstructured data, backups, static assets (S3, Blob Storage, GCS).",
+          "Providing persistent Block Storage volumes for VMs and databases requiring low latency (EBS, Managed Disks, Persistent Disk).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_load_balancer.png", // Placeholder
-        techName: "Load Balancing",
-        description: "Distributing Application Traffic",
+        imgSrc: "/assets/img/cloud_managed_databases.png", // Placeholder: Managed DB icon
+        techName: "Managed Cloud Databases (SQL & NoSQL)",
+        description: "Reliable & Scalable Database Services",
         features: [
-          "Automatically distributes incoming application traffic across multiple targets (VMs, containers).",
-          "Increases application availability, fault tolerance, and scalability.",
-          "Operates at different layers (Application Load Balancer, Network Load Balancer).",
+          "Deploying managed relational databases (AWS RDS, Azure SQL, Google Cloud SQL).",
+          "Utilizing managed NoSQL databases for flexibility and scale (DynamoDB, Cosmos DB, Firestore).",
+          "Reducing operational overhead with automated backups, patching, scaling, and high availability.",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_cdn.png", // Placeholder
-        techName: "Content Delivery Network (CDN)",
-        description: "Accelerated Content Delivery",
+        imgSrc: "/assets/img/cloud_network_cdn_lb.png", // Placeholder: Network/CDN/LB concepts
+        techName: "Cloud Networking & Content Delivery",
+        description: "Secure Connectivity, Scalability & Performance",
         features: [
-          "Globally distributed network of proxy servers caching content closer to users.",
-          "Reduces latency and improves performance for websites and applications.",
-          "Examples: AWS CloudFront, Azure CDN, Google Cloud CDN.",
+          "Designing secure and isolated Virtual Private Clouds (VPCs).",
+          "Implementing Load Balancing for application availability and scalability.",
+          "Accelerating content delivery globally with Content Delivery Networks (CDNs).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
-
-      // Platform as a Service (PaaS) & Development
+      // --- Medium Demand (Specialized) Tier ---
       {
-        imgSrc: "/assets/img/cloud_paas.png", // Placeholder
-        techName: "Platform as a Service (PaaS)",
-        description: "Managed Application Platforms",
+        imgSrc: "/assets/img/cloud_advanced_ai_bigdata.png", // Placeholder: AI/Big Data concepts
+        techName: "Advanced Cloud Services (Big Data, AI/ML)",
+        description: "Data Analytics & Intelligent Applications",
         features: [
-          "Provides a platform allowing customers to develop, run, and manage applications without infrastructure complexity.",
-          "Includes OS, programming language execution environment, database, web server.",
-          "Examples: Heroku, AWS Elastic Beanstalk, Azure App Service, Google App Engine.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_devops_cicd.png", // Placeholder
-        techName: "DevOps & CI/CD Tools",
-        description: "Automated Software Delivery",
-        features: [
-          "Cloud platforms offer integrated tools for source control, build, testing, deployment.",
-          "Facilitates Continuous Integration and Continuous Delivery/Deployment (CI/CD) pipelines.",
-          "Examples: AWS CodePipeline/CodeBuild, Azure DevOps, Google Cloud Build.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_iac.png", // Placeholder
-        techName: "Infrastructure as Code (IaC)",
-        description: "Managing Infrastructure via Code",
-        features: [
-          "Managing and provisioning infrastructure through machine-readable definition files.",
-          "Enables automation, version control, and repeatable environment creation.",
-          "Tools: Terraform, AWS CloudFormation, Azure Resource Manager (ARM), Google Cloud Deployment Manager.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Advanced Services
-      {
-        imgSrc: "/assets/img/cloud_bigdata.png", // Placeholder
-        techName: "Big Data & Analytics",
-        description: "Processing & Analyzing Large Datasets",
-        features: [
-          "Managed services for data warehousing, data lakes, ETL, stream processing, and analytics.",
-          "Scalable platforms to derive insights from vast amounts of data.",
-          "Examples: AWS Redshift/EMR, Azure Synapse/Data Factory, Google BigQuery/Dataproc.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_ai_ml.png", // Placeholder
-        techName: "AI & Machine Learning Services",
-        description: "Integrating Intelligence into Apps",
-        features: [
-          "Pre-trained AI services (vision, speech, language) and platforms for building custom ML models.",
-          "Tools for data labeling, model training, deployment, and management.",
-          "Examples: AWS SageMaker/Rekognition, Azure Machine Learning/Cognitive Services, Google AI Platform/Vision AI.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-
-      // Management & Migration
-      {
-        imgSrc: "/assets/img/cloud_hybrid_multi.png", // Placeholder
-        techName: "Hybrid & Multi-Cloud Management",
-        description: "Managing Diverse Cloud Environments",
-        features: [
-          "Tools and platforms to manage resources across on-premises, private, and public clouds.",
-          "Provides consistent management, governance, and operations.",
-          "Examples: Azure Arc, Google Anthos, AWS Outposts (for hybrid).",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_migration.png", // Placeholder
-        techName: "Cloud Migration Strategies",
-        description: "Moving Workloads to the Cloud",
-        features: [
-          "Methodologies for migrating applications and data (Rehost, Replatform, Refactor, Rearchitect, etc.).",
-          "Services and tools offered by cloud providers to assist migration.",
-          "Requires careful planning, assessment, and execution.",
-        ],
-        deployedLink: "https://your-deployed-site.com", // Placeholder
-      },
-      {
-        imgSrc: "/assets/img/cloud_monitoring.png", // Placeholder
-        techName: "Monitoring & Observability",
-        description: "Performance & Health Tracking",
-        features: [
-          "Services for collecting metrics, logs, and traces from cloud resources and applications.",
-          "Provides visibility into performance, health, and troubleshooting.",
-          "Examples: AWS CloudWatch, Azure Monitor, Google Cloud Operations (Stackdriver).",
+          "Leveraging managed Big Data platforms for processing and analytics (Redshift, Synapse, BigQuery).",
+          "Utilizing cloud-based AI/ML services for building intelligent applications (SageMaker, Azure ML, Vertex AI, Cognitive Services).",
         ],
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },

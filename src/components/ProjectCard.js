@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 
 const ProjectCard = ({ id, image, title, description, techStacks = [] }) => {
@@ -15,15 +15,15 @@ const ProjectCard = ({ id, image, title, description, techStacks = [] }) => {
       >
         {/* Image */}
         <a href={`/projects/${id}`}>
-        <div className="p-4">
-          <div className="relative h-64 rounded-xl overflow-hidden">
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-110"
-            />
+          <div className="p-4">
+            <div className="relative h-64 rounded-xl overflow-hidden">
+              <img
+                src={image}
+                alt={title}
+                className="w-full h-full object-cover rounded-xl transition-transform duration-500 hover:scale-110"
+              />
+            </div>
           </div>
-        </div>
         </a>
 
         {/* Content */}
