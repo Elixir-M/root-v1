@@ -1,6 +1,5 @@
-
 // export default ProjectDetailsPage;
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -19,7 +18,6 @@ const ProjectDetailPage = ({ project }) => {
   useEffect(() => {
     setIsClient(true);
   }, []);
- 
 
   const settings = {
     dots: true,
@@ -31,7 +29,6 @@ const ProjectDetailPage = ({ project }) => {
     autoplaySpeed: 3000,
     fade: true,
     arrows: true,
-    
   };
 
   if (!isClient) {
@@ -49,7 +46,7 @@ const ProjectDetailPage = ({ project }) => {
             {project.gallery?.length > 0 ? (
               <Slider {...settings}>
                 {project.gallery.map((img, index) => (
-                  <div key={index} >
+                  <div key={index}>
                     <img
                       src={img}
                       alt={`${project.title} image ${index + 1}`}
@@ -68,13 +65,13 @@ const ProjectDetailPage = ({ project }) => {
 
         {/* Paragraph 1 */}
         <div className="w-full lg:w-1/2 flex items-center">
-          <motion.p 
+          <motion.p
             className="text-lg text-gray-300 leading-relaxed"
-            initial={{ opacity: 0, y: 40 }} 
-            animate={{ opacity: 1, y: 0 }} 
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {project.para1}
+            <div dangerouslySetInnerHTML={{ __html: project.para1 }} />
           </motion.p>
         </div>
       </div>
@@ -82,7 +79,9 @@ const ProjectDetailPage = ({ project }) => {
       {/* Middle Section: Para 2 + TechStacks */}
       <div className="flex flex-col lg:flex-row gap-8 mb-12">
         <div className="w-full lg:w-3/4">
-          <p className="text-lg text-gray-300 leading-relaxed">{project.para2}</p>
+          <p className="text-lg text-gray-300 leading-relaxed">
+            <div dangerouslySetInnerHTML={{ __html: project.para2 }} />
+          </p>
         </div>
 
         <div className="w-full lg:w-1/4 space-y-3">
@@ -93,7 +92,9 @@ const ProjectDetailPage = ({ project }) => {
                 className="h-3 w-3 rounded-full"
                 style={{ backgroundColor: tech.color }}
               ></span>
-              <span className="text-gray-300 text-sm hover:text-white transition-colors duration-300">{tech.name}</span>
+              <span className="text-gray-300 text-sm hover:text-white transition-colors duration-300">
+                {tech.name}
+              </span>
             </div>
           ))}
         </div>
@@ -108,7 +109,9 @@ const ProjectDetailPage = ({ project }) => {
               key={idx}
               className="bg-slate-800 p-4 rounded-xl hover:shadow-lg hover:shadow-emerald-500 transition duration-300 text-center"
             >
-              <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
+              <div className="text-3xl font-bold text-white mb-2">
+                {stat.value}
+              </div>
               <div className="text-sm text-gray-400">{stat.label}</div>
             </div>
           ))}
@@ -117,7 +120,9 @@ const ProjectDetailPage = ({ project }) => {
 
       {/* Bottom Section: Para 3 */}
       <div className="max-w-5xl mx-auto">
-        <p className="text-lg text-gray-300 leading-relaxed text-center">{project.para3}</p>
+        <p className="text-lg text-gray-300 leading-relaxed text-center">
+          <div dangerouslySetInnerHTML={{ __html: project.para3 }} />
+        </p>
       </div>
     </div>
   );
