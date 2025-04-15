@@ -138,8 +138,10 @@ const projectsData = {
       gallery: ["/assets/img/studydao.png", "/assets/img/e-logo.png"],
 
       techStacks: [
-        { name: "Solidity", color: "#f3ba2f" },
-        { name: "React", color: "#61dafb" },
+        { name: "ChatGPT-4", color: "#f3ba2f" },
+        { name: "React", color: "#f3ba2f" },
+        { name: "Python", color: "#61dafb" },
+        { name: "Azure", color: "#61dafb" },
       ],
       para1:
         "<p>A mid-sized company's HR department was inundated with repetitive questions from employees about benefits, leave policies, expense procedures, and IT support. New hire onboarding involved numerous manual check-ins and answering the same basic questions repeatedly, consuming significant HR bandwidth.</p>",
