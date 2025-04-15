@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { Navbar } from "./Navbar";
 
 const ProjectCard = ({ id, image, title, description, techStacks = [] }) => {
   const [isHovered, setIsHovered] = useState(false);
