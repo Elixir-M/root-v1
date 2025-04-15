@@ -38,6 +38,12 @@ const ProjectDetailPage = ({ project }) => {
 
   return (
     <div className="bg-black text-white min-h-screen px-6 py-16">
+      <p className="text-center text-white bg-gradient-to-r from-purple-800 via-pink-500 to-red-500 p-4 rounded-2xl shadow-lg text-3xl font-semibold">
+        {project.title}
+      </p>
+      <br />
+
+      <br />
       {/* Top Section: Gallery + Para 1 */}
       <div className="flex flex-col lg:flex-row gap-8 mb-12">
         {/* Image Gallery (Carousel) */}
@@ -75,7 +81,6 @@ const ProjectDetailPage = ({ project }) => {
           </motion.p>
         </div>
       </div>
-
       {/* Middle Section: Para 2 + TechStacks */}
       <div className="flex flex-col lg:flex-row gap-8 mb-12">
         <div className="w-full lg:w-3/4">
@@ -99,7 +104,6 @@ const ProjectDetailPage = ({ project }) => {
           ))}
         </div>
       </div>
-
       {/* Stats Table */}
       <div className="bg-gray-900 p-6 rounded-2xl shadow-md mb-12">
         <h4 className="text-xl font-semibold mb-4">Project Stats</h4>
@@ -117,7 +121,6 @@ const ProjectDetailPage = ({ project }) => {
           ))}
         </div>
       </div>
-
       {/* Bottom Section: Para 3 */}
       <div className="max-w-5xl mx-auto">
         <p className="text-lg text-gray-300 leading-relaxed text-center">
