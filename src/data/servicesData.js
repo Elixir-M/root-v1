@@ -237,7 +237,7 @@ const servicesData = {
     serviceName: "Mobile App Development",
     tagline: "Engaging Mobile Experiences, Expertly Crafted.",
     videoUrl:
-      "https://videos.pexels.com/video-files/3999528/3999528-uhd_2732_1440_25fps.mp4", // Example mobile dev video
+      "https://videos.pexels.com/video-files/853919/853919-hd_1920_1080_25fps.mp4", // Example mobile dev video
     gradientshade: "#3498DB", // Example blue shade
     cards: [
       // Platforms & Native Languages
@@ -365,7 +365,7 @@ const servicesData = {
     serviceName: "Web Development",
     tagline: "Building Responsive, Scalable, and Engaging Web Solutions.",
     videoUrl:
-      "https://videos.pexels.com/video-files/5775187/5775187-uhd_2732_1440_25fps.mp4", // Example web dev video
+      "https://videos.pexels.com/video-files/855411/855411-hd_1920_1080_25fps.mp4", // Example web dev video
     gradientshade: "#2ECC71", // Example green shade
     cards: [
       // --- Highest Demand Tier ---
@@ -523,7 +523,7 @@ const servicesData = {
     serviceName: "AI & Machine Learning",
     tagline: "Unlocking Insights and Automation with Intelligent Solutions.",
     videoUrl:
-      "https://videos.pexels.com/video-files/8140241/8140241-uhd_3840_2160_25fps.mp4", // Example AI/ML video
+      "https://videos.pexels.com/video-files/3141210/3141210-uhd_2560_1440_25fps.mp4", // Example AI/ML video
     gradientshade: "#8E44AD", // Example purple shade
     cards: [
       // --- Highest Demand Tier ---
@@ -659,7 +659,7 @@ const servicesData = {
     serviceName: "Application Development",
     tagline: "Building Robust, Scalable, and Custom Software Applications.",
     videoUrl:
-      "https://videos.pexels.com/video-files/3183166/3183166-uhd_3840_2160_25fps.mp4", // Example coding/dev video
+      "https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4", // Example coding/dev video
     gradientshade: "#1ABC9C", // Example teal/turquoise shade
     cards: [
       // Core Programming Languages
@@ -962,7 +962,7 @@ const servicesData = {
     tagline:
       "Protecting Your Digital Assets with Proactive Security Solutions.",
     videoUrl:
-      "https://videos.pexels.com/video-files/7689914/7689914-hd_1920_1080_25fps.mp4", // Example cybersecurity/network video
+      "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4", // Example cybersecurity/network video
     gradientshade: "#E74C3C", // Example red/alert shade
     cards: [
       // --- Highest Demand / Foundational Tier ---
@@ -1199,7 +1199,7 @@ const servicesData = {
     serviceName: "System Integration Services",
     tagline: "Connecting Your Systems for Seamless Operations and Data Flow.",
     videoUrl:
-      "https://videos.pexels.com/video-files/8573969/8573969-hd_1920_1080_25fps.mp4", // Example connectivity/network video
+      "https://videos.pexels.com/video-files/7141174/7141174-uhd_2560_1440_24fps.mp4", // Example connectivity/network video
     gradientshade: "#5D6D7E", // Example professional grey/slate shade
     cards: [
       // Core Integration Concepts
@@ -1330,7 +1330,7 @@ const servicesData = {
     tagline:
       "Ensuring Software Quality, Reliability, and Performance Through Comprehensive Testing.", // Slightly enhanced tagline
     videoUrl:
-      "https://videos.pexels.com/video-files/5477840/5477840-hd_1920_1080_25fps.mp4", // Example software testing/code analysis video
+     "https://videos.pexels.com/video-files/2792370/2792370-hd_1920_1080_30fps.mp4", // Example software testing/code analysis video
     gradientshade: "#2ECC71", // Example reliable green shade
     cards: [
       // QA Process & Strategy
@@ -1546,7 +1546,7 @@ const servicesData = {
     serviceName: "Game Development",
     tagline: "Creating Immersive and Engaging Gaming Experiences.",
     videoUrl:
-      "https://videos.pexels.com/video-files/7168356/7168356-hd_1920_1080_25fps.mp4", // Example game development/graphics video
+      "https://videos.pexels.com/video-files/6498238/6498238-uhd_2560_1440_25fps.mp4", // Example game development/graphics video
     gradientshade: "#F39C12", // Example vibrant orange shade
     cards: [
       // Core Engines & Technology

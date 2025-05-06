@@ -6,6 +6,7 @@ import { black } from "tailwindcss/colors";
 import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarousel";
 import { FeaturesSectionDemo } from "@/components/BentoGrid";
 import { WobbleCardDemo } from "@/components/WobbleCard";
+import VideoHero from "@/components/VideoHero";
 export default function Home() {
   return (
     <div
@@ -13,6 +14,7 @@ export default function Home() {
       style={{ backgroundColor: black }} // Lighter shade of black
     >
       <Navbar className="top-2" />
+      {/* <VideoHero/> */}
       <HeroSection />
       <WobbleCardDemo />
       {/* <HeroScrollDemo /> */}
