@@ -238,7 +238,7 @@ const servicesData = {
     tagline: "Engaging Mobile Experiences, Expertly Crafted.",
     videoUrl:
       "https://videos.pexels.com/video-files/853919/853919-hd_1920_1080_25fps.mp4", // Example mobile dev video
-    gradientshade: "#3498DB", // Example blue shade
+    gradientshade: "#000000", // Example blue shade
     cards: [
       // Platforms & Native Languages
       {
@@ -366,7 +366,7 @@ const servicesData = {
     tagline: "Building Responsive, Scalable, and Engaging Web Solutions.",
     videoUrl:
       "https://videos.pexels.com/video-files/855411/855411-hd_1920_1080_25fps.mp4", // Example web dev video
-    gradientshade: "#2ECC71", // Example green shade
+    gradientshade: "#000000", // Example green shade
     cards: [
       // --- Highest Demand Tier ---
       {
@@ -524,7 +524,7 @@ const servicesData = {
     tagline: "Unlocking Insights and Automation with Intelligent Solutions.",
     videoUrl:
       "https://videos.pexels.com/video-files/3141210/3141210-uhd_2560_1440_25fps.mp4", // Example AI/ML video
-    gradientshade: "#8E44AD", // Example purple shade
+    gradientshade: "#000000", // Example purple shade
     cards: [
       // --- Highest Demand Tier ---
       {
@@ -660,7 +660,7 @@ const servicesData = {
     tagline: "Building Robust, Scalable, and Custom Software Applications.",
     videoUrl:
       "https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4", // Example coding/dev video
-    gradientshade: "#1ABC9C", // Example teal/turquoise shade
+    gradientshade: "#000000", // Example teal/turquoise shade
     cards: [
       // Core Programming Languages
       {
@@ -963,7 +963,7 @@ const servicesData = {
       "Protecting Your Digital Assets with Proactive Security Solutions.",
     videoUrl:
       "https://videos.pexels.com/video-files/6963744/6963744-hd_1920_1080_25fps.mp4", // Example cybersecurity/network video
-    gradientshade: "#E74C3C", // Example red/alert shade
+    gradientshade: "#000000", // Example red/alert shade
     cards: [
       // --- Highest Demand / Foundational Tier ---
       {
@@ -1096,7 +1096,7 @@ const servicesData = {
       "Leveraging the Cloud for Scalability, Innovation, and Efficiency.",
     videoUrl:
       "https://videos.pexels.com/video-files/8093278/8093278-hd_1920_1080_25fps.mp4", // Example cloud/data center video
-    gradientshade: "#3498DB", // Example blue/cloud shade
+    gradientshade: "#000000", // Example blue/cloud shade
     cards: [
       // --- Highest Demand Tier ---
       {
@@ -1200,7 +1200,7 @@ const servicesData = {
     tagline: "Connecting Your Systems for Seamless Operations and Data Flow.",
     videoUrl:
       "https://videos.pexels.com/video-files/7141174/7141174-uhd_2560_1440_24fps.mp4", // Example connectivity/network video
-    gradientshade: "#5D6D7E", // Example professional grey/slate shade
+    gradientshade: "#000000", // Example professional grey/slate shade
     cards: [
       // Core Integration Concepts
       {
@@ -1331,7 +1331,7 @@ const servicesData = {
       "Ensuring Software Quality, Reliability, and Performance Through Comprehensive Testing.", // Slightly enhanced tagline
     videoUrl:
      "https://videos.pexels.com/video-files/2792370/2792370-hd_1920_1080_30fps.mp4", // Example software testing/code analysis video
-    gradientshade: "#2ECC71", // Example reliable green shade
+    gradientshade: "#000000", // Example reliable green shade
     cards: [
       // QA Process & Strategy
       {
@@ -1547,7 +1547,7 @@ const servicesData = {
     tagline: "Creating Immersive and Engaging Gaming Experiences.",
     videoUrl:
       "https://videos.pexels.com/video-files/6498238/6498238-uhd_2560_1440_25fps.mp4", // Example game development/graphics video
-    gradientshade: "#F39C12", // Example vibrant orange shade
+    gradientshade: "#000000", // Example vibrant orange shade
     cards: [
       // Core Engines & Technology
       {
@@ -1713,7 +1713,7 @@ const servicesData = {
       "Optimizing Your Supply Chain for Efficiency, Visibility, and Resilience.",
     videoUrl:
       "https://videos.pexels.com/video-files/5021910/5021910-hd_1920_1080_30fps.mp4", // Example logistics/warehouse/global trade video
-    gradientshade: "#1ABC9C", // Example turquoise/green shade
+    gradientshade: "#000000", // Example turquoise/green shade
     cards: [
       // Planning & Strategy
       {
@@ -1878,7 +1878,7 @@ const servicesData = {
     tagline: "Building Your Brand and Driving Growth in the Digital Landscape.",
     videoUrl:
       "https://videos.pexels.com/video-files/3194231/3194231-hd_1920_1080_25fps.mp4", // Example digital marketing/social media/analytics video
-    gradientshade: "#8E44AD", // Example purple shade
+    gradientshade: "#000000", // Example purple shade
     cards: [
       // Branding & Strategy
       {
@@ -2034,7 +2034,7 @@ const servicesData = {
     tagline: "Manage Your Content Effortlessly, Power Your Digital Presence.",
     videoUrl:
       "https://videos.pexels.com/video-files/6476260/6476260-hd_1920_1080_25fps.mp4", // Example CMS/web video
-    gradientshade: "#F39C12", // Example orange shade
+    gradientshade: "#000000", // Example orange shade
     cards: [
       // Core CMS Platforms (Traditional & Headless)
       {
