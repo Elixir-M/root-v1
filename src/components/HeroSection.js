@@ -74,9 +74,9 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      <div className="mt-[calc(-20vh+5vw)]">
+      {/* <div className="mt-[calc(-20vh+5vw)]">
         <FocusCardsDemo />
-      </div>
+      </div> */}
     </div>
   );
 };

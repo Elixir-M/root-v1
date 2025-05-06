@@ -20,17 +20,16 @@ export function WobbleCardDemo() {
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-8 w-full">
               <div className="lg:w-1/2 z-10">
                 <h2 className="text-left text-balance text-lg lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Gippity AI powers the entire universe
+                Future-Ready Teams. Future-Proof Tech.
                 </h2>
                 <p className="mt-2 lg:mt-4 text-left text-sm lg:text-base text-neutral-200">
-                  With over 100,000 mothly active bot users, Gippity AI is the
-                  most popular AI platform for developers.
+                <b>Tech talent that just gets it.</b> Whether it's blockchain with Solidity or full-stack builds in React and AI/ML, we bring the expertise to you.
                 </p>
               </div>
               <div className="lg:w-1/2 flex justify-center lg:justify-end mt-2 lg:mt-0">
                 <img
-                  src="https://images.unsplash.com/photo-1731432245362-26f9c0f1ba2f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="linear demo image"
+                  src="https://www.mindinventory.com/blog/wp-content/uploads/2023/06/blockchain-trends.webp"
+                  alt="development trends"
                   className="object-contain rounded-2xl w-full h-[120px] lg:h-auto max-w-[200px] lg:max-w-full"
                 />
               </div>
@@ -39,18 +38,12 @@ export function WobbleCardDemo() {
 
           <WobbleCard containerClassName="col-span-1 min-h-[180px]">
             <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-              No shirt, no shoes, no weapons.
+            From Hype to Reality: AI & ML Made Simple
             </h2>
             <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
-              If someone yells "stop!", goes limp, or taps out, the fight is
-              over.
+            <b>Cut through the noise of Generative AI.</b> We build smarter, scalable solutions using TensorFlow, PyTorch, and custom ML models tailored to your business.
               <br />
-              <a
-                href="https://jamesclear.com/articles"
-                className="text-blue-400 hover:text-blue-300 hover:underline"
-              >
-                Read More
-              </a>
+              
             </p>
           </WobbleCard>
 
@@ -61,18 +54,16 @@ export function WobbleCardDemo() {
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 w-full">
               <div className="lg:w-1/2 z-10">
                 <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Signup for blazing-fast cutting-edge state of the art Gippity
-                  AI wrapper today!
+                Immersive Web Experiences in 3D
                 </h2>
                 <p className="mt-4 text-left text-base/6 text-neutral-200">
-                  With over 100,000 mothly active bot users, Gippity AI is the
-                  most popular AI platform for developers.
+                <b>Futuristic design, seamless performance.</b> We craft stunning 3D websites with Three.js, React Three Fiber, and Next.js—bringing your ideas to life.
                 </p>
               </div>
               <div className="lg:w-1/2 flex justify-center lg:justify-end">
                 <img
-                  src="https://images.unsplash.com/photo-1731432245362-26f9c0f1ba2f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="linear demo image"
+                  src="https://cdn.iconscout.com/wordpress/2021/11/Cover--Inspiring-Web-Design-Concepts-with-3D-Graphics-1.png"
+                  alt="3D trends"
                   className="object-contain rounded-2xl w-full max-w-[280px] lg:max-w-full"
                 />
               </div>
@@ -85,26 +76,22 @@ export function WobbleCardDemo() {
           <div className="h-full flex flex-col justify-between">
             <div>
               <h2 className="text-left text-balance text-2xl lg:text-4xl font-semibold tracking-[-0.015em] text-white">
-                Vertical Showcase
+              Build, Scale & Protect with Confidence
               </h2>
               <p className="mt-4 text-left text-base/6 text-neutral-200">
-                This tall card shows important information that spans the full
-                height.
+              <b>Modern infrastructure, fortified security.</b> 
               </p>
             </div>
             <img
-              src="https://images.unsplash.com/photo-1731432245362-26f9c0f1ba2f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="vertical card image"
+              src="https://eu-images.contentstack.com/v3/assets/blt07f68461ccd75245/bltd5624bcfcfb6295c/678f89665b42b0fec96e92bc/padlock-1716x965_-_2025-01-21.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale"
+              alt="cybersecurity trends"
               className="object-contain rounded-2xl mx-auto my-8 lg:my-0 max-w-[280px] lg:max-w-[90%] w-full"
             />
             <div className="mt-4">
               <p className="text-left text-base/6 text-neutral-200">
-                Bottom section content with additional details or calls to
-                action.
+              From Kubernetes and microservices to AI-driven cybersecurity, we ensure your systems grow and stay safe.
               </p>
-              <button className="mt-4 px-6 py-2 bg-white/10 hover:bg-white/20 rounded-lg text-white transition-colors">
-                Learn More
-              </button>
+              
             </div>
           </div>
         </WobbleCard>
