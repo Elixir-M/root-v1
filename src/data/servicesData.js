@@ -528,7 +528,7 @@ const servicesData = {
     cards: [
       // --- Highest Demand Tier ---
       {
-        imgSrc: "/assets/img/nlp_llm_transformers.png", // Placeholder: NLP/LLM concepts
+        imgSrc: "/assets/services/ai/nlp.webp", // Placeholder: NLP/LLM concepts
         techName: "Natural Language Processing (NLP) & LLMs",
         description: "Advanced Language Understanding & Generation",
         features: [
@@ -540,7 +540,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/genai_text_image.png", // Placeholder: GenAI concepts
+        imgSrc: "/assets/services/ai/generative.jpeg", // Placeholder: GenAI concepts
         techName: "Generative AI (Text, Image, Code)",
         description: "Creating Novel Content with AI",
         features: [
@@ -552,7 +552,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/mlops_cloud_scale.png", // Placeholder: MLOps/Cloud/Scale concepts
+        imgSrc: "/assets/services/ai/mlops.webp", // Placeholder: MLOps/Cloud/Scale concepts
         techName: "MLOps, Cloud AI & Scalability",
         description: "Operationalizing & Scaling AI/ML Solutions",
         features: [
@@ -564,7 +564,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/python_numpy_pandas.png", // Placeholder: Core Python stack
+        imgSrc: "/assets/services/ai/data-science-stack.jpg", // Placeholder: Core Python stack
         techName: "Core Python Data Science Stack",
         description: "Fundamental Tools for Data Analysis & AI",
         features: [
@@ -577,7 +577,7 @@ const servicesData = {
       },
       // --- High/Medium Demand Tier ---
       {
-        imgSrc: "/assets/img/predictive_recommendation.png", // Placeholder: Prediction/Recommendation concepts
+        imgSrc: "/assets/services/ai/predictive-modeling-icon-editable-vector.jpg", // Placeholder: Prediction/Recommendation concepts
         techName: "Predictive Modeling & Recommendation Systems",
         description: "Forecasting Outcomes & Personalizing Experiences",
         features: [
@@ -589,7 +589,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cv_detection_cnn.png", // Placeholder: CV concepts
+        imgSrc: "/assets/services/ai/computer-vision.avif", // Placeholder: CV concepts
         techName: "Computer Vision (CV)",
         description: "Extracting Insights from Visual Data",
         features: [
@@ -601,7 +601,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/deep_learning_tf_pytorch.png", // Placeholder: TF/PyTorch/Keras logos
+        imgSrc: "/assets/services/ai/deep-learning.png", // Placeholder: TF/PyTorch/Keras logos
         techName: "Deep Learning Frameworks (TF/PyTorch/Keras)",
         description: "Building & Training Neural Networks",
         features: [
@@ -614,7 +614,7 @@ const servicesData = {
       },
       // --- Medium/Lower Demand Tier (but important/specialized) ---
       {
-        imgSrc: "/assets/img/responsible_ai_xai.png", // Placeholder: Responsible AI concepts
+        imgSrc: "/assets/services/ai/reasonable-ai.webp", // Placeholder: Responsible AI concepts
         techName: "Responsible & Explainable AI (XAI)",
         description: "Building Trustworthy & Ethical AI",
         features: [
@@ -626,7 +626,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/rl_robotics_games.png", // Placeholder: RL concepts
+        imgSrc: "/assets/services/ai/reinforcement-learning.avif", // Placeholder: RL concepts
         techName: "Reinforcement Learning (RL)",
         description: "Training Agents for Optimal Decision-Making",
         features: [
