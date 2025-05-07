@@ -1100,7 +1100,7 @@ const servicesData = {
     cards: [
       // --- Highest Demand Tier ---
       {
-        imgSrc: "/assets/img/cloud_compute_all.png", // Placeholder: Combined Compute icons
+        imgSrc: "/assets/services/cloud/cloud VMS.jpg", // Placeholder: Combined Compute icons
         techName: "Cloud Compute Services (VMs, Containers, Serverless)",
         description: "Flexible & Scalable Application Hosting",
         features: [
@@ -1111,7 +1111,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_mgmt_migrate_monitor.png", // Placeholder: Mgmt/Migrate/Monitor concepts
+        imgSrc: "/assets/services/cloud/CLOUD MANAGEMENT MIGRATION.jpg", // Placeholder: Mgmt/Migrate/Monitor concepts
         techName: "Cloud Management, Migration & Monitoring",
         description: "Operations, Transitioning & Observability",
         features: [
@@ -1122,7 +1122,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_dev_devops_iac.png", // Placeholder: Dev/DevOps/IaC concepts
+        imgSrc: "/assets/services/cloud/CLOUD DEVELOPMENT.jpg", // Placeholder: Dev/DevOps/IaC concepts
         techName: "Cloud Development & DevOps Enablement",
         description: "Modern Application Delivery & Automation",
         features: [
@@ -1134,7 +1134,7 @@ const servicesData = {
       },
       // --- High/Medium Demand Tier ---
       {
-        imgSrc: "/assets/img/cloud_storage_object_block.png", // Placeholder: Combined Storage icons
+        imgSrc: "/assets/services/cloud/CLOUD STORAGE SOLUTION.png", // Placeholder: Combined Storage icons
         techName: "Cloud Storage Solutions (Object & Block)",
         description: "Scalable, Durable, and Performant Data Storage",
         features: [
@@ -1144,7 +1144,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_managed_databases.png", // Placeholder: Managed DB icon
+        imgSrc: "/assets/services/cloud/managed-cloud-DATABASE.jpg", // Placeholder: Managed DB icon
         techName: "Managed Cloud Databases (SQL & NoSQL)",
         description: "Reliable & Scalable Database Services",
         features: [
@@ -1155,7 +1155,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_network_cdn_lb.png", // Placeholder: Network/CDN/LB concepts
+        imgSrc: "/assets/services/cloud/cloud networking content delivery.jpg", // Placeholder: Network/CDN/LB concepts
         techName: "Cloud Networking & Content Delivery",
         description: "Secure Connectivity, Scalability & Performance",
         features: [
@@ -1167,7 +1167,7 @@ const servicesData = {
       },
       // --- Medium Demand (Specialized) Tier ---
       {
-        imgSrc: "/assets/img/cloud_advanced_ai_bigdata.png", // Placeholder: AI/Big Data concepts
+        imgSrc: "/assets/services/cloud/advanced cloud services.jpg", // Placeholder: AI/Big Data concepts
         techName: "Advanced Cloud Services (Big Data, AI/ML)",
         description: "Data Analytics & Intelligent Applications",
         features: [
@@ -1191,7 +1191,7 @@ const servicesData = {
         "Cloud Cost Optimization: Analyzing and reducing cloud spending.",
         "Hybrid and Multi-Cloud Integration & Management: Connecting and managing diverse environments.",
       ],
-      image1Path: "/assets/img/cloud_main.webp", // Placeholder
+      image1Path: "/assets/img/bt.webp", // Placeholder
     },
     queryname: "cloud solutions", // Corrected: Matches top-level key and naming convention
   },
