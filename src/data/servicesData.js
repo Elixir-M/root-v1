@@ -370,7 +370,7 @@ const servicesData = {
     cards: [
       // --- Highest Demand Tier ---
       {
-        imgSrc: "/assets/img/react_next_state.png", // Placeholder for combined React/Next/State
+        imgSrc: "/assets/services/webdev/react ecosystem.jpg", // Placeholder for combined React/Next/State
         techName: "React Ecosystem (React, Next.js, State Mgmt)",
         description: "Leading Frontend Development Stack",
         features: [
@@ -381,7 +381,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/backend_node_python.png", // Placeholder for combined Node/Python backend
+        imgSrc: "/assets/services/webdev/nodejs python.jpeg", // Placeholder for combined Node/Python backend
         techName: "Modern Backend Development (Node.js, Python)",
         description: "Robust Server-Side Solutions & APIs",
         features: [
@@ -392,7 +392,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/frontend_fundamentals.png", // Placeholder for HTML/CSS/JS/TS
+        imgSrc: "/assets/services/webdev/Front-End-Development-Tools.jpg", // Placeholder for HTML/CSS/JS/TS
         techName: "Fundamental Frontend Technologies",
         description: "Core Skills for Modern Web Experiences",
         features: [
@@ -403,7 +403,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cloud_devops_containers.png", // Placeholder for combined Cloud/DevOps
+        imgSrc: "/assets/services/webdev/cloud deployment.jpg", // Placeholder for combined Cloud/DevOps
         techName: "Cloud, Deployment & DevOps",
         description: "Infrastructure, CI/CD, and Scalability",
         features: [
@@ -415,7 +415,7 @@ const servicesData = {
       },
       // --- High/Medium Demand Tier ---
       {
-        imgSrc: "/assets/img/api_rest_graphql.png", // Placeholder for combined API tech
+        imgSrc: "/assets/services/webdev/api development.webp", // Placeholder for combined API tech
         techName: "API Development (REST & GraphQL)",
         description: "Designing & Building Web Service Interfaces",
         features: [
@@ -426,7 +426,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/databases_sql_nosql.png", // Placeholder for combined DB tech
+        imgSrc: "/assets/services/webdev/database solution.webp", // Placeholder for combined DB tech
         techName: "Database Solutions (SQL, NoSQL, In-Memory)",
         description: "Data Storage & Management Expertise",
         features: [
@@ -437,7 +437,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/cms_headless_wordpress.png", // Placeholder for combined CMS
+        imgSrc: "/assets/services/webdev/CMS.webp", // Placeholder for combined CMS
         techName: "Content Management (CMS - Headless & WordPress)",
         description: "Flexible Content Solutions",
         features: [
@@ -448,7 +448,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/css_styling_tailwind_cssinjs.png", // Placeholder for combined CSS tech
+        imgSrc: "/assets/services/webdev/MODERN CSS.jpg", // Placeholder for combined CSS tech
         techName: "Modern CSS & Styling",
         description: "Efficient and Maintainable Styling Approaches",
         features: [
@@ -460,7 +460,7 @@ const servicesData = {
       },
       // --- Medium/Lower Demand Tier (but important) ---
       {
-        imgSrc: "/assets/img/frontend_frameworks_other.png", // Placeholder for Angular/Vue/Svelte
+        imgSrc: "/assets/services/webdev/OTHER FRONTEND FRAMEWORK.jpg", // Placeholder for Angular/Vue/Svelte
         techName: "Other Frontend Frameworks (Angular, Vue, Svelte)",
         description: "Versatile Framework Expertise",
         features: [
@@ -471,7 +471,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/testing_jest_cypress.png", // Placeholder for combined testing tools
+        imgSrc: "/assets/services/webdev/COMPREHENSICE TESTING STRATEGY.png", // Placeholder for combined testing tools
         techName: "Comprehensive Testing Strategies",
         description: "Ensuring Application Quality & Reliability",
         features: [
@@ -482,7 +482,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/build_tools_vite_webpack.png", // Placeholder for combined build tools
+        imgSrc: "/assets/services/webdev/TOOL AND OPTIMIZATION.png", // Placeholder for combined build tools
         techName: "Build Tools & Optimization",
         description: "Modern Frontend Tooling & Performance",
         features: [
@@ -493,7 +493,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/advanced_web_pwa_wasm.png", // Placeholder for PWA/Wasm/Serverless
+        imgSrc: "/assets/services/webdev/ADVANCE WEB CAPABILITY.png", // Placeholder for PWA/Wasm/Serverless
         techName: "Advanced Web Capabilities",
         description: "Emerging Technologies & Specialized Features",
         features: [
@@ -514,7 +514,7 @@ const servicesData = {
         "E-commerce Solutions: Developing scalable online stores with secure payments.",
         "Web Application Maintenance: Providing ongoing support, updates, and tuning.",
       ],
-      image1Path: "/assets/img/web_dev_main.webp", // Placeholder
+      image1Path: "/assets/img/bt.webp", // Placeholder
     },
     queryname: "web dev", // Using the tag from your list
   },
@@ -651,7 +651,7 @@ const servicesData = {
         "AI Strategy & Consulting: Helping businesses identify opportunities and implement AI/ML.",
         "Generative AI Solutions: Implementing solutions using LLMs, diffusion models, etc.",
       ],
-      image1Path: "/assets/img/ai_ml_main.webp", // Placeholder
+      image1Path: "/assets/img/bt.webp", // Placeholder
     },
     queryname: "ai and ml", // Using the tag from your list
   },
