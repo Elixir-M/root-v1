@@ -242,7 +242,7 @@ const servicesData = {
     cards: [
       // Platforms & Native Languages
       {
-        imgSrc: "/assets/img/ios_dev.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/ios.jpg", // Placeholder
         techName: "iOS Development",
         description: "Native Apps for Apple Devices",
         features: [
@@ -253,7 +253,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/android_dev.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/android development.avif", // Placeholder
         techName: "Android Development",
         description: "Native Apps for the Android Ecosystem",
         features: [
@@ -264,7 +264,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/swift_lang.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/swift-og.png", // Placeholder
         techName: "Swift",
         description: "Modern Language for Apple Platforms",
         features: [
@@ -275,7 +275,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/kotlin_lang.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/kotlin.png", // Placeholder
         techName: "Kotlin",
         description: "Preferred Language for Android",
         features: [
@@ -288,7 +288,7 @@ const servicesData = {
 
       // Cross-Platform Frameworks
       {
-        imgSrc: "/assets/img/react_native.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/react native.png", // Placeholder
         techName: "React Native",
         description: "Cross-Platform Apps with JavaScript",
         features: [
@@ -299,7 +299,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/flutter_dev.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/flutter.jpg", // Placeholder
         techName: "Flutter",
         description: "UI Toolkit for Cross-Platform Apps",
         features: [
@@ -312,7 +312,7 @@ const servicesData = {
 
       // Supporting Concepts & Tools
       {
-        imgSrc: "/assets/img/mobile_uiux.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/mobile uiux.webp", // Placeholder
         techName: "Mobile UI/UX Design",
         description: "Crafting User-Centric Interfaces",
         features: [
@@ -323,7 +323,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/api_integration.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/api integration.webp", // Placeholder
         techName: "API Integration",
         description: "Connecting Apps to Backends",
         features: [
@@ -334,7 +334,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com", // Placeholder
       },
       {
-        imgSrc: "/assets/img/mobile_testing.png", // Placeholder
+        imgSrc: "/assets/services/mobappdev/mobile app testing.png", // Placeholder
         techName: "Mobile App Testing",
         description: "Ensuring Quality and Performance",
         features: [
@@ -356,7 +356,7 @@ const servicesData = {
         "App Maintenance & Support: Providing ongoing updates, bug fixes, and optimization.",
         "API Development & Integration: Connecting mobile apps to backend systems.",
       ],
-      image1Path: "/assets/img/mobile_dev_main.webp", // Placeholder
+      image1Path: "/assets/img/bt.webp", // Placeholder
     },
     queryname: "mobile dev", // Using the tag from your list
   },
