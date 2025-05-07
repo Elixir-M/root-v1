@@ -53,7 +53,7 @@ const servicesData = {
     gradientshade: "#000000",
     cards: [
       {
-        imgSrc: "/assets/img/SmartContracts.avif",
+        imgSrc: "/assets/services/blockchain/SmartContracts.avif",
         techName: "Smart Contracts",
         description: "Automating Trust & Agreements",
         features: [
@@ -64,7 +64,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/DApps.avif",
+        imgSrc: "/assets/services/blockchain/Decentralized Apps.png",
         techName: "Decentralized Apps (dApps)",
         description: "Decentralized and Open",
         features: [
@@ -75,7 +75,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/DeFi.avif",
+        imgSrc: "/assets/services/blockchain/DeFi.webp",
         techName: "DeFi (Decentralized Finance)",
         description: "Open Finance Ecosystem",
         features: [
@@ -86,7 +86,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/NFTs.avif",
+        imgSrc: "/assets/services/blockchain/NFT.jpg",
         techName: "NFTs (Non-Fungible Tokens)",
         description: "Uniqueness in the Digital World",
         features: [
@@ -97,7 +97,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/DAOs.avif",
+        imgSrc: "/assets/services/blockchain/DAO.jpeg",
         techName: "DAOs",
         description: "Code-Governed Organizations",
         features: [
@@ -108,7 +108,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Ethereum.avif",
+        imgSrc: "/assets/services/blockchain/ETHEREUM.avif",
         techName: "Ethereum",
         description: "The Web3 Powerhouse",
         features: [
@@ -119,7 +119,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Hyperledger.avif",
+        imgSrc: "/assets/services/blockchain/HYPER LEDGER FABRICS.webp",
         techName: "Hyperledger Fabric",
         description: "Enterprise Blockchain Framework",
         features: [
@@ -130,7 +130,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Solana.avif",
+        imgSrc: "/assets/services/blockchain/SOLANA.jpg",
         techName: "Solana",
         description: "Blazing Fast Blockchain",
         features: [
@@ -141,7 +141,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Polygon.avif",
+        imgSrc: "/assets/services/blockchain/Polygon-MATIC.jpg",
         techName: "Polygon (PoS & zkEVM)",
         description: "Scaling Ethereum",
         features: [
@@ -152,7 +152,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/ZKPs.avif",
+        imgSrc: "/assets/services/blockchain/ZERO KNOWLEDGE PROOF.png",
         techName: "Zero-Knowledge Proofs",
         description: "Privacy-Preserving Computation",
         features: [
@@ -163,7 +163,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/ZKRollups.avif",
+        imgSrc: "/assets/services/blockchain/What-Are-ZK-Rollups.webp",
         techName: "ZK-Rollups",
         description: "Efficient Layer 2 Scaling",
         features: [
@@ -174,7 +174,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Solidity.avif",
+        imgSrc: "/assets/services/blockchain/solidity.avif",
         techName: "Solidity",
         description: "Smart Contract Language",
         features: [
@@ -185,7 +185,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Rust.avif",
+        imgSrc: "/assets/services/blockchain/rust.png",
         techName: "Rust",
         description: "Secure & Fast for Web3",
         features: [
@@ -196,7 +196,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/Oracles.avif",
+        imgSrc: "/assets/services/blockchain/oracles.png",
         techName: "Oracles (e.g., Chainlink)",
         description: "Real-World Data for Smart Contracts",
         features: [
@@ -207,7 +207,7 @@ const servicesData = {
         deployedLink: "https://your-deployed-site.com",
       },
       {
-        imgSrc: "/assets/img/IPFS.avif",
+        imgSrc: "/assets/services/blockchain/IPFS.jpg",
         techName: "Decentralized Storage (IPFS)",
         description: "Distributed File Sharing",
         features: [
