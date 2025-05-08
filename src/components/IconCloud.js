@@ -5,9 +5,7 @@ import { useTheme } from "next-themes";
 import {
   Cloud,
   fetchSimpleIcons,
-  ICloud,
   renderSimpleIcon,
-  SimpleIcon,
 } from "react-icon-cloud";
 
 export const cloudProps = {
@@ -17,7 +15,6 @@ export const cloudProps = {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      // paddingTop: 2,
     },
   },
   options: {
@@ -33,33 +30,13 @@ export const cloudProps = {
     outlineColour: "#0000",
     maxSpeed: 0.04,
     minSpeed: 0.02,
-    // dragControl: false,
   },
-};
-
-export const renderCustomIcon = (icon, theme) => {
-  const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
-  const minContrastRatio = theme === "dark" ? 2 : 1.2;
-
-  return renderSimpleIcon({
-    icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
-    size: 28,
-    aProps: {
-      href: undefined,
-      target: undefined,
-      rel: undefined,
-      onClick: (e) => e.preventDefault(),
-    },
-  });
 };
 
 export default function IconCloud({ iconSlugs }) {
   const [data, setData] = useState(null);
   const { theme } = useTheme();
+  const currentTheme = theme || "dark";
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -68,13 +45,35 @@ export default function IconCloud({ iconSlugs }) {
   const renderedIcons = useMemo(() => {
     if (!data) return null;
 
-    return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "dark"),
-    );
-  }, [data, theme]);
+    // Use white for dark mode, black for light mode
+    const monochromeColor = currentTheme === "light" ? "#000000" : "#ffffff";
+    const bgHex = currentTheme === "light" ? "#f3f2ef" : "#080510";
+
+    return Object.values(data.simpleIcons).map((icon) => {
+      // Create a modified icon object with our monochrome color
+      const monochromeIcon = {
+        ...icon,
+        hex: monochromeColor.replace('#', ''),
+        path: icon.path
+      };
+
+      return renderSimpleIcon({
+        icon: monochromeIcon,
+        bgHex,
+        fallbackHex: monochromeColor,
+        minContrastRatio: 2,
+        size: 28,
+        aProps: {
+          href: undefined,
+          target: undefined,
+          rel: undefined,
+          onClick: (e) => e.preventDefault(),
+        },
+      });
+    });
+  }, [data, currentTheme]);
 
   return (
-    // @ts-ignore
     <Cloud {...cloudProps}>
       <>{renderedIcons}</>
     </Cloud>
