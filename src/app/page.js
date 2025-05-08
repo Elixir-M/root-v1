@@ -14,8 +14,8 @@ export default function Home() {
       style={{ backgroundColor: black }} // Lighter shade of black
     >
       <Navbar className="top-2" />
-      {/* <VideoHero/> */}
-      <HeroSection />
+      <VideoHero/>
+      {/* <HeroSection /> */}
       <WobbleCardDemo />
       {/* <HeroScrollDemo /> */}
       <FeaturesSectionDemo />
